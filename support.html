@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help &amp; Support - LocalGemma</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; color: #333; max-width: 780px; margin: 40px auto; padding: 0 20px; }
+    h1 { color: #222; }
+    h2 { color: #444; margin-top: 1.8em; font-size: 1.2em; border-bottom: 1px solid #eee; padding-bottom: 0.25em; }
+    h3 { color: #444; margin-top: 1.3em; font-size: 1.03em; }
+    table { border-collapse: collapse; margin: 1.2em 0; font-size: 0.93em; width: 100%; }
+    th, td { border: 1px solid #e2e2e2; padding: 7px 10px; text-align: left; vertical-align: top; }
+    th { background: #fafafa; font-weight: 600; }
+    table.meta th { white-space: nowrap; width: 30%; }
+    code { background: #f5f5f5; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+    .callout { background: #f6f9fc; border-left: 4px solid #4a90d9; padding: 12px 16px; margin: 1.3em 0; border-radius: 0 6px 6px 0; }
+    .warn { background: #fff8ec; border-left-color: #e0a33a; }
+    ul, ol { padding-left: 1.3em; }
+    li { margin: 0.4em 0; }
+    nav.toc { background: #fafafa; border: 1px solid #eee; border-radius: 6px; padding: 12px 16px; font-size: 0.94em; }
+    nav.toc ul { margin: 0.4em 0 0; }
+    footer { margin-top: 3em; color: #888; font-size: 0.85em; border-top: 1px solid #eee; padding-top: 1em; }
+    nav.langbar { display: flex; align-items: center; justify-content: flex-end; gap: 0.5em; margin: 0 0 1.6em; font-size: 0.9em; }
+    nav.langbar label { color: #666; }
+    nav.langbar select { font: inherit; padding: 4px 8px; border: 1px solid #d5d5d5; border-radius: 6px; background: #fff; color: inherit; }
+    /* Only the selected language is rendered; English is visible without JavaScript. */
+    .i18n { display: none; }
+    .i18n.is-active { display: block; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1b1b1d; color: #d6d6d6; }
+      h1, h2, h3 { color: #f0f0f0; }
+      h2 { border-bottom-color: #2f2f31; }
+      th, td { border-color: #3a3a3c; }
+      th, nav.toc { background: #242426; }
+      nav.toc { border-color: #2f2f31; }
+      code { background: #2a2a2c; }
+      .callout { background: #20262c; border-left-color: #4a90d9; }
+      .warn { background: #2b2620; border-left-color: #e0a33a; }
+      footer { border-top-color: #2f2f31; color: #9a9a9a; }
+      nav.langbar label { color: #9a9a9a; }
+      nav.langbar select { background: #2a2a2c; border-color: #3a3a3c; color: #d6d6d6; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="langbar">
+  <label id="lang-label" for="lang-select">Language</label>
+  <select id="lang-select" aria-labelledby="lang-label">
+    <option value="en">English</option>
+    <option value="ja">日本語</option>
+    <option value="de">Deutsch</option>
+    <option value="fr">Français</option>
+    <option value="es">Español</option>
+    <option value="it">Italiano</option>
+  </select>
+</nav>
+
+<!-- ============================ English ============================ -->
+<div class="i18n is-active" data-lang="en" lang="en">
+
+<h1>LocalGemma &mdash; Help &amp; Support</h1>
+
+<p>LocalGemma is a fully on-device AI chat app for iPhone. The language model runs on your own hardware: no account, no sign-in, no cloud service, and nothing about your conversations leaves your device. This page explains how to use the app, what its limits are, and how to fix common problems.</p>
+
+<table class="meta">
+  <tr><th>Version documented</th><td>1.1.6 (build 1)</td></tr>
+  <tr><th>Last updated</th><td>October 17, 2026</td></tr>
+  <tr><th>Platform</th><td>iPhone, iOS 26.0 or later</td></tr>
+  <tr><th>Model</th><td>Gemma 4 E2B Instruct (text-only, 4-bit) &mdash; about 2.5&nbsp;GiB, downloaded once</td></tr>
+  <tr><th>Internet needed</th><td>Only for the first model download. Fully offline afterwards.</td></tr>
+  <tr><th>Price</th><td>Free &mdash; no purchases, no subscriptions, no other charges (since October 4, 2026)</td></tr>
+  <tr><th>Support contact</th><td><a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a></td></tr>
+</table>
+
+<nav class="toc">
+  <strong>On this page</strong>
+  <ul>
+    <li><a href="#start-en">Getting started</a></li>
+    <li><a href="#menus-en">The on-screen menus</a></li>
+    <li><a href="#features-en">Features</a></li>
+    <li><a href="#memory-en">How the conversation and its limits work</a></li>
+    <li><a href="#trouble-en">Troubleshooting</a></li>
+    <li><a href="#faq-en">Frequently asked questions</a></li>
+    <li><a href="#report-en">Reporting a problem</a></li>
+  </ul>
+</nav>
+
+<h2 id="start-en">Getting started</h2>
+
+<ol>
+  <li><strong>Check your device.</strong> You need an iPhone with iOS 26.0 or later and roughly <strong>3&nbsp;GB of free storage</strong> (2.5&nbsp;GiB for the model, plus working space).</li>
+  <li><strong>Download the model.</strong> On first launch the app asks you to confirm the download and shows its size. Accept, keep the app in the foreground on a reliable connection, and wait. The download uses a background session, so it can continue if you briefly leave the app.</li>
+  <li><strong>Start chatting.</strong> Once the model is loaded you can type a message and send it. From this point on the app works entirely offline &mdash; you can put the phone in Airplane Mode and it will still reply.</li>
+</ol>
+
+<h2 id="menus-en">The on-screen menus</h2>
+
+<h3>Model menu (bottom of the screen)</h3>
+<ul>
+  <li><strong>Model name</strong> &mdash; shows the currently installed model. Version 1.1.6 ships with a single model, so there is nothing to switch between.</li>
+  <li><strong>Delete &lt;model&gt;</strong> &mdash; deletes the downloaded model files and that model&rsquo;s saved chat history, freeing about 2.5&nbsp;GiB. You will be asked to re-download the next time you want to chat.</li>
+  <li><strong>HF Source</strong> &mdash; chooses where model files are downloaded from: <code>hf-mirror.com</code> (default) or <code>huggingface.co</code>. If a download is slow or fails, try the other source.</li>
+</ul>
+
+<h3>&ldquo;&hellip;&rdquo; menu (top-right)</h3>
+<ul>
+  <li><strong>Export&hellip;</strong> &mdash; saves the current conversation as a Markdown (<code>.md</code>) file; on iPhone you choose the destination in the Files app.</li>
+  <li><strong>Storage</strong> &mdash; shows how much space the app and its model use, and lets you reclaim space left behind by failed or interrupted downloads; it also holds <em>Clear Chat</em>, which erases the current conversation and its saved history. The model in use is never removed.</li>
+  <li><strong>About</strong> &mdash; version information and a link to the <a href="index.html">Privacy Policy</a>.</li>
+  <li><strong>Tools calling</strong> &mdash; off by default; see below.</li>
+  <li><strong>Thinking</strong> &mdash; off by default; see below.</li>
+</ul>
+
+<h2 id="features-en">Features</h2>
+
+<h3>Tools calling (recommended for anything involving numbers)</h3>
+<p>When enabled, the model may call built-in tools instead of answering from memory. This makes arithmetic reliable, because the calculation is performed by the app rather than guessed by the model:</p>
+<ul>
+  <li><code>calculate</code> &mdash; arithmetic and expressions (e.g. &ldquo;1500 &times; 2&rdquo;).</li>
+  <li><code>get_current_time</code> &mdash; the current date and time, optionally in a time zone you name (for example <code>Asia/Tokyo</code>). Local only; it reads your device clock.</li>
+  <li><code>generate_random_number</code> &mdash; a random number within a range you specify.</li>
+  <li><code>get_weather</code> &mdash; a <strong>demonstration tool that returns fixed sample data</strong> (20&nbsp;&deg;C, &ldquo;Sunny&rdquo;). It does not contact any weather service and the values it reports are not real weather.</li>
+</ul>
+<p>Tools run locally, so enabling them does not affect privacy. Enabling tools makes each reply slightly slower, because the model takes an extra round to request the tool and then read its result.</p>
+
+<h3>Thinking</h3>
+<p>Thinking turns on the model&rsquo;s built-in reasoning mode, in which it works through a problem before answering. It is <strong>off by default</strong> because it is noticeably slower and it consumes part of the same limited reply budget described below. Your choice is remembered between launches. Because the setting is applied when the model session is created, switching it reloads the model &mdash; expect a few seconds of &ldquo;Loading model weights&hellip;&rdquo; and a brief full-screen overlay. Your conversation is preserved across the reload.</p>
+
+<div class="callout warn">
+  <p><strong>Two toggles you may want to combine:</strong> leave <em>Tools calling</em> on if you ask questions with numbers, and leave <em>Thinking</em> off unless you specifically want the model to reason step by step. Both are independent.</p>
+</div>
+
+<h2 id="memory-en">How the conversation and its limits work</h2>
+
+<p>LocalGemma runs a small 4-bit model that must fit in your iPhone&rsquo;s memory, so it deliberately keeps very little context. Understanding this explains most surprising behaviour:</p>
+
+<ul>
+  <li><strong>Only the last two messages are sent to the model each turn</strong> (your most recent message and the assistant&rsquo;s most recent reply), together with a fixed system instruction. Earlier messages remain visible on screen and are included in the exported file, but the model does <em>not</em> see them. In practice the model &ldquo;forgets&rdquo; older parts of a long conversation.</li>
+  <li><strong>Each reply is limited to about 1,024 tokens.</strong> A long answer may end in the middle of a sentence &mdash; that is the limit, not an error. Sending &ldquo;continue&rdquo; will produce more.</li>
+  <li><strong>Thinking shares that same budget.</strong> With Thinking on, part of the 1,024 tokens is spent on reasoning, leaving less room for the visible answer.</li>
+  <li><strong>Long generations are demanding.</strong> Generating many tokens in a row keeps the GPU and CPU busy; on a memory-constrained iPhone, iOS may terminate the app if it exceeds system limits. See Troubleshooting.</li>
+</ul>
+
+<h2 id="trouble-en">Troubleshooting</h2>
+
+<table>
+  <tr><th>Symptom</th><th>What to do</th></tr>
+  <tr>
+    <td>The app closes by itself during a long reply</td>
+    <td>This is iOS terminating the app for exceeding memory or CPU limits while generating a long response. Keep replies shorter, turn <em>Thinking</em> off, and avoid asking for very long texts (for example multi-page documents). Your saved history is preserved, so reopen the app and continue &mdash; the conversation is still there.</td>
+  </tr>
+  <tr>
+    <td>A reply stops mid-sentence</td>
+    <td>Normal: the reply hit the ~1,024-token limit. Send &ldquo;continue&rdquo; to get the rest.</td>
+  </tr>
+  <tr>
+    <td>The model seems to forget what we discussed</td>
+    <td>Expected. Only the last two messages are sent each turn. For anything that must be remembered, repeat it in your current message.</td>
+  </tr>
+  <tr>
+    <td>The download stalls or fails</td>
+    <td>Confirm you have a working connection and free space, then try again &mdash; the download resumes and the app re-checks the files. If it keeps failing, switch <em>HF Source</em> to the other host.</td>
+  </tr>
+  <tr>
+    <td>&ldquo;Loading model weights&hellip;&rdquo; seems to take a long time</td>
+    <td>The app is loading roughly 2.5&nbsp;GiB of weights into memory. A cold load takes noticeably longer than a reload of an already-downloaded model. Wait for the overlay to disappear; do not force-quit.</td>
+  </tr>
+  <tr>
+    <td>You need free space</td>
+    <td>Open the model menu and choose <em>Delete &lt;model&gt;</em>. This removes the weights (about 2.5&nbsp;GiB) and that model&rsquo;s history. Everything else stays.</td>
+  </tr>
+  <tr>
+    <td>The app reports that the model is not loaded</td>
+    <td>This existed in earlier builds and is fixed in 1.1.2: clearing the chat no longer unloads the model. If you still see it, close and reopen the app.</td>
+  </tr>
+  <tr>
+    <td>You want to start over completely</td>
+    <td>Use <em>Clear Chat</em> (Storage screen) to wipe the conversation. To remove everything &mdash; model, history, preferences and the local diagnostics log &mdash; delete the app from the Home Screen.</td>
+  </tr>
+</table>
+
+<h2 id="faq-en">Frequently asked questions</h2>
+
+<h3>Do I need an internet connection?</h3>
+<p>Only to download the model (about 2.5&nbsp;GiB) and to check its file sizes beforehand. After that the app is fully usable offline.</p>
+
+<h3>Is my conversation sent anywhere?</h3>
+<p>No. The model runs on your iPhone. There is no account, no analytics, no advertising, no crash reporting and no tracking. The only network requests the app ever makes are the model download and the small metadata request that tells it the download size. See the <a href="index.html">Privacy Policy</a> for the exact details.</p>
+
+<h3>Are there subscriptions, in-app purchases or premium features?</h3>
+<p>No. LocalGemma is free: there are no in-app purchases, no subscriptions and no other charges, and every feature is available at no cost (as of October 4, 2026). If paid features are ever introduced, the pricing details will be updated on this page and in the <a href="index.html">Privacy Policy</a> first.</p>
+
+<h3>Which AI model does it use?</h3>
+<p>Gemma 4 E2B Instruct, a text-only 4-bit build published on Hugging Face as <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. It is distributed under Google&rsquo;s <strong>Gemma Terms of Use</strong>, so Google&rsquo;s terms and its Prohibited Use Policy apply to your use of the model&rsquo;s outputs, in addition to these support notes. This app is not affiliated with or endorsed by Google. Only one model ships with the app, and the app has no interface for adding your own.</p>
+
+<h3>Can I send images?</h3>
+<p>No. The bundled model is text-only, so the app does not offer image input.</p>
+
+<h3>Where is my data stored, and how do I delete it?</h3>
+<p>Everything is inside the app&rsquo;s private storage on your iPhone: the model in <code>Documents/.localllmclient/</code>, your chat history in <code>Application Support/LLMclient/History/</code>, one preference in system settings storage, and a small local memory diagnostics log in <code>Documents/diagnostics.log</code>. Use <em>Clear Chat</em> (Storage screen) for the conversation, <em>Delete &lt;model&gt;</em> for the model files, or delete the app to remove all of it. Nothing is stored on any server.</p>
+
+<h3>Why is the app &ldquo;LocalGemma&rdquo; but the bundle identifier says &ldquo;LLMclient&rdquo;?</h3>
+<p>The app has had more than one name over its life; since version 1.1.6 it is called LocalGemma. Its technical bundle identifier was deliberately left unchanged so that existing installations keep their downloaded model, history and preferences.</p>
+
+<h3>Is the weather tool giving me real weather?</h3>
+<p>No. It is a demonstration tool that returns fixed sample data so you can see tool calling at work. It never contacts a weather service.</p>
+
+<h3>What changed in 1.1.3?</h3>
+<ul>
+  <li>Internal stability fixes: two strict-concurrency diagnostics were resolved. How the app behaves is unchanged.</li>
+  <li>The dependencies are now pinned in the repository, so a fresh build uses exactly the same library versions.</li>
+  <li>This help page and the privacy policy are now also available in Japanese, German, French, Spanish and Italian.</li>
+</ul>
+
+<h3>What changed in 1.1.2?</h3>
+<ul>
+  <li>All features are now free &mdash; in-app purchases were removed entirely.</li>
+  <li>App renamed (bundle identifier unchanged).</li>
+  <li>Added the <strong>Thinking</strong> toggle (off by default).</li>
+  <li>Launch is much faster: the app no longer re-reads and re-verifies the 2.5&nbsp;GiB of model weights on every start, and no longer shows a &ldquo;Switching model&rdquo; step.</li>
+  <li>Fixed a bug where clearing the chat could leave the app unable to reply until it was restarted.</li>
+  <li>Fixed the app icon so it passes App Store validation.</li>
+  <li>The model menu was reduced to the single bundled model.</li>
+</ul>
+
+<h2 id="report-en">Reporting a problem</h2>
+
+<p>Email <a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a>. To help diagnose the issue quickly, please include:</p>
+
+<ul>
+  <li>your iPhone model and iOS version;</li>
+  <li>the app version, shown in <em>&hellip;</em> &rarr; <em>About</em> (the supported version is 1.1.6, build 1);</li>
+  <li>what you asked the model to do, and whether <em>Tools calling</em> or <em>Thinking</em> was enabled;</li>
+  <li>the steps that reproduce the problem, and any message you saw on screen.</li>
+</ul>
+
+<footer>
+  <p>LocalGemma 1.1.6 (build 1) &middot; Help &amp; Support &middot; Last updated October 17, 2026<br>
+  See also: <a href="index.html">Privacy Policy</a></p>
+</footer>
+
+</div>
+
+<!-- ============================ 日本語 ============================ -->
+<div class="i18n" data-lang="ja" lang="ja">
+
+<h1>LocalGemma &mdash; ヘルプとサポート</h1>
+
+<p>LocalGemma は、完全に端末上で動作する iPhone 向けの AI チャットアプリです。言語モデルはお使いのハードウェア上で動作し、アカウントもログインもクラウドサービスもなく、会話の内容が端末の外に出ることはありません。このページでは、アプリの使い方、制限事項、よくある問題の対処方法を説明します。</p>
+
+<table class="meta">
+  <tr><th>対象バージョン</th><td>1.1.6（build 1）</td></tr>
+  <tr><th>最終更新</th><td>2026年10月17日</td></tr>
+  <tr><th>プラットフォーム</th><td>iPhone、iOS 26.0 以降</td></tr>
+  <tr><th>モデル</th><td>Gemma 4 E2B Instruct（テキスト専用、4bit）&mdash; 約 2.5&nbsp;GiB、ダウンロードは 1 回のみ</td></tr>
+  <tr><th>インターネット接続</th><td>初回のモデルダウンロード時のみ必要です。以後は完全にオフラインで動作します。</td></tr>
+  <tr><th>料金</th><td>無料 &mdash; 買い切り・サブスクリプション等の課金はありません（2026年10月4日以降）</td></tr>
+  <tr><th>サポート窓口</th><td><a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a></td></tr>
+</table>
+
+<nav class="toc">
+  <strong>このページの内容</strong>
+  <ul>
+    <li><a href="#start-ja">はじめに</a></li>
+    <li><a href="#menus-ja">画面上のメニュー</a></li>
+    <li><a href="#features-ja">機能</a></li>
+    <li><a href="#memory-ja">会話とその制限の仕組み</a></li>
+    <li><a href="#trouble-ja">トラブルシューティング</a></li>
+    <li><a href="#faq-ja">よくある質問</a></li>
+    <li><a href="#report-ja">問題の報告</a></li>
+  </ul>
+</nav>
+
+<h2 id="start-ja">はじめに</h2>
+
+<ol>
+  <li><strong>端末を確認します。</strong> iOS 26.0 以降を実行する iPhone と、およそ <strong>3&nbsp;GB の空き容量</strong>（モデル用の 2.5&nbsp;GiB と作業領域）が必要です。</li>
+  <li><strong>モデルをダウンロードします。</strong> 初回起動時に、アプリがダウンロードの確認とサイズを表示します。承認し、安定した接続のもとでアプリを前面に保ったまま待ってください。ダウンロードにはバックグラウンドセッションを使うため、アプリを短時間離れても続行されます。</li>
+  <li><strong>チャットを始めます。</strong> モデルの読み込みが完了したら、メッセージを入力して送信できます。以降は完全にオフラインで動作するため、機内モードにしても返答します。</li>
+</ol>
+
+<h2 id="menus-ja">画面上のメニュー</h2>
+
+<h3>モデルメニュー（画面下部）</h3>
+<ul>
+  <li><strong>モデル名</strong> &mdash; 現在インストールされているモデルを表示します。バージョン 1.1.6 にはモデルが 1 つだけ同梱されているため、切り替える対象はありません。</li>
+  <li><strong>Delete &lt;モデル&gt;</strong> &mdash; ダウンロード済みのモデルファイルとそのモデルの会話履歴を削除し、約 2.5&nbsp;GiB を解放します。次にチャットする際は再度ダウンロードが必要です。</li>
+  <li><strong>HF Source</strong> &mdash; モデルファイルのダウンロード元を選びます：<code>hf-mirror.com</code>（既定）または <code>huggingface.co</code>。ダウンロードが遅い、または失敗する場合は、もう一方の提供元をお試しください。</li>
+</ul>
+
+<h3>「&hellip;」メニュー（右上）</h3>
+<ul>
+  <li><strong>Export&hellip;</strong> &mdash; 現在の会話を Markdown（<code>.md</code>）ファイルとして保存します。iPhone では「ファイル」アプリで保存先を選べます。</li>
+  <li><strong>Storage</strong> &mdash; アプリとモデルが使用している容量を表示し、ダウンロードの失敗や中断で残ったデータを削除できます。現在の会話と保存済みの履歴を消去する <em>Clear Chat</em> もここにあります。使用中のモデルは削除されません。</li>
+  <li><strong>About</strong> &mdash; バージョン情報と<a href="index.html">プライバシーポリシー</a>へのリンク。</li>
+  <li><strong>Tools calling</strong> &mdash; 既定ではオフです。以下をご覧ください。</li>
+  <li><strong>Thinking</strong> &mdash; 既定ではオフです。以下をご覧ください。</li>
+</ul>
+
+<h2 id="features-ja">機能</h2>
+
+<h3>Tools calling（数値を扱う質問におすすめ）</h3>
+<p>有効にすると、モデルは記憶から答える代わりに組み込みツールを呼び出せるようになります。計算はモデルが推測するのではなくアプリが実行するため、算術が確実になります。</p>
+<ul>
+  <li><code>calculate</code> &mdash; 四則演算と式（例：「1500 &times; 2」）。</li>
+  <li><code>get_current_time</code> &mdash; 現在の日時。指定したタイムゾーン（例：<code>Asia/Tokyo</code>）で取得することもできます。端末内のみで完結し、端末の時計を読み取ります。</li>
+  <li><code>generate_random_number</code> &mdash; 指定した範囲内の乱数。</li>
+  <li><code>get_weather</code> &mdash; <strong>固定のサンプルデータを返すデモ用ツール</strong>（20&nbsp;&deg;C、「晴れ」）です。気象サービスには一切接続せず、返される値は実際の天気ではありません。</li>
+</ul>
+<p>ツールはローカルで動作するため、有効にしてもプライバシーには影響しません。ただし、モデルがツールを要求し、その結果を読み取る分だけ余分な処理が入るため、各返答は少し遅くなります。</p>
+
+<h3>Thinking</h3>
+<p>Thinking は、答える前に問題をじっくり考える、モデル内蔵の推論モードを有効にします。<strong>既定ではオフ</strong>です。体感できるほど遅くなり、後述する限られた返答の予算を一部消費するためです。設定は起動のたびに保持されます。この設定はモデルのセッション作成時に適用されるため、切り替えるとモデルが再読み込みされます。数秒間の「Loading model weights&hellip;」と短い全画面表示が入りますが、会話は保持されます。</p>
+
+<div class="callout warn">
+  <p><strong>組み合わせて使いたい 2 つの切り替え：</strong> 数値を含む質問をする場合は <em>Tools calling</em> をオンのままにし、モデルに手順を追って考えてほしい場合を除いて <em>Thinking</em> はオフのままにしてください。両者は独立しています。</p>
+</div>
+
+<h2 id="memory-ja">会話とその制限の仕組み</h2>
+
+<p>LocalGemma は iPhone のメモリに収める必要がある小さな 4bit モデルを実行するため、意図的にごくわずかな文脈しか保持しません。これを理解すると、意外に思える挙動のほとんどが説明できます。</p>
+
+<ul>
+  <li><strong>各ターンでモデルに渡されるのは直近 2 件のメッセージだけです</strong>（あなたの最新のメッセージと、アシスタントの最新の返答）に、固定のシステム指示を加えたものです。それ以前のメッセージは画面には表示され、エクスポートしたファイルにも含まれますが、モデルは<em>それらを見ていません</em>。実際には、長い会話の古い部分をモデルは「忘れて」いきます。</li>
+  <li><strong>各返答は約 1,024 トークンに制限されています。</strong> 長い回答は文の途中で終わることがありますが、それはエラーではなく上限です。「continue」と送れば続きが生成されます。</li>
+  <li><strong>Thinking は同じ予算を共有します。</strong> Thinking をオンにすると、1,024 トークンの一部が推論に使われ、表示される回答に使える分が減ります。</li>
+  <li><strong>長い生成は負荷が高くなります。</strong> 多くのトークンを続けて生成すると GPU と CPU が稼働し続け、メモリに制約のある iPhone では、システムの上限を超えると iOS がアプリを終了させることがあります。「トラブルシューティング」をご覧ください。</li>
+</ul>
+
+<h2 id="trouble-ja">トラブルシューティング</h2>
+
+<table>
+  <tr><th>症状</th><th>対処方法</th></tr>
+  <tr>
+    <td>長い返答の途中でアプリが勝手に終了する</td>
+    <td>長い回答を生成中にメモリまたは CPU の上限を超えたため、iOS がアプリを終了させています。返答を短めにし、<em>Thinking</em> をオフにし、非常に長いテキスト（複数ページの文書など）を求めないようにしてください。保存済みの履歴は残るので、アプリを開き直せば会話はそのまま続けられます。</td>
+  </tr>
+  <tr>
+    <td>返答が文の途中で止まる</td>
+    <td>正常です。返答が約 1,024 トークンの上限に達したためです。「continue」と送ると続きが得られます。</td>
+  </tr>
+  <tr>
+    <td>話した内容をモデルが忘れているようだ</td>
+    <td>想定どおりの動作です。各ターンで送られるのは直近 2 件のメッセージだけです。覚えていてほしい内容は、そのときのメッセージにもう一度書いてください。</td>
+  </tr>
+  <tr>
+    <td>ダウンロードが止まる、または失敗する</td>
+    <td>接続と空き容量を確認してから再試行してください。ダウンロードは再開し、アプリがファイルを再確認します。それでも失敗する場合は、<em>HF Source</em> を別のホストに切り替えてください。</td>
+  </tr>
+  <tr>
+    <td>「Loading model weights&hellip;」が長く続く</td>
+    <td>約 2.5&nbsp;GiB の重みをメモリに読み込んでいます。初回の読み込みは、ダウンロード済みモデルの再読み込みより明らかに時間がかかります。画面が消えるまで待ち、強制終了しないでください。</td>
+  </tr>
+  <tr>
+    <td>空き容量を確保したい</td>
+    <td>モデルメニューを開き <em>Delete &lt;モデル&gt;</em> を選びます。重み（約 2.5&nbsp;GiB）とそのモデルの履歴が削除されます。それ以外は残ります。</td>
+  </tr>
+  <tr>
+    <td>モデルが読み込まれていないという表示が出る</td>
+    <td>以前のビルドにあった問題で、1.1.2 で修正されています（チャットを消去してもモデルがアンロードされなくなりました）。まだ表示される場合は、アプリを終了して開き直してください。</td>
+  </tr>
+  <tr>
+    <td>完全に最初からやり直したい</td>
+    <td>会話を消すには <em>Clear Chat</em>（Storage 画面）を使います。モデル、履歴、設定、ローカルの診断ログまですべて削除するには、ホーム画面からアプリを削除してください。</td>
+  </tr>
+</table>
+
+<h2 id="faq-ja">よくある質問</h2>
+
+<h3>インターネット接続は必要ですか？</h3>
+<p>モデルのダウンロード（約 2.5&nbsp;GiB）と、その前にファイルサイズを確認するときだけ必要です。それ以降は完全にオフラインで利用できます。</p>
+
+<h3>会話はどこかに送信されますか？</h3>
+<p>いいえ。モデルはお使いの iPhone 上で動作します。アカウント、解析、広告、クラッシュレポート、トラッキングはありません。アプリが行うネットワーク通信は、モデルのダウンロードと、ダウンロードサイズを取得する小さなメタデータ要求だけです。詳しくは<a href="index.html">プライバシーポリシー</a>をご覧ください。</p>
+
+<h3>サブスクリプション、アプリ内課金、有料機能はありますか？</h3>
+<p>いいえ。LocalGemma は無料です。アプリ内課金もサブスクリプションもその他の費用もなく、すべての機能を無償で利用できます（2026年10月4日から）。将来、有料機能を導入する場合は、まずこのページと<a href="index.html">プライバシーポリシー</a>で内容を更新します。</p>
+
+<h3>どの AI モデルを使っていますか？</h3>
+<p>Gemma 4 E2B Instruct です。Hugging Face で <code>over-show/gemma-4-e2b-it-text-only-4bit</code> として公開されているテキスト専用の 4bit 版です。Google の <strong>Gemma 利用規約</strong>に基づいて配布されているため、モデルの出力を利用する際には、このサポートページに加えて同規約と禁止使用ポリシーが適用されます。本アプリは Google と提携しておらず、承認も受けていません。同梱されるモデルは 1 つだけで、独自のモデルを追加するインターフェースはありません。</p>
+
+<h3>画像を送信できますか？</h3>
+<p>いいえ。同梱のモデルはテキスト専用のため、画像入力には対応していません。</p>
+
+<h3>データはどこに保存され、どうやって削除しますか？</h3>
+<p>すべて iPhone 上の本アプリ専用領域にあります。モデルは <code>Documents/.localllmclient/</code>、チャット履歴は <code>Application Support/LLMclient/History/</code>、設定はシステムの設定ストレージに 1 件、そして小さなローカルのメモリ診断ログが <code>Documents/diagnostics.log</code> に保存されます。会話は <em>Clear Chat</em>（Storage 画面）、モデルファイルは <em>Delete &lt;モデル&gt;</em>、すべてを削除するにはアプリの削除を使ってください。サーバーには何も保存されていません。</p>
+
+<h3>アプリ名は「LocalGemma」なのに、バンドル ID が「LLMclient」なのはなぜですか？</h3>
+<p>このアプリはこれまでに何度か名前を変更しており、バージョン 1.1.6 以降は LocalGemma という名前です。技術的なバンドル ID は、既存のインストール環境でダウンロード済みのモデル、履歴、設定をそのまま引き継げるよう、意図的に変更していません。</p>
+
+<h3>天気ツールは実際の天気を返しますか？</h3>
+<p>いいえ。ツール呼び出しの動作を確認できるよう、固定のサンプルデータを返すデモ用ツールです。気象サービスには一切接続しません。</p>
+
+<h3>1.1.3 で何が変わりましたか？</h3>
+<ul>
+  <li>内部の安定性修正：厳格な並行性チェックに関する 2 件の診断を解消しました。アプリの動作は変わりません。</li>
+  <li>依存パッケージのバージョンをリポジトリで固定し、新しい環境でも同じライブラリ構成でビルドできるようにしました。</li>
+  <li>このヘルプページとプライバシーポリシーが、日本語・ドイツ語・フランス語・スペイン語・イタリア語でも閲覧できるようになりました。</li>
+</ul>
+
+<h3>1.1.2 で何が変わりましたか？</h3>
+<ul>
+  <li>すべての機能が無料になりました &mdash; アプリ内課金は完全に削除されました。</li>
+  <li>アプリ名を変更しました（バンドル ID は変更なし）。</li>
+  <li><strong>Thinking</strong> 切り替えを追加しました（既定はオフ）。</li>
+  <li>起動が大幅に高速化しました。毎回の起動時に 2.5&nbsp;GiB のモデル重みを読み直して検証することがなくなり、「Switching model」の手順も表示されなくなりました。</li>
+  <li>チャットを消去すると再起動するまで返答できなくなることがある不具合を修正しました。</li>
+  <li>App Store の審査を通過するようアプリアイコンを修正しました。</li>
+  <li>モデルメニューを同梱の 1 モデルだけに整理しました。</li>
+</ul>
+
+<h2 id="report-ja">問題の報告</h2>
+
+<p><a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a> までメールでお寄せください。迅速に診断するため、次の情報を添えてください。</p>
+
+<ul>
+  <li>お使いの iPhone の機種と iOS のバージョン</li>
+  <li>アプリのバージョン（<em>&hellip;</em> &rarr; <em>About</em> に表示。対応バージョンは 1.1.6、build 1 です）</li>
+  <li>モデルに依頼した内容、および <em>Tools calling</em> や <em>Thinking</em> が有効だったかどうか</li>
+  <li>問題を再現する手順と、画面に表示されたメッセージ</li>
+</ul>
+
+<footer>
+  <p>LocalGemma 1.1.6（build 1）&middot; ヘルプとサポート &middot; 最終更新 2026年10月17日<br>
+  関連：<a href="index.html">プライバシーポリシー</a></p>
+</footer>
+
+</div>
+
+<!-- ============================ Deutsch ============================ -->
+<div class="i18n" data-lang="de" lang="de">
+
+<h1>LocalGemma &mdash; Hilfe &amp; Support</h1>
+
+<p>LocalGemma ist eine vollständig auf dem Gerät arbeitende KI-Chat-App für das iPhone. Das Sprachmodell läuft auf Ihrer eigenen Hardware: kein Konto, keine Anmeldung, kein Cloud-Dienst, und nichts von Ihren Gesprächen verlässt Ihr Gerät. Diese Seite erklärt, wie Sie die App bedienen, welche Grenzen sie hat und wie Sie häufige Probleme beheben.</p>
+
+<table class="meta">
+  <tr><th>Dokumentierte Version</th><td>1.1.6 (Build 1)</td></tr>
+  <tr><th>Zuletzt aktualisiert</th><td>17. Oktober 2026</td></tr>
+  <tr><th>Plattform</th><td>iPhone, iOS 26.0 oder neuer</td></tr>
+  <tr><th>Modell</th><td>Gemma 4 E2B Instruct (nur Text, 4 Bit) &mdash; etwa 2,5&nbsp;GiB, einmaliger Download</td></tr>
+  <tr><th>Internet erforderlich</th><td>Nur für den ersten Modell-Download. Danach vollständig offline.</td></tr>
+  <tr><th>Preis</th><td>Kostenlos &mdash; keine Käufe, keine Abonnements, keine sonstigen Kosten (seit 4. Oktober 2026)</td></tr>
+  <tr><th>Support-Kontakt</th><td><a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a></td></tr>
+</table>
+
+<nav class="toc">
+  <strong>Auf dieser Seite</strong>
+  <ul>
+    <li><a href="#start-de">Erste Schritte</a></li>
+    <li><a href="#menus-de">Die Menüs auf dem Bildschirm</a></li>
+    <li><a href="#features-de">Funktionen</a></li>
+    <li><a href="#memory-de">Wie das Gespräch und seine Grenzen funktionieren</a></li>
+    <li><a href="#trouble-de">Fehlerbehebung</a></li>
+    <li><a href="#faq-de">Häufige Fragen</a></li>
+    <li><a href="#report-de">Ein Problem melden</a></li>
+  </ul>
+</nav>
+
+<h2 id="start-de">Erste Schritte</h2>
+
+<ol>
+  <li><strong>Prüfen Sie Ihr Gerät.</strong> Sie benötigen ein iPhone mit iOS 26.0 oder neuer und rund <strong>3&nbsp;GB freien Speicher</strong> (2,5&nbsp;GiB für das Modell plus Arbeitsplatz).</li>
+  <li><strong>Laden Sie das Modell herunter.</strong> Beim ersten Start bittet die App um Bestätigung des Downloads und zeigt dessen Größe an. Bestätigen Sie, lassen Sie die App bei einer zuverlässigen Verbindung im Vordergrund und warten Sie. Der Download nutzt eine Hintergrundsitzung und kann daher fortgesetzt werden, wenn Sie die App kurz verlassen.</li>
+  <li><strong>Beginnen Sie zu chatten.</strong> Sobald das Modell geladen ist, können Sie eine Nachricht eingeben und senden. Ab diesem Zeitpunkt arbeitet die App völlig offline &mdash; Sie können den Flugmodus aktivieren und sie antwortet weiterhin.</li>
+</ol>
+
+<h2 id="menus-de">Die Menüs auf dem Bildschirm</h2>
+
+<h3>Modellmenü (unten am Bildschirm)</h3>
+<ul>
+  <li><strong>Modellname</strong> &mdash; zeigt das aktuell installierte Modell. Version 1.1.6 enthält nur ein einziges Modell, es gibt also nichts umzuschalten.</li>
+  <li><strong>Delete &lt;Modell&gt;</strong> &mdash; löscht die heruntergeladenen Modelldateien und den gespeicherten Chatverlauf dieses Modells und gibt etwa 2,5&nbsp;GiB frei. Beim nächsten Chat wird ein erneuter Download verlangt.</li>
+  <li><strong>HF Source</strong> &mdash; wählt, woher die Modelldateien geladen werden: <code>hf-mirror.com</code> (Standard) oder <code>huggingface.co</code>. Wenn ein Download langsam ist oder fehlschlägt, versuchen Sie die andere Quelle.</li>
+</ul>
+
+<h3>Menü &bdquo;&hellip;&ldquo; (oben rechts)</h3>
+<ul>
+  <li><strong>Export&hellip;</strong> &mdash; speichert das aktuelle Gespräch als Markdown-Datei (<code>.md</code>); auf dem iPhone wählen Sie das Ziel in der Dateien-App.</li>
+  <li><strong>Storage</strong> &mdash; zeigt, wie viel Platz App und Modell belegen, und erlaubt das Freigeben von Daten, die durch fehlgeschlagene oder abgebrochene Downloads übrig geblieben sind; hier liegt auch <em>Clear Chat</em>, das das aktuelle Gespräch und dessen gespeicherten Verlauf löscht. Das verwendete Modell wird nie entfernt.</li>
+  <li><strong>About</strong> &mdash; Versionsinformationen und ein Link zur <a href="index.html">Datenschutzerklärung</a>.</li>
+  <li><strong>Tools calling</strong> &mdash; standardmäßig aus; siehe unten.</li>
+  <li><strong>Thinking</strong> &mdash; standardmäßig aus; siehe unten.</li>
+</ul>
+
+<h2 id="features-de">Funktionen</h2>
+
+<h3>Tools calling (empfohlen bei allem mit Zahlen)</h3>
+<p>Wenn aktiviert, kann das Modell integrierte Werkzeuge aufrufen, statt aus dem Gedächtnis zu antworten. Das macht Arithmetik zuverlässig, weil die Berechnung von der App ausgeführt und nicht vom Modell geraten wird:</p>
+<ul>
+  <li><code>calculate</code> &mdash; Rechenoperationen und Ausdrücke (z. B. &bdquo;1500 &times; 2&ldquo;).</li>
+  <li><code>get_current_time</code> &mdash; das aktuelle Datum und die Uhrzeit, optional in einer von Ihnen genannten Zeitzone (zum Beispiel <code>Asia/Tokyo</code>). Rein lokal; es liest Ihre Geräteuhr.</li>
+  <li><code>generate_random_number</code> &mdash; eine Zufallszahl innerhalb eines von Ihnen angegebenen Bereichs.</li>
+  <li><code>get_weather</code> &mdash; ein <strong>Demonstrationswerkzeug, das feste Beispieldaten liefert</strong> (20&nbsp;&deg;C, &bdquo;Sonnig&ldquo;). Es kontaktiert keinen Wetterdienst, und die gemeldeten Werte sind kein echtes Wetter.</li>
+</ul>
+<p>Die Werkzeuge laufen lokal, die Aktivierung beeinträchtigt also den Datenschutz nicht. Sie machen jede Antwort etwas langsamer, weil das Modell eine zusätzliche Runde benötigt, um das Werkzeug anzufordern und das Ergebnis zu lesen.</p>
+
+<h3>Thinking</h3>
+<p>Thinking aktiviert den eingebauten Denkmodus des Modells, in dem es ein Problem durcharbeitet, bevor es antwortet. Er ist <strong>standardmäßig aus</strong>, weil er spürbar langsamer ist und einen Teil desselben begrenzten Antwortbudgets verbraucht, das weiter unten beschrieben wird. Ihre Wahl bleibt über Neustarts hinweg erhalten. Da die Einstellung beim Erstellen der Modellsitzung angewendet wird, lädt ein Umschalten das Modell neu &mdash; rechnen Sie mit einigen Sekunden &bdquo;Loading model weights&hellip;&ldquo; und einer kurzen Vollbildanzeige. Ihr Gespräch bleibt über das Neuladen hinweg erhalten.</p>
+
+<div class="callout warn">
+  <p><strong>Zwei Schalter, die Sie kombinieren können:</strong> Lassen Sie <em>Tools calling</em> aktiv, wenn Sie Fragen mit Zahlen stellen, und lassen Sie <em>Thinking</em> aus, wenn Sie nicht ausdrücklich möchten, dass das Modell Schritt für Schritt denkt. Beide sind unabhängig.</p>
+</div>
+
+<h2 id="memory-de">Wie das Gespräch und seine Grenzen funktionieren</h2>
+
+<p>LocalGemma führt ein kleines 4-Bit-Modell aus, das in den Speicher Ihres iPhones passen muss, und hält daher bewusst sehr wenig Kontext vor. Wer das versteht, kann die meisten überraschenden Verhaltensweisen erklären:</p>
+
+<ul>
+  <li><strong>Pro Runde werden nur die letzten zwei Nachrichten an das Modell gesendet</strong> (Ihre neueste Nachricht und die neueste Antwort des Assistenten) zusammen mit einer festen Systemanweisung. Frühere Nachrichten bleiben auf dem Bildschirm sichtbar und sind in der exportierten Datei enthalten, aber das Modell <em>sieht sie nicht</em>. In der Praxis &bdquo;vergisst&ldquo; das Modell ältere Teile eines langen Gesprächs.</li>
+  <li><strong>Jede Antwort ist auf etwa 1.024 Token begrenzt.</strong> Eine lange Antwort kann mitten im Satz enden &mdash; das ist die Grenze, kein Fehler. Senden Sie &bdquo;continue&ldquo;, um mehr zu erhalten.</li>
+  <li><strong>Thinking nutzt dasselbe Budget.</strong> Bei aktivem Thinking wird ein Teil der 1.024 Token für das Nachdenken verwendet, sodass für die sichtbare Antwort weniger übrig bleibt.</li>
+  <li><strong>Lange Generierungen sind anspruchsvoll.</strong> Viele Token hintereinander halten GPU und CPU beschäftigt; auf einem speicherknappen iPhone kann iOS die App beenden, wenn sie Systemgrenzen überschreitet. Siehe Fehlerbehebung.</li>
+</ul>
+
+<h2 id="trouble-de">Fehlerbehebung</h2>
+
+<table>
+  <tr><th>Symptom</th><th>Was zu tun ist</th></tr>
+  <tr>
+    <td>Die App schließt sich während einer langen Antwort von selbst</td>
+    <td>Hier beendet iOS die App, weil beim Erzeugen einer langen Antwort Speicher- oder CPU-Grenzen überschritten werden. Halten Sie Antworten kürzer, schalten Sie <em>Thinking</em> aus und verlangen Sie keine sehr langen Texte (etwa mehrseitige Dokumente). Ihr gespeicherter Verlauf bleibt erhalten: Öffnen Sie die App erneut und machen Sie weiter &mdash; das Gespräch ist noch da.</td>
+  </tr>
+  <tr>
+    <td>Eine Antwort bricht mitten im Satz ab</td>
+    <td>Normal: Die Antwort hat die Grenze von ~1.024 Token erreicht. Senden Sie &bdquo;continue&ldquo;, um den Rest zu erhalten.</td>
+  </tr>
+  <tr>
+    <td>Das Modell scheint zu vergessen, was besprochen wurde</td>
+    <td>Erwartet. Pro Runde werden nur die letzten zwei Nachrichten gesendet. Wiederholen Sie alles, was im Gedächtnis bleiben muss, in Ihrer aktuellen Nachricht.</td>
+  </tr>
+  <tr>
+    <td>Der Download hängt oder schlägt fehl</td>
+    <td>Prüfen Sie Verbindung und freien Speicher und versuchen Sie es erneut &mdash; der Download wird fortgesetzt und die App prüft die Dateien erneut. Wenn es weiterhin fehlschlägt, stellen Sie <em>HF Source</em> auf den anderen Host um.</td>
+  </tr>
+  <tr>
+    <td>&bdquo;Loading model weights&hellip;&ldquo; dauert scheinbar lange</td>
+    <td>Die App lädt rund 2,5&nbsp;GiB Gewichte in den Speicher. Ein Kaltstart dauert deutlich länger als das Neuladen eines bereits heruntergeladenen Modells. Warten Sie, bis die Anzeige verschwindet; beenden Sie die App nicht gewaltsam.</td>
+  </tr>
+  <tr>
+    <td>Sie benötigen freien Speicher</td>
+    <td>Öffnen Sie das Modellmenü und wählen Sie <em>Delete &lt;Modell&gt;</em>. Damit werden die Gewichte (etwa 2,5&nbsp;GiB) und der Verlauf dieses Modells entfernt. Alles andere bleibt.</td>
+  </tr>
+  <tr>
+    <td>Die App meldet, das Modell sei nicht geladen</td>
+    <td>Das gab es in früheren Builds und ist in 1.1.2 behoben: Das Löschen des Chats entlädt das Modell nicht mehr. Sollte es weiterhin auftreten, schließen Sie die App und öffnen Sie sie erneut.</td>
+  </tr>
+  <tr>
+    <td>Sie möchten komplett neu beginnen</td>
+    <td>Mit <em>Clear Chat</em> (Storage-Bildschirm) löschen Sie das Gespräch. Um alles zu entfernen &mdash; Modell, Verlauf, Einstellungen und das lokale Diagnoseprotokoll &mdash; löschen Sie die App vom Home-Bildschirm.</td>
+  </tr>
+</table>
+
+<h2 id="faq-de">Häufige Fragen</h2>
+
+<h3>Brauche ich eine Internetverbindung?</h3>
+<p>Nur zum Herunterladen des Modells (etwa 2,5&nbsp;GiB) und um vorab dessen Dateigrößen zu prüfen. Danach ist die App vollständig offline nutzbar.</p>
+
+<h3>Wird mein Gespräch irgendwohin gesendet?</h3>
+<p>Nein. Das Modell läuft auf Ihrem iPhone. Es gibt kein Konto, keine Analyse, keine Werbung, keine Absturzberichte und kein Tracking. Die einzigen Netzwerkanfragen der App sind der Modell-Download und die kleine Metadatenanfrage, die die Downloadgröße ermittelt. Die genauen Details finden Sie in der <a href="index.html">Datenschutzerklärung</a>.</p>
+
+<h3>Gibt es Abonnements, In-App-Käufe oder Premium-Funktionen?</h3>
+<p>Nein. LocalGemma ist kostenlos: Es gibt keine In-App-Käufe, keine Abonnements und keine sonstigen Kosten, und alle Funktionen sind kostenlos nutzbar (gültig ab dem 4. Oktober 2026). Sollten jemals kostenpflichtige Funktionen eingeführt werden, werden die Preisangaben zuerst auf dieser Seite und in der <a href="index.html">Datenschutzerklärung</a> aktualisiert.</p>
+
+<h3>Welches KI-Modell wird verwendet?</h3>
+<p>Gemma 4 E2B Instruct, ein reiner 4-Bit-Textaufbau, veröffentlicht auf Hugging Face als <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Es wird unter Googles <strong>Gemma-Nutzungsbedingungen</strong> verbreitet; daher gelten Googles Bedingungen und seine Richtlinie zur verbotenen Nutzung zusätzlich zu diesen Support-Hinweisen für Ihre Verwendung der Modellausgaben. Diese App ist mit Google weder verbunden noch von Google unterstützt. Es ist nur ein Modell enthalten, und die App bietet keine Schnittstelle zum Hinzufügen eigener Modelle.</p>
+
+<h3>Kann ich Bilder senden?</h3>
+<p>Nein. Das mitgelieferte Modell ist reiner Text, daher bietet die App keine Bildeingabe an.</p>
+
+<h3>Wo werden meine Daten gespeichert, und wie lösche ich sie?</h3>
+<p>Alles liegt im privaten Speicher der App auf Ihrem iPhone: das Modell in <code>Documents/.localllmclient/</code>, Ihr Chatverlauf in <code>Application Support/LLMclient/History/</code>, eine Einstellung im Systemspeicher und ein kleines lokales Speicherdiagnoseprotokoll in <code>Documents/diagnostics.log</code>. Nutzen Sie <em>Clear Chat</em> (Storage-Bildschirm) für das Gespräch, <em>Delete &lt;Modell&gt;</em> für die Modelldateien, oder löschen Sie die App, um alles zu entfernen. Auf keinem Server wird etwas gespeichert.</p>
+
+<h3>Warum heißt die App &bdquo;LocalGemma&ldquo;, der Bundle-Identifier aber &bdquo;LLMclient&ldquo;?</h3>
+<p>Die App hat im Laufe der Zeit mehr als einen Namen getragen; seit Version 1.1.6 heißt sie LocalGemma. Ihr technischer Bundle-Identifier wurde bewusst unverändert gelassen, damit bestehende Installationen ihr heruntergeladenes Modell, ihren Verlauf und ihre Einstellungen behalten.</p>
+
+<h3>Liefert das Wetter-Werkzeug echtes Wetter?</h3>
+<p>Nein. Es ist ein Demonstrationswerkzeug, das feste Beispieldaten zurückgibt, damit Sie den Werkzeugaufruf in Aktion sehen. Es kontaktiert nie einen Wetterdienst.</p>
+
+<h3>Was hat sich in 1.1.3 geändert?</h3>
+<ul>
+  <li>Interne Stabilitätskorrekturen: zwei Diagnosen zur strikten Nebenläufigkeit wurden behoben. Das Verhalten der App ändert sich dadurch nicht.</li>
+  <li>Die Abhängigkeiten sind jetzt im Repository festgeschrieben, sodass ein neuer Build genau dieselben Bibliotheksversionen verwendet.</li>
+  <li>Diese Hilfeseite und die Datenschutzerklärung sind jetzt auch auf Japanisch, Deutsch, Französisch, Spanisch und Italienisch verfügbar.</li>
+</ul>
+
+<h3>Was hat sich in 1.1.2 geändert?</h3>
+<ul>
+  <li>Alle Funktionen sind jetzt kostenlos &mdash; In-App-Käufe wurden vollständig entfernt.</li>
+  <li>App umbenannt (Bundle-Identifier unverändert).</li>
+  <li>Der Schalter <strong>Thinking</strong> wurde hinzugefügt (standardmäßig aus).</li>
+  <li>Der Start ist viel schneller: Die App liest und prüft die 2,5&nbsp;GiB Modellgewichte nicht mehr bei jedem Start und zeigt keinen Schritt &bdquo;Switching model&ldquo; mehr an.</li>
+  <li>Ein Fehler wurde behoben, durch den die App nach dem Löschen des Chats bis zum Neustart nicht mehr antworten konnte.</li>
+  <li>Das App-Symbol wurde korrigiert, damit es die App-Store-Prüfung besteht.</li>
+  <li>Das Modellmenü wurde auf das einzige mitgelieferte Modell reduziert.</li>
+</ul>
+
+<h2 id="report-de">Ein Problem melden</h2>
+
+<p>Schreiben Sie an <a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a>. Um das Problem schnell einzugrenzen, geben Sie bitte an:</p>
+
+<ul>
+  <li>Ihr iPhone-Modell und die iOS-Version;</li>
+  <li>die App-Version, zu sehen unter <em>&hellip;</em> &rarr; <em>About</em> (die unterstützte Version ist 1.1.6, Build 1);</li>
+  <li>was Sie vom Modell verlangt haben und ob <em>Tools calling</em> oder <em>Thinking</em> aktiv war;</li>
+  <li>die Schritte, mit denen sich das Problem reproduzieren lässt, und jede Meldung, die Sie auf dem Bildschirm gesehen haben.</li>
+</ul>
+
+<footer>
+  <p>LocalGemma 1.1.6 (Build 1) &middot; Hilfe &amp; Support &middot; Zuletzt aktualisiert am 17. Oktober 2026<br>
+  Siehe auch: <a href="index.html">Datenschutzerklärung</a></p>
+</footer>
+
+</div>
+
+<!-- ============================ Français ============================ -->
+<div class="i18n" data-lang="fr" lang="fr">
+
+<h1>LocalGemma &mdash; Aide et assistance</h1>
+
+<p>LocalGemma est une application de conversation par IA entièrement embarquée pour iPhone. Le modèle de langage s&rsquo;exécute sur votre propre matériel&nbsp;: aucun compte, aucune connexion, aucun service cloud, et rien de vos conversations ne quitte votre appareil. Cette page explique comment utiliser l&rsquo;application, quelles sont ses limites et comment résoudre les problèmes courants.</p>
+
+<table class="meta">
+  <tr><th>Version documentée</th><td>1.1.6 (build 1)</td></tr>
+  <tr><th>Dernière mise à jour</th><td>17 octobre 2026</td></tr>
+  <tr><th>Plateforme</th><td>iPhone, iOS 26.0 ou version ultérieure</td></tr>
+  <tr><th>Modèle</th><td>Gemma 4 E2B Instruct (texte uniquement, 4 bits) &mdash; environ 2,5&nbsp;GiB, téléchargé une seule fois</td></tr>
+  <tr><th>Internet nécessaire</th><td>Uniquement pour le premier téléchargement du modèle. Entièrement hors ligne ensuite.</td></tr>
+  <tr><th>Prix</th><td>Gratuit &mdash; aucun achat, aucun abonnement, aucun autre frais (depuis le 4 octobre 2026)</td></tr>
+  <tr><th>Contact du support</th><td><a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a></td></tr>
+</table>
+
+<nav class="toc">
+  <strong>Sur cette page</strong>
+  <ul>
+    <li><a href="#start-fr">Pour commencer</a></li>
+    <li><a href="#menus-fr">Les menus à l&rsquo;écran</a></li>
+    <li><a href="#features-fr">Fonctionnalités</a></li>
+    <li><a href="#memory-fr">Fonctionnement de la conversation et de ses limites</a></li>
+    <li><a href="#trouble-fr">Résolution des problèmes</a></li>
+    <li><a href="#faq-fr">Questions fréquentes</a></li>
+    <li><a href="#report-fr">Signaler un problème</a></li>
+  </ul>
+</nav>
+
+<h2 id="start-fr">Pour commencer</h2>
+
+<ol>
+  <li><strong>Vérifiez votre appareil.</strong> Il vous faut un iPhone sous iOS 26.0 ou version ultérieure et environ <strong>3&nbsp;Go d&rsquo;espace libre</strong> (2,5&nbsp;GiB pour le modèle, plus de l&rsquo;espace de travail).</li>
+  <li><strong>Téléchargez le modèle.</strong> Au premier lancement, l&rsquo;application vous demande de confirmer le téléchargement et en affiche la taille. Acceptez, gardez l&rsquo;application au premier plan sur une connexion fiable et attendez. Le téléchargement utilise une session d&rsquo;arrière-plan&nbsp;: il peut donc se poursuivre si vous quittez brièvement l&rsquo;application.</li>
+  <li><strong>Commencez à discuter.</strong> Une fois le modèle chargé, vous pouvez saisir un message et l&rsquo;envoyer. À partir de là, l&rsquo;application fonctionne entièrement hors ligne &mdash; vous pouvez activer le mode Avion, elle répondra toujours.</li>
+</ol>
+
+<h2 id="menus-fr">Les menus à l&rsquo;écran</h2>
+
+<h3>Menu du modèle (en bas de l&rsquo;écran)</h3>
+<ul>
+  <li><strong>Nom du modèle</strong> &mdash; affiche le modèle actuellement installé. La version 1.1.6 ne contient qu&rsquo;un seul modèle&nbsp;: il n&rsquo;y a donc rien à changer.</li>
+  <li><strong>Delete &lt;modèle&gt;</strong> &mdash; supprime les fichiers du modèle téléchargé et l&rsquo;historique de conversation enregistré de ce modèle, libérant environ 2,5&nbsp;GiB. Un nouveau téléchargement vous sera demandé lors de votre prochaine conversation.</li>
+  <li><strong>HF Source</strong> &mdash; choisit la source des fichiers du modèle&nbsp;: <code>hf-mirror.com</code> (par défaut) ou <code>huggingface.co</code>. Si un téléchargement est lent ou échoue, essayez l&rsquo;autre source.</li>
+</ul>
+
+<h3>Menu &laquo;&nbsp;&hellip;&nbsp;&raquo; (en haut à droite)</h3>
+<ul>
+  <li><strong>Export&hellip;</strong> &mdash; enregistre la conversation en cours dans un fichier Markdown (<code>.md</code>)&nbsp;; sur iPhone, vous choisissez la destination dans l&rsquo;app Fichiers.</li>
+  <li><strong>Storage</strong> &mdash; indique l&rsquo;espace occupé par l&rsquo;app et son modèle et permet de récupérer l&rsquo;espace laissé par des téléchargements échoués ou interrompus&nbsp;; il contient aussi <em>Clear Chat</em>, qui efface la conversation en cours et son historique enregistré. Le modèle utilisé n&rsquo;est jamais supprimé.</li>
+  <li><strong>About</strong> &mdash; informations de version et lien vers la <a href="index.html">Politique de confidentialité</a>.</li>
+  <li><strong>Tools calling</strong> &mdash; désactivé par défaut&nbsp;; voir ci-dessous.</li>
+  <li><strong>Thinking</strong> &mdash; désactivé par défaut&nbsp;; voir ci-dessous.</li>
+</ul>
+
+<h2 id="features-fr">Fonctionnalités</h2>
+
+<h3>Tools calling (recommandé dès qu&rsquo;il y a des chiffres)</h3>
+<p>Lorsque cette option est active, le modèle peut appeler des outils intégrés au lieu de répondre de mémoire. L&rsquo;arithmétique devient fiable, car le calcul est effectué par l&rsquo;application plutôt que deviné par le modèle&nbsp;:</p>
+<ul>
+  <li><code>calculate</code> &mdash; opérations et expressions arithmétiques (par exemple &laquo;&nbsp;1500 &times; 2&nbsp;&raquo;).</li>
+  <li><code>get_current_time</code> &mdash; la date et l&rsquo;heure actuelles, éventuellement dans un fuseau horaire que vous indiquez (par exemple <code>Asia/Tokyo</code>). Purement local&nbsp;: il lit l&rsquo;horloge de votre appareil.</li>
+  <li><code>generate_random_number</code> &mdash; un nombre aléatoire dans une plage que vous précisez.</li>
+  <li><code>get_weather</code> &mdash; un <strong>outil de démonstration qui renvoie des données d&rsquo;exemple fixes</strong> (20&nbsp;&deg;C, &laquo;&nbsp;Ensoleillé&nbsp;&raquo;). Il ne contacte aucun service météo et les valeurs indiquées ne sont pas la météo réelle.</li>
+</ul>
+<p>Les outils s&rsquo;exécutent localement&nbsp;: les activer ne change rien à la confidentialité. Les activer ralentit légèrement chaque réponse, car le modèle a besoin d&rsquo;un tour supplémentaire pour demander l&rsquo;outil puis lire son résultat.</p>
+
+<h3>Thinking</h3>
+<p>Thinking active le mode de raisonnement intégré du modèle, dans lequel il travaille un problème avant de répondre. Il est <strong>désactivé par défaut</strong>, car il est nettement plus lent et consomme une partie du budget de réponse limité décrit ci-dessous. Votre choix est mémorisé entre les lancements. Comme le réglage est appliqué à la création de la session du modèle, le basculer recharge le modèle &mdash; comptez quelques secondes de &laquo;&nbsp;Loading model weights&hellip;&nbsp;&raquo; et un bref écran plein format. Votre conversation est conservée pendant le rechargement.</p>
+
+<div class="callout warn">
+  <p><strong>Deux options à combiner&nbsp;:</strong> laissez <em>Tools calling</em> activé si vous posez des questions avec des chiffres, et laissez <em>Thinking</em> désactivé, sauf si vous voulez réellement que le modèle raisonne étape par étape. Les deux sont indépendantes.</p>
+</div>
+
+<h2 id="memory-fr">Fonctionnement de la conversation et de ses limites</h2>
+
+<p>LocalGemma exécute un petit modèle 4 bits qui doit tenir dans la mémoire de votre iPhone&nbsp;; il ne conserve donc volontairement que très peu de contexte. Le comprendre explique la plupart des comportements surprenants&nbsp;:</p>
+
+<ul>
+  <li><strong>Seuls les deux derniers messages sont envoyés au modèle à chaque tour</strong> (votre message le plus récent et la dernière réponse de l&rsquo;assistant), accompagnés d&rsquo;une instruction système fixe. Les messages antérieurs restent visibles à l&rsquo;écran et figurent dans le fichier exporté, mais le modèle <em>ne les voit pas</em>. En pratique, le modèle &laquo;&nbsp;oublie&nbsp;&raquo; les parties anciennes d&rsquo;une longue conversation.</li>
+  <li><strong>Chaque réponse est limitée à environ 1&nbsp;024 tokens.</strong> Une réponse longue peut s&rsquo;arrêter au milieu d&rsquo;une phrase&nbsp;: c&rsquo;est la limite, pas une erreur. Envoyez &laquo;&nbsp;continue&nbsp;&raquo; pour obtenir la suite.</li>
+  <li><strong>Thinking partage ce même budget.</strong> Avec Thinking activé, une partie des 1&nbsp;024 tokens sert au raisonnement, ce qui réduit la place de la réponse visible.</li>
+  <li><strong>Les générations longues sont exigeantes.</strong> Générer de nombreux tokens d&rsquo;affilée mobilise le GPU et le CPU&nbsp;; sur un iPhone limité en mémoire, iOS peut fermer l&rsquo;application si elle dépasse les limites du système. Voir la section Résolution des problèmes.</li>
+</ul>
+
+<h2 id="trouble-fr">Résolution des problèmes</h2>
+
+<table>
+  <tr><th>Symptôme</th><th>Que faire</th></tr>
+  <tr>
+    <td>L&rsquo;application se ferme seule pendant une longue réponse</td>
+    <td>iOS ferme l&rsquo;application parce qu&rsquo;elle dépasse les limites de mémoire ou de CPU pendant la génération d&rsquo;une longue réponse. Faites des réponses plus courtes, désactivez <em>Thinking</em> et évitez de demander des textes très longs (par exemple des documents de plusieurs pages). Votre historique enregistré est conservé&nbsp;: rouvrez l&rsquo;application et poursuivez, la conversation est toujours là.</td>
+  </tr>
+  <tr>
+    <td>Une réponse s&rsquo;arrête au milieu d&rsquo;une phrase</td>
+    <td>Normal&nbsp;: la réponse a atteint la limite d&rsquo;environ 1&nbsp;024 tokens. Envoyez &laquo;&nbsp;continue&nbsp;&raquo; pour obtenir la suite.</td>
+  </tr>
+  <tr>
+    <td>Le modèle semble oublier ce dont nous avons parlé</td>
+    <td>C&rsquo;est attendu. Seuls les deux derniers messages sont envoyés à chaque tour. Pour tout ce qui doit être retenu, répétez-le dans votre message actuel.</td>
+  </tr>
+  <tr>
+    <td>Le téléchargement se bloque ou échoue</td>
+    <td>Vérifiez votre connexion et l&rsquo;espace libre, puis réessayez &mdash; le téléchargement reprend et l&rsquo;application revérifie les fichiers. S&rsquo;il échoue encore, changez <em>HF Source</em> pour l&rsquo;autre hôte.</td>
+  </tr>
+  <tr>
+    <td>&laquo;&nbsp;Loading model weights&hellip;&nbsp;&raquo; semble très long</td>
+    <td>L&rsquo;application charge environ 2,5&nbsp;GiB de poids en mémoire. Un chargement à froid est nettement plus long qu&rsquo;un rechargement d&rsquo;un modèle déjà téléchargé. Attendez la disparition de l&rsquo;écran&nbsp;; ne forcez pas la fermeture.</td>
+  </tr>
+  <tr>
+    <td>Vous avez besoin d&rsquo;espace libre</td>
+    <td>Ouvrez le menu du modèle et choisissez <em>Delete &lt;modèle&gt;</em>. Cela supprime les poids (environ 2,5&nbsp;GiB) et l&rsquo;historique de ce modèle. Tout le reste est conservé.</td>
+  </tr>
+  <tr>
+    <td>L&rsquo;application indique que le modèle n&rsquo;est pas chargé</td>
+    <td>Cela existait dans les versions antérieures et est corrigé en 1.1.2&nbsp;: effacer la conversation ne décharge plus le modèle. Si cela se produit encore, fermez puis rouvrez l&rsquo;application.</td>
+  </tr>
+  <tr>
+    <td>Vous voulez repartir de zéro</td>
+    <td>Utilisez <em>Clear Chat</em> (écran Storage) pour effacer la conversation. Pour tout supprimer &mdash; modèle, historique, préférences et journal de diagnostic local &mdash; supprimez l&rsquo;application depuis l&rsquo;écran d&rsquo;accueil.</td>
+  </tr>
+</table>
+
+<h2 id="faq-fr">Questions fréquentes</h2>
+
+<h3>Ai-je besoin d&rsquo;une connexion Internet&nbsp;?</h3>
+<p>Uniquement pour télécharger le modèle (environ 2,5&nbsp;GiB) et vérifier sa taille au préalable. Ensuite, l&rsquo;application est pleinement utilisable hors ligne.</p>
+
+<h3>Ma conversation est-elle envoyée quelque part&nbsp;?</h3>
+<p>Non. Le modèle s&rsquo;exécute sur votre iPhone. Il n&rsquo;y a ni compte, ni analyse, ni publicité, ni rapport de plantage, ni suivi. Les seules requêtes réseau de l&rsquo;application sont le téléchargement du modèle et la petite requête de métadonnées qui en donne la taille. Voir la <a href="index.html">Politique de confidentialité</a> pour les détails exacts.</p>
+
+<h3>Y a-t-il des abonnements, des achats intégrés ou des fonctions premium&nbsp;?</h3>
+<p>Non. LocalGemma est gratuit&nbsp;: il n&rsquo;y a ni achats intégrés, ni abonnements, ni aucun autre frais, et toutes les fonctions sont accessibles gratuitement (à compter du 4 octobre 2026). Si des fonctions payantes devaient être introduites un jour, les informations tarifaires seront mises à jour d&rsquo;abord sur cette page et dans la <a href="index.html">Politique de confidentialité</a>.</p>
+
+<h3>Quel modèle d&rsquo;IA est utilisé&nbsp;?</h3>
+<p>Gemma 4 E2B Instruct, une version texte uniquement en 4 bits publiée sur Hugging Face sous <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Il est distribué sous les <strong>Conditions d&rsquo;utilisation de Gemma</strong> de Google&nbsp;: ces conditions et la politique d&rsquo;utilisation interdite de Google s&rsquo;appliquent donc à votre usage des sorties du modèle, en plus de ces notes d&rsquo;assistance. Cette application n&rsquo;est ni affiliée à Google ni approuvée par Google. Un seul modèle est fourni, et l&rsquo;application n&rsquo;offre aucune interface pour en ajouter.</p>
+
+<h3>Puis-je envoyer des images&nbsp;?</h3>
+<p>Non. Le modèle fourni est uniquement textuel&nbsp;: l&rsquo;application ne propose donc pas d&rsquo;entrée d&rsquo;images.</p>
+
+<h3>Où sont stockées mes données et comment les supprimer&nbsp;?</h3>
+<p>Tout se trouve dans l&rsquo;espace de stockage privé de l&rsquo;application sur votre iPhone&nbsp;: le modèle dans <code>Documents/.localllmclient/</code>, votre historique de conversation dans <code>Application Support/LLMclient/History/</code>, une préférence dans le stockage système et un petit journal local de diagnostic mémoire dans <code>Documents/diagnostics.log</code>. Utilisez <em>Clear Chat</em> (écran Storage) pour la conversation, <em>Delete &lt;modèle&gt;</em> pour les fichiers du modèle, ou supprimez l&rsquo;application pour tout effacer. Rien n&rsquo;est stocké sur un serveur.</p>
+
+<h3>Pourquoi l&rsquo;application s&rsquo;appelle-t-elle &laquo;&nbsp;LocalGemma&nbsp;&raquo; alors que l&rsquo;identifiant de bundle indique &laquo;&nbsp;LLMclient&nbsp;&raquo;&nbsp;?</h3>
+<p>Au fil du temps, l&rsquo;application a porté plusieurs noms&nbsp;; depuis la version 1.1.6, elle s&rsquo;appelle LocalGemma. Son identifiant de bundle technique a été délibérément laissé inchangé afin que les installations existantes conservent leur modèle téléchargé, leur historique et leurs préférences.</p>
+
+<h3>L&rsquo;outil météo donne-t-il la météo réelle&nbsp;?</h3>
+<p>Non. C&rsquo;est un outil de démonstration qui renvoie des données d&rsquo;exemple fixes pour vous montrer l&rsquo;appel d&rsquo;outils en action. Il ne contacte jamais de service météo.</p>
+
+<h3>Qu&rsquo;est-ce qui a changé en 1.1.3&nbsp;?</h3>
+<ul>
+  <li>Corrections de stabilité internes&nbsp;: deux diagnostics liés à la concurrence stricte ont été résolus. Le comportement de l&rsquo;application reste inchangé.</li>
+  <li>Les dépendances sont désormais figées dans le dépôt, afin qu&rsquo;une nouvelle compilation utilise exactement les mêmes versions de bibliothèques.</li>
+  <li>Cette page d&rsquo;aide et la politique de confidentialité sont désormais disponibles en japonais, allemand, français, espagnol et italien.</li>
+</ul>
+
+<h3>Qu&rsquo;est-ce qui a changé en 1.1.2&nbsp;?</h3>
+<ul>
+  <li>Toutes les fonctionnalités sont désormais gratuites &mdash; les achats intégrés ont été entièrement supprimés.</li>
+  <li>Application renommée (identifiant de bundle inchangé).</li>
+  <li>Ajout de l&rsquo;option <strong>Thinking</strong> (désactivée par défaut).</li>
+  <li>Lancement beaucoup plus rapide&nbsp;: l&rsquo;application ne relit et ne revérifie plus les 2,5&nbsp;GiB de poids à chaque démarrage, et n&rsquo;affiche plus d&rsquo;étape &laquo;&nbsp;Switching model&nbsp;&raquo;.</li>
+  <li>Correction d&rsquo;un bug où l&rsquo;effacement de la conversation pouvait empêcher l&rsquo;application de répondre jusqu&rsquo;au redémarrage.</li>
+  <li>Correction de l&rsquo;icône de l&rsquo;application pour qu&rsquo;elle passe la validation de l&rsquo;App Store.</li>
+  <li>Le menu du modèle a été réduit au seul modèle fourni.</li>
+</ul>
+
+<h2 id="report-fr">Signaler un problème</h2>
+
+<p>Écrivez à <a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a>. Pour nous aider à diagnostiquer rapidement le problème, veuillez inclure&nbsp;:</p>
+
+<ul>
+  <li>le modèle de votre iPhone et la version d&rsquo;iOS&nbsp;;</li>
+  <li>la version de l&rsquo;application, visible dans <em>&hellip;</em> &rarr; <em>About</em> (la version prise en charge est la 1.1.6, build 1)&nbsp;;</li>
+  <li>ce que vous avez demandé au modèle, et si <em>Tools calling</em> ou <em>Thinking</em> était activé&nbsp;;</li>
+  <li>les étapes qui reproduisent le problème, ainsi que tout message affiché à l&rsquo;écran.</li>
+</ul>
+
+<footer>
+  <p>LocalGemma 1.1.6 (build 1) &middot; Aide et assistance &middot; Dernière mise à jour le 17 octobre 2026<br>
+  Voir aussi&nbsp;: <a href="index.html">Politique de confidentialité</a></p>
+</footer>
+
+</div>
+
+<!-- ============================ Español ============================ -->
+<div class="i18n" data-lang="es" lang="es">
+
+<h1>LocalGemma &mdash; Ayuda y soporte</h1>
+
+<p>LocalGemma es una aplicación de chat con IA totalmente local para iPhone. El modelo de lenguaje se ejecuta en su propio hardware: sin cuenta, sin inicio de sesión, sin servicio en la nube, y nada de sus conversaciones sale de su dispositivo. Esta página explica cómo usar la aplicación, cuáles son sus límites y cómo resolver los problemas habituales.</p>
+
+<table class="meta">
+  <tr><th>Versión documentada</th><td>1.1.6 (compilación 1)</td></tr>
+  <tr><th>Última actualización</th><td>17 de octubre de 2026</td></tr>
+  <tr><th>Plataforma</th><td>iPhone, iOS 26.0 o posterior</td></tr>
+  <tr><th>Modelo</th><td>Gemma 4 E2B Instruct (solo texto, 4 bits) &mdash; unos 2,5&nbsp;GiB, se descarga una sola vez</td></tr>
+  <tr><th>Internet necesario</th><td>Solo para la primera descarga del modelo. Totalmente sin conexión después.</td></tr>
+  <tr><th>Precio</th><td>Gratis &mdash; sin compras, sin suscripciones y sin ningún otro cargo (desde el 4 de octubre de 2026)</td></tr>
+  <tr><th>Contacto de soporte</th><td><a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a></td></tr>
+</table>
+
+<nav class="toc">
+  <strong>En esta página</strong>
+  <ul>
+    <li><a href="#start-es">Primeros pasos</a></li>
+    <li><a href="#menus-es">Los menús en pantalla</a></li>
+    <li><a href="#features-es">Funciones</a></li>
+    <li><a href="#memory-es">Cómo funcionan la conversación y sus límites</a></li>
+    <li><a href="#trouble-es">Solución de problemas</a></li>
+    <li><a href="#faq-es">Preguntas frecuentes</a></li>
+    <li><a href="#report-es">Informar de un problema</a></li>
+  </ul>
+</nav>
+
+<h2 id="start-es">Primeros pasos</h2>
+
+<ol>
+  <li><strong>Compruebe su dispositivo.</strong> Necesita un iPhone con iOS 26.0 o posterior y unos <strong>3&nbsp;GB de espacio libre</strong> (2,5&nbsp;GiB para el modelo, más espacio de trabajo).</li>
+  <li><strong>Descargue el modelo.</strong> En el primer inicio, la aplicación le pide que confirme la descarga y muestra su tamaño. Acepte, mantenga la aplicación en primer plano con una conexión fiable y espere. La descarga usa una sesión en segundo plano, por lo que puede continuar si sale brevemente de la aplicación.</li>
+  <li><strong>Empiece a conversar.</strong> Una vez cargado el modelo, puede escribir un mensaje y enviarlo. A partir de ese momento la aplicación funciona totalmente sin conexión: puede activar el modo Avión y seguirá respondiendo.</li>
+</ol>
+
+<h2 id="menus-es">Los menús en pantalla</h2>
+
+<h3>Menú del modelo (parte inferior de la pantalla)</h3>
+<ul>
+  <li><strong>Nombre del modelo</strong> &mdash; muestra el modelo instalado actualmente. La versión 1.1.6 incluye un único modelo, así que no hay nada entre lo que cambiar.</li>
+  <li><strong>Delete &lt;modelo&gt;</strong> &mdash; elimina los archivos del modelo descargado y el historial de conversación guardado de ese modelo, liberando unos 2,5&nbsp;GiB. Se le pedirá que lo descargue de nuevo la próxima vez que quiera conversar.</li>
+  <li><strong>HF Source</strong> &mdash; elige de dónde se descargan los archivos del modelo: <code>hf-mirror.com</code> (predeterminado) o <code>huggingface.co</code>. Si una descarga va lenta o falla, pruebe la otra fuente.</li>
+</ul>
+
+<h3>Menú &laquo;&hellip;&raquo; (arriba a la derecha)</h3>
+<ul>
+  <li><strong>Export&hellip;</strong> &mdash; guarda la conversación actual como archivo Markdown (<code>.md</code>); en el iPhone elige el destino en la app Archivos.</li>
+  <li><strong>Storage</strong> &mdash; muestra el espacio que ocupan la app y su modelo, y permite recuperar el espacio que dejan las descargas fallidas o interrumpidas; también incluye <em>Clear Chat</em>, que borra la conversación actual y su historial guardado. El modelo en uso nunca se elimina.</li>
+  <li><strong>About</strong> &mdash; información de versión y un enlace a la <a href="index.html">Política de privacidad</a>.</li>
+  <li><strong>Tools calling</strong> &mdash; desactivado de forma predeterminada; véase más abajo.</li>
+  <li><strong>Thinking</strong> &mdash; desactivado de forma predeterminada; véase más abajo.</li>
+</ul>
+
+<h2 id="features-es">Funciones</h2>
+
+<h3>Tools calling (recomendado para todo lo que implique números)</h3>
+<p>Cuando está activado, el modelo puede llamar a herramientas integradas en lugar de responder de memoria. Esto hace fiable la aritmética, porque el cálculo lo realiza la aplicación y no lo adivina el modelo:</p>
+<ul>
+  <li><code>calculate</code> &mdash; operaciones y expresiones aritméticas (por ejemplo, &laquo;1500 &times; 2&raquo;).</li>
+  <li><code>get_current_time</code> &mdash; la fecha y la hora actuales, opcionalmente en una zona horaria que usted indique (por ejemplo, <code>Asia/Tokyo</code>). Solo local; lee el reloj de su dispositivo.</li>
+  <li><code>generate_random_number</code> &mdash; un número aleatorio dentro de un rango que usted especifique.</li>
+  <li><code>get_weather</code> &mdash; una <strong>herramienta de demostración que devuelve datos de ejemplo fijos</strong> (20&nbsp;&deg;C, &laquo;Soleado&raquo;). No contacta con ningún servicio meteorológico y los valores que informa no son el tiempo real.</li>
+</ul>
+<p>Las herramientas se ejecutan localmente, así que activarlas no afecta a la privacidad. Activarlas hace que cada respuesta sea algo más lenta, porque el modelo necesita una ronda adicional para solicitar la herramienta y leer su resultado.</p>
+
+<h3>Thinking</h3>
+<p>Thinking activa el modo de razonamiento integrado del modelo, en el que analiza un problema antes de responder. Está <strong>desactivado de forma predeterminada</strong> porque es notablemente más lento y consume parte del mismo presupuesto limitado de respuesta que se describe más abajo. Su elección se recuerda entre inicios. Como el ajuste se aplica al crear la sesión del modelo, cambiarlo recarga el modelo: cuente con unos segundos de &laquo;Loading model weights&hellip;&raquo; y una breve pantalla completa. Su conversación se conserva durante la recarga.</p>
+
+<div class="callout warn">
+  <p><strong>Dos opciones que quizá quiera combinar:</strong> deje <em>Tools calling</em> activado si hace preguntas con números, y deje <em>Thinking</em> desactivado salvo que quiera específicamente que el modelo razone paso a paso. Ambas son independientes.</p>
+</div>
+
+<h2 id="memory-es">Cómo funcionan la conversación y sus límites</h2>
+
+<p>LocalGemma ejecuta un pequeño modelo de 4 bits que debe caber en la memoria de su iPhone, por lo que conserva deliberadamente muy poco contexto. Entender esto explica la mayoría de los comportamientos sorprendentes:</p>
+
+<ul>
+  <li><strong>En cada turno solo se envían al modelo los dos últimos mensajes</strong> (su mensaje más reciente y la última respuesta del asistente), junto con una instrucción de sistema fija. Los mensajes anteriores siguen visibles en pantalla y se incluyen en el archivo exportado, pero el modelo <em>no</em> los ve. En la práctica, el modelo &laquo;olvida&raquo; las partes antiguas de una conversación larga.</li>
+  <li><strong>Cada respuesta está limitada a unos 1.024 tokens.</strong> Una respuesta larga puede terminar a mitad de frase: es el límite, no un error. Envíe &laquo;continue&raquo; para obtener más.</li>
+  <li><strong>Thinking comparte ese mismo presupuesto.</strong> Con Thinking activado, parte de los 1.024 tokens se dedica al razonamiento, lo que deja menos espacio para la respuesta visible.</li>
+  <li><strong>Las generaciones largas son exigentes.</strong> Generar muchos tokens seguidos mantiene ocupados a la GPU y la CPU; en un iPhone con memoria limitada, iOS puede cerrar la aplicación si supera los límites del sistema. Véase Solución de problemas.</li>
+</ul>
+
+<h2 id="trouble-es">Solución de problemas</h2>
+
+<table>
+  <tr><th>Síntoma</th><th>Qué hacer</th></tr>
+  <tr>
+    <td>La aplicación se cierra sola durante una respuesta larga</td>
+    <td>iOS está cerrando la aplicación por superar los límites de memoria o CPU al generar una respuesta larga. Haga respuestas más cortas, desactive <em>Thinking</em> y evite pedir textos muy largos (por ejemplo, documentos de varias páginas). Su historial guardado se conserva, así que vuelva a abrir la aplicación y continúe: la conversación sigue ahí.</td>
+  </tr>
+  <tr>
+    <td>Una respuesta se corta a mitad de frase</td>
+    <td>Es normal: la respuesta alcanzó el límite de ~1.024 tokens. Envíe &laquo;continue&raquo; para obtener el resto.</td>
+  </tr>
+  <tr>
+    <td>El modelo parece olvidar lo que hemos hablado</td>
+    <td>Es lo esperado. En cada turno solo se envían los dos últimos mensajes. Todo lo que deba recordarse, repítalo en su mensaje actual.</td>
+  </tr>
+  <tr>
+    <td>La descarga se atasca o falla</td>
+    <td>Compruebe que tiene conexión y espacio libre, y vuelva a intentarlo: la descarga se reanuda y la aplicación vuelve a comprobar los archivos. Si sigue fallando, cambie <em>HF Source</em> al otro host.</td>
+  </tr>
+  <tr>
+    <td>&laquo;Loading model weights&hellip;&raquo; parece tardar mucho</td>
+    <td>La aplicación está cargando unos 2,5&nbsp;GiB de pesos en memoria. Una carga en frío tarda bastante más que una recarga de un modelo ya descargado. Espere a que desaparezca la pantalla; no fuerce el cierre.</td>
+  </tr>
+  <tr>
+    <td>Necesita espacio libre</td>
+    <td>Abra el menú del modelo y elija <em>Delete &lt;modelo&gt;</em>. Esto elimina los pesos (unos 2,5&nbsp;GiB) y el historial de ese modelo. Todo lo demás se conserva.</td>
+  </tr>
+  <tr>
+    <td>La aplicación indica que el modelo no está cargado</td>
+    <td>Esto ocurría en versiones anteriores y está corregido en la 1.1.2: borrar la conversación ya no descarga el modelo. Si aún lo ve, cierre y vuelva a abrir la aplicación.</td>
+  </tr>
+  <tr>
+    <td>Quiere empezar de cero por completo</td>
+    <td>Usa <em>Clear Chat</em> (pantalla Storage) para borrar la conversación. Para eliminar todo &mdash; modelo, historial, preferencias y el registro de diagnóstico local &mdash; elimine la aplicación desde la pantalla de inicio.</td>
+  </tr>
+</table>
+
+<h2 id="faq-es">Preguntas frecuentes</h2>
+
+<h3>¿Necesito conexión a Internet?</h3>
+<p>Solo para descargar el modelo (unos 2,5&nbsp;GiB) y para comprobar antes sus tamaños de archivo. Después, la aplicación es totalmente utilizable sin conexión.</p>
+
+<h3>¿Se envía mi conversación a algún sitio?</h3>
+<p>No. El modelo se ejecuta en su iPhone. No hay cuenta, ni analítica, ni publicidad, ni informes de fallos, ni seguimiento. Las únicas solicitudes de red que hace la aplicación son la descarga del modelo y la pequeña solicitud de metadatos que indica el tamaño de la descarga. Consulte la <a href="index.html">Política de privacidad</a> para conocer los detalles exactos.</p>
+
+<h3>¿Hay suscripciones, compras integradas o funciones premium?</h3>
+<p>No. LocalGemma es gratis: no hay compras integradas, ni suscripciones, ni ningún otro cargo, y todas las funciones están disponibles sin coste (a partir del 4 de octubre de 2026). Si en el futuro se introducen funciones de pago, los detalles de precio se actualizarán primero en esta página y en la <a href="index.html">Política de privacidad</a>.</p>
+
+<h3>¿Qué modelo de IA utiliza?</h3>
+<p>Gemma 4 E2B Instruct, una versión solo de texto en 4 bits publicada en Hugging Face como <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Se distribuye bajo las <strong>Condiciones de uso de Gemma</strong> de Google, por lo que dichas condiciones y su Política de usos prohibidos se aplican a su uso de las salidas del modelo, además de estas notas de soporte. Esta aplicación no está afiliada a Google ni cuenta con su respaldo. Solo se incluye un modelo y la aplicación no ofrece ninguna interfaz para añadir el suyo.</p>
+
+<h3>¿Puedo enviar imágenes?</h3>
+<p>No. El modelo incluido es solo de texto, así que la aplicación no ofrece entrada de imágenes.</p>
+
+<h3>¿Dónde se guardan mis datos y cómo los elimino?</h3>
+<p>Todo está en el almacenamiento privado de la aplicación en su iPhone: el modelo en <code>Documents/.localllmclient/</code>, su historial de conversaciones en <code>Application Support/LLMclient/History/</code>, una preferencia en el almacenamiento del sistema y un pequeño registro local de diagnóstico de memoria en <code>Documents/diagnostics.log</code>. Usa <em>Clear Chat</em> (pantalla Storage) para la conversación, <em>Delete &lt;modelo&gt;</em> para los archivos del modelo, o elimine la aplicación para quitarlo todo. No se guarda nada en ningún servidor.</p>
+
+<h3>¿Por qué la aplicación se llama &laquo;LocalGemma&raquo; pero el identificador de paquete dice &laquo;LLMclient&raquo;?</h3>
+<p>La aplicación ha tenido más de un nombre con el tiempo; desde la versión 1.1.6 se llama LocalGemma. Su identificador de paquete técnico se dejó deliberadamente sin cambios para que las instalaciones existentes conserven el modelo descargado, el historial y las preferencias.</p>
+
+<h3>¿La herramienta del tiempo me da el tiempo real?</h3>
+<p>No. Es una herramienta de demostración que devuelve datos de ejemplo fijos para que vea la llamada a herramientas en funcionamiento. Nunca contacta con un servicio meteorológico.</p>
+
+<h3>¿Qué ha cambiado en la 1.1.3?</h3>
+<ul>
+  <li>Correcciones internas de estabilidad: se resolvieron dos diagnósticos de concurrencia estricta. El comportamiento de la aplicación no cambia.</li>
+  <li>Las dependencias ahora quedan fijadas en el repositorio, de modo que una compilación nueva usa exactamente las mismas versiones de las bibliotecas.</li>
+  <li>Esta página de ayuda y la política de privacidad ya están disponibles en japonés, alemán, francés, español e italiano.</li>
+</ul>
+
+<h3>¿Qué ha cambiado en la 1.1.2?</h3>
+<ul>
+  <li>Todas las funciones son ahora gratuitas &mdash; las compras integradas se eliminaron por completo.</li>
+  <li>Nombre de la aplicación cambiado (identificador de paquete sin cambios).</li>
+  <li>Se añadió la opción <strong>Thinking</strong> (desactivada de forma predeterminada).</li>
+  <li>El inicio es mucho más rápido: la aplicación ya no relee ni reverifica los 2,5&nbsp;GiB de pesos en cada arranque, y ya no muestra un paso &laquo;Switching model&raquo;.</li>
+  <li>Se corrigió un error por el que borrar la conversación podía dejar la aplicación sin poder responder hasta reiniciarla.</li>
+  <li>Se corrigió el icono de la aplicación para que supere la validación del App Store.</li>
+  <li>El menú del modelo se redujo al único modelo incluido.</li>
+</ul>
+
+<h2 id="report-es">Informar de un problema</h2>
+
+<p>Escriba a <a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a>. Para ayudarnos a diagnosticar el problema con rapidez, incluya:</p>
+
+<ul>
+  <li>el modelo de su iPhone y la versión de iOS;</li>
+  <li>la versión de la aplicación, que aparece en <em>&hellip;</em> &rarr; <em>About</em> (la versión admitida es la 1.1.6, compilación 1);</li>
+  <li>qué le pidió al modelo y si <em>Tools calling</em> o <em>Thinking</em> estaba activado;</li>
+  <li>los pasos que reproducen el problema y cualquier mensaje que viera en pantalla.</li>
+</ul>
+
+<footer>
+  <p>LocalGemma 1.1.6 (compilación 1) &middot; Ayuda y soporte &middot; Última actualización: 17 de octubre de 2026<br>
+  Véase también: <a href="index.html">Política de privacidad</a></p>
+</footer>
+
+</div>
+
+<!-- ============================ Italiano ============================ -->
+<div class="i18n" data-lang="it" lang="it">
+
+<h1>LocalGemma &mdash; Assistenza e supporto</h1>
+
+<p>LocalGemma è un&rsquo;app di chat con IA che funziona interamente sul dispositivo, per iPhone. Il modello linguistico viene eseguito sul tuo hardware: nessun account, nessun accesso, nessun servizio cloud e nulla delle tue conversazioni lascia il dispositivo. Questa pagina spiega come usare l&rsquo;app, quali sono i suoi limiti e come risolvere i problemi più comuni.</p>
+
+<table class="meta">
+  <tr><th>Versione documentata</th><td>1.1.6 (build 1)</td></tr>
+  <tr><th>Ultimo aggiornamento</th><td>17 ottobre 2026</td></tr>
+  <tr><th>Piattaforma</th><td>iPhone, iOS 26.0 o successivo</td></tr>
+  <tr><th>Modello</th><td>Gemma 4 E2B Instruct (solo testo, 4 bit) &mdash; circa 2,5&nbsp;GiB, scaricato una sola volta</td></tr>
+  <tr><th>Internet necessario</th><td>Solo per il primo download del modello. Poi completamente offline.</td></tr>
+  <tr><th>Prezzo</th><td>Gratuito &mdash; nessun acquisto, nessun abbonamento, nessun altro costo (dal 4 ottobre 2026)</td></tr>
+  <tr><th>Contatto per il supporto</th><td><a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a></td></tr>
+</table>
+
+<nav class="toc">
+  <strong>In questa pagina</strong>
+  <ul>
+    <li><a href="#start-it">Per iniziare</a></li>
+    <li><a href="#menus-it">I menu sullo schermo</a></li>
+    <li><a href="#features-it">Funzionalità</a></li>
+    <li><a href="#memory-it">Come funzionano la conversazione e i suoi limiti</a></li>
+    <li><a href="#trouble-it">Risoluzione dei problemi</a></li>
+    <li><a href="#faq-it">Domande frequenti</a></li>
+    <li><a href="#report-it">Segnalare un problema</a></li>
+  </ul>
+</nav>
+
+<h2 id="start-it">Per iniziare</h2>
+
+<ol>
+  <li><strong>Controlla il dispositivo.</strong> Serve un iPhone con iOS 26.0 o successivo e circa <strong>3&nbsp;GB di spazio libero</strong> (2,5&nbsp;GiB per il modello, più lo spazio di lavoro).</li>
+  <li><strong>Scarica il modello.</strong> Al primo avvio l&rsquo;app chiede di confermare il download e ne mostra la dimensione. Accetta, mantieni l&rsquo;app in primo piano con una connessione affidabile e attendi. Il download usa una sessione in background, quindi può proseguire se esci brevemente dall&rsquo;app.</li>
+  <li><strong>Inizia a chattare.</strong> Una volta caricato il modello puoi digitare un messaggio e inviarlo. Da quel momento l&rsquo;app funziona completamente offline: puoi attivare la modalità Aereo e continuerà a rispondere.</li>
+</ol>
+
+<h2 id="menus-it">I menu sullo schermo</h2>
+
+<h3>Menu del modello (in basso sullo schermo)</h3>
+<ul>
+  <li><strong>Nome del modello</strong> &mdash; mostra il modello attualmente installato. La versione 1.1.6 include un solo modello, quindi non c&rsquo;è nulla tra cui scegliere.</li>
+  <li><strong>Delete &lt;modello&gt;</strong> &mdash; elimina i file del modello scaricato e la cronologia chat salvata di quel modello, liberando circa 2,5&nbsp;GiB. Al prossimo utilizzo ti verrà chiesto di scaricarlo di nuovo.</li>
+  <li><strong>HF Source</strong> &mdash; sceglie da dove scaricare i file del modello: <code>hf-mirror.com</code> (predefinito) o <code>huggingface.co</code>. Se un download è lento o non riesce, prova l&rsquo;altra fonte.</li>
+</ul>
+
+<h3>Menu &laquo;&hellip;&raquo; (in alto a destra)</h3>
+<ul>
+  <li><strong>Export&hellip;</strong> &mdash; salva la conversazione corrente come file Markdown (<code>.md</code>); su iPhone scegli la destinazione nell&rsquo;app File.</li>
+  <li><strong>Storage</strong> &mdash; mostra quanto spazio occupano l&rsquo;app e il suo modello e permette di recuperare lo spazio lasciato da download non riusciti o interrotti; include anche <em>Clear Chat</em>, che cancella la conversazione corrente e la cronologia salvata. Il modello in uso non viene mai rimosso.</li>
+  <li><strong>About</strong> &mdash; informazioni sulla versione e un link all&rsquo;<a href="index.html">Informativa sulla privacy</a>.</li>
+  <li><strong>Tools calling</strong> &mdash; disattivato per impostazione predefinita; vedi sotto.</li>
+  <li><strong>Thinking</strong> &mdash; disattivato per impostazione predefinita; vedi sotto.</li>
+</ul>
+
+<h2 id="features-it">Funzionalità</h2>
+
+<h3>Tools calling (consigliato per qualsiasi cosa con numeri)</h3>
+<p>Quando è attivo, il modello può chiamare strumenti integrati invece di rispondere a memoria. Questo rende affidabile l&rsquo;aritmetica, perché il calcolo lo esegue l&rsquo;app invece di essere indovinato dal modello:</p>
+<ul>
+  <li><code>calculate</code> &mdash; operazioni ed espressioni aritmetiche (ad esempio &laquo;1500 &times; 2&raquo;).</li>
+  <li><code>get_current_time</code> &mdash; la data e l&rsquo;ora correnti, facoltativamente in un fuso orario che indichi tu (ad esempio <code>Asia/Tokyo</code>). Solo in locale; legge l&rsquo;orologio del dispositivo.</li>
+  <li><code>generate_random_number</code> &mdash; un numero casuale all&rsquo;interno di un intervallo che specifichi tu.</li>
+  <li><code>get_weather</code> &mdash; uno <strong>strumento dimostrativo che restituisce dati di esempio fissi</strong> (20&nbsp;&deg;C, &laquo;Sereno&raquo;). Non contatta alcun servizio meteo e i valori riportati non sono il meteo reale.</li>
+</ul>
+<p>Gli strumenti vengono eseguiti localmente, quindi attivarli non incide sulla privacy. Attivarli rende ogni risposta un po&rsquo; più lenta, perché il modello impiega un giro in più per richiedere lo strumento e leggerne il risultato.</p>
+
+<h3>Thinking</h3>
+<p>Thinking attiva la modalità di ragionamento integrata del modello, in cui elabora un problema prima di rispondere. È <strong>disattivata per impostazione predefinita</strong> perché è sensibilmente più lenta e consuma parte dello stesso budget di risposta limitato descritto di seguito. La tua scelta viene ricordata tra un avvio e l&rsquo;altro. Poiché l&rsquo;impostazione viene applicata al momento della creazione della sessione del modello, cambiarla ricarica il modello: aspettati qualche secondo di &laquo;Loading model weights&hellip;&raquo; e una breve schermata a tutto schermo. La conversazione viene conservata durante la ricarica.</p>
+
+<div class="callout warn">
+  <p><strong>Due opzioni che potresti voler combinare:</strong> lascia attivo <em>Tools calling</em> se fai domande con numeri, e lascia disattivato <em>Thinking</em> a meno che tu non voglia specificamente che il modello ragioni passo per passo. Le due opzioni sono indipendenti.</p>
+</div>
+
+<h2 id="memory-it">Come funzionano la conversazione e i suoi limiti</h2>
+
+<p>LocalGemma esegue un piccolo modello a 4 bit che deve stare nella memoria del tuo iPhone, quindi mantiene deliberatamente pochissimo contesto. Capire questo spiega la maggior parte dei comportamenti inattesi:</p>
+
+<ul>
+  <li><strong>A ogni turno vengono inviati al modello solo gli ultimi due messaggi</strong> (il tuo messaggio più recente e l&rsquo;ultima risposta dell&rsquo;assistente), insieme a un&rsquo;istruzione di sistema fissa. I messaggi precedenti restano visibili sullo schermo e sono inclusi nel file esportato, ma il modello <em>non</em> li vede. In pratica il modello &laquo;dimentica&raquo; le parti più vecchie di una conversazione lunga.</li>
+  <li><strong>Ogni risposta è limitata a circa 1.024 token.</strong> Una risposta lunga può terminare a metà frase: è il limite, non un errore. Invia &laquo;continue&raquo; per ottenere il resto.</li>
+  <li><strong>Thinking condivide lo stesso budget.</strong> Con Thinking attivo, parte dei 1.024 token viene spesa nel ragionamento, lasciando meno spazio alla risposta visibile.</li>
+  <li><strong>Le generazioni lunghe sono impegnative.</strong> Generare molti token di seguito tiene occupate GPU e CPU; su un iPhone con memoria limitata, iOS può chiudere l&rsquo;app se supera i limiti di sistema. Vedi Risoluzione dei problemi.</li>
+</ul>
+
+<h2 id="trouble-it">Risoluzione dei problemi</h2>
+
+<table>
+  <tr><th>Sintomo</th><th>Cosa fare</th></tr>
+  <tr>
+    <td>L&rsquo;app si chiude da sola durante una risposta lunga</td>
+    <td>iOS sta chiudendo l&rsquo;app perché ha superato i limiti di memoria o CPU mentre generava una risposta lunga. Mantieni le risposte più brevi, disattiva <em>Thinking</em> ed evita di chiedere testi molto lunghi (per esempio documenti di più pagine). La cronologia salvata viene conservata: riapri l&rsquo;app e continua, la conversazione è ancora lì.</td>
+  </tr>
+  <tr>
+    <td>Una risposta si interrompe a metà frase</td>
+    <td>Normale: la risposta ha raggiunto il limite di ~1.024 token. Invia &laquo;continue&raquo; per ottenere il resto.</td>
+  </tr>
+  <tr>
+    <td>Il modello sembra dimenticare ciò di cui abbiamo parlato</td>
+    <td>È previsto. A ogni turno vengono inviati solo gli ultimi due messaggi. Per tutto ciò che deve essere ricordato, ripetilo nel messaggio corrente.</td>
+  </tr>
+  <tr>
+    <td>Il download si blocca o non riesce</td>
+    <td>Verifica di avere una connessione funzionante e spazio libero, poi riprova: il download riprende e l&rsquo;app ricontrolla i file. Se continua a fallire, imposta <em>HF Source</em> sull&rsquo;altro host.</td>
+  </tr>
+  <tr>
+    <td>&laquo;Loading model weights&hellip;&raquo; sembra durare molto</td>
+    <td>L&rsquo;app sta caricando in memoria circa 2,5&nbsp;GiB di pesi. Un caricamento a freddo richiede molto più tempo del ricaricamento di un modello già scaricato. Attendi che la schermata scompaia; non forzare la chiusura.</td>
+  </tr>
+  <tr>
+    <td>Ti serve spazio libero</td>
+    <td>Apri il menu del modello e scegli <em>Delete &lt;modello&gt;</em>. Rimuove i pesi (circa 2,5&nbsp;GiB) e la cronologia di quel modello. Tutto il resto resta.</td>
+  </tr>
+  <tr>
+    <td>L&rsquo;app segnala che il modello non è caricato</td>
+    <td>Esisteva nelle build precedenti ed è stato corretto nella 1.1.2: cancellare la chat non scarica più il modello. Se lo vedi ancora, chiudi e riapri l&rsquo;app.</td>
+  </tr>
+  <tr>
+    <td>Vuoi ricominciare completamente da zero</td>
+    <td>Usa <em>Clear Chat</em> (schermata Storage) per azzerare la conversazione. Per rimuovere tutto &mdash; modello, cronologia, preferenze e il registro di diagnostica locale &mdash; elimina l&rsquo;app dalla schermata Home.</td>
+  </tr>
+</table>
+
+<h2 id="faq-it">Domande frequenti</h2>
+
+<h3>Serve una connessione a Internet?</h3>
+<p>Solo per scaricare il modello (circa 2,5&nbsp;GiB) e per verificarne prima le dimensioni dei file. Dopo, l&rsquo;app è pienamente utilizzabile offline.</p>
+
+<h3>La mia conversazione viene inviata da qualche parte?</h3>
+<p>No. Il modello viene eseguito sul tuo iPhone. Non ci sono account, analisi, pubblicità, segnalazione di crash né tracciamento. Le uniche richieste di rete che l&rsquo;app effettua sono il download del modello e la piccola richiesta di metadati che ne indica la dimensione. Consulta l&rsquo;<a href="index.html">Informativa sulla privacy</a> per i dettagli esatti.</p>
+
+<h3>Ci sono abbonamenti, acquisti in-app o funzioni premium?</h3>
+<p>No. LocalGemma è gratuito: non ci sono acquisti in-app, abbonamenti né altri costi, e tutte le funzioni sono disponibili gratuitamente (a partire dal 4 ottobre 2026). Se in futuro verranno introdotte funzioni a pagamento, i dettagli sui prezzi saranno aggiornati prima su questa pagina e nell&rsquo;<a href="index.html">Informativa sulla privacy</a>.</p>
+
+<h3>Quale modello di IA utilizza?</h3>
+<p>Gemma 4 E2B Instruct, una build solo testo a 4 bit pubblicata su Hugging Face come <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. È distribuito secondo i <strong>Termini di utilizzo di Gemma</strong> di Google, quindi quei termini e la relativa Politica sui divieti d&rsquo;uso si applicano al tuo utilizzo degli output del modello, oltre a queste note di supporto. Questa app non è affiliata a Google né approvata da Google. È incluso un solo modello e l&rsquo;app non offre alcuna interfaccia per aggiungerne altri.</p>
+
+<h3>Posso inviare immagini?</h3>
+<p>No. Il modello incluso è solo testo, quindi l&rsquo;app non offre input per le immagini.</p>
+
+<h3>Dove sono conservati i miei dati e come li elimino?</h3>
+<p>Tutto si trova nello spazio di archiviazione privato dell&rsquo;app sul tuo iPhone: il modello in <code>Documents/.localllmclient/</code>, la cronologia delle chat in <code>Application Support/LLMclient/History/</code>, una preferenza nella memoria di sistema e un piccolo registro locale di diagnostica della memoria in <code>Documents/diagnostics.log</code>. Usa <em>Clear Chat</em> (schermata Storage) per la conversazione, <em>Delete &lt;modello&gt;</em> per i file del modello, oppure elimina l&rsquo;app per rimuovere tutto. Nulla viene conservato su alcun server.</p>
+
+<h3>Perché l&rsquo;app si chiama &laquo;LocalGemma&raquo; ma l&rsquo;identificatore del bundle dice &laquo;LLMclient&raquo;?</h3>
+<p>Nel tempo l&rsquo;app ha avuto più di un nome; dalla versione 1.1.6 si chiama LocalGemma. Il suo identificatore di bundle tecnico è stato lasciato intenzionalmente invariato, così le installazioni esistenti mantengono il modello scaricato, la cronologia e le preferenze.</p>
+
+<h3>Lo strumento meteo fornisce il meteo reale?</h3>
+<p>No. È uno strumento dimostrativo che restituisce dati di esempio fissi, così puoi vedere la chiamata agli strumenti in azione. Non contatta mai alcun servizio meteo.</p>
+
+<h3>Cosa è cambiato nella 1.1.3?</h3>
+<ul>
+  <li>Correzioni interne di stabilità: risolte due segnalazioni relative alla concorrenza rigorosa. Il comportamento dell&rsquo;app non cambia.</li>
+  <li>Le dipendenze sono ora fissate nel repository, così una nuova build usa esattamente le stesse versioni delle librerie.</li>
+  <li>Questa pagina di assistenza e l&rsquo;informativa sulla privacy sono ora disponibili anche in giapponese, tedesco, francese, spagnolo e italiano.</li>
+</ul>
+
+<h3>Cosa è cambiato nella 1.1.2?</h3>
+<ul>
+  <li>Tutte le funzioni sono ora gratuite &mdash; gli acquisti in-app sono stati rimossi del tutto.</li>
+  <li>App rinominata (identificatore del bundle invariato).</li>
+  <li>Aggiunta dell&rsquo;opzione <strong>Thinking</strong> (disattivata per impostazione predefinita).</li>
+  <li>Avvio molto più rapido: l&rsquo;app non rilegge e non riverifica più i 2,5&nbsp;GiB di pesi a ogni avvio e non mostra più il passaggio &laquo;Switching model&raquo;.</li>
+  <li>Corretto un bug per cui cancellare la chat poteva lasciare l&rsquo;app incapace di rispondere fino al riavvio.</li>
+  <li>Corretta l&rsquo;icona dell&rsquo;app perché superi la convalida dell&rsquo;App Store.</li>
+  <li>Il menu del modello è stato ridotto all&rsquo;unico modello incluso.</li>
+</ul>
+
+<h2 id="report-it">Segnalare un problema</h2>
+
+<p>Scrivi a <a href="mailto:vegaodm@outlook.com">vegaodm@outlook.com</a>. Per aiutarci a diagnosticare rapidamente il problema, includi:</p>
+
+<ul>
+  <li>il modello del tuo iPhone e la versione di iOS;</li>
+  <li>la versione dell&rsquo;app, visibile in <em>&hellip;</em> &rarr; <em>About</em> (la versione supportata è la 1.1.6, build 1);</li>
+  <li>cosa hai chiesto al modello e se <em>Tools calling</em> o <em>Thinking</em> era attivo;</li>
+  <li>i passaggi che riproducono il problema e qualsiasi messaggio visto sullo schermo.</li>
+</ul>
+
+<footer>
+  <p>LocalGemma 1.1.6 (build 1) &middot; Assistenza e supporto &middot; Ultimo aggiornamento 17 ottobre 2026<br>
+  Vedi anche: <a href="index.html">Informativa sulla privacy</a></p>
+</footer>
+
+</div>
+
+<script>
+  (function () {
+    var LANGUAGES = ["en", "ja", "de", "fr", "es", "it"];
+    var STORAGE_KEY = "localllmclient.lang";
+    var TITLES = {
+      en: "Help & Support - LocalGemma",
+      ja: "ヘルプとサポート - LocalGemma",
+      de: "Hilfe & Support - LocalGemma",
+      fr: "Aide et assistance - LocalGemma",
+      es: "Ayuda y soporte - LocalGemma",
+      it: "Assistenza e supporto - LocalGemma"
+    };
+    var LABELS = {
+      en: "Language",
+      ja: "言語",
+      de: "Sprache",
+      fr: "Langue",
+      es: "Idioma",
+      it: "Lingua"
+    };
+
+    // Accepts "ja", "ja-JP", "JA-jp" … and falls back to the base language.
+    function normalize(tag) {
+      if (!tag) { return null; }
+      var lower = String(tag).toLowerCase();
+      if (LANGUAGES.indexOf(lower) !== -1) { return lower; }
+      var base = lower.split("-")[0];
+      return LANGUAGES.indexOf(base) !== -1 ? base : null;
+    }
+
+    function stored() {
+      try { return normalize(window.localStorage.getItem(STORAGE_KEY)); } catch (e) { return null; }
+    }
+
+    function remember(lang) {
+      try { window.localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* private mode */ }
+    }
+
+    function preferred() {
+      var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+      for (var i = 0; i < list.length; i++) {
+        var match = normalize(list[i]);
+        if (match) { return match; }
+      }
+      return "en";
+    }
+
+    function apply(lang) {
+      document.documentElement.lang = lang;
+      document.title = TITLES[lang] || TITLES.en;
+
+      var label = document.getElementById("lang-label");
+      if (label) { label.textContent = LABELS[lang] || LABELS.en; }
+
+      var blocks = document.querySelectorAll(".i18n[data-lang]");
+      for (var i = 0; i < blocks.length; i++) {
+        var block = blocks[i];
+        var active = block.getAttribute("data-lang") === lang;
+        block.classList.toggle("is-active", active);
+        block.setAttribute("aria-hidden", active ? "false" : "true");
+      }
+
+      var select = document.getElementById("lang-select");
+      if (select && select.value !== lang) { select.value = lang; }
+    }
+
+    var select = document.getElementById("lang-select");
+    if (select) {
+      select.addEventListener("change", function () {
+        var lang = normalize(select.value) || "en";
+        remember(lang);
+        apply(lang);
+      });
+    }
+
+    apply(stored() || preferred());
+  })();
+</script>
+
+</body>
+</html>
