@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Help &amp; Support - LocalGemma</title>
+  <title>Help &amp; Support - Pocket LLMG</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; color: #333; max-width: 780px; margin: 40px auto; padding: 0 20px; }
     h1 { color: #222; }
@@ -60,13 +60,13 @@
 <!-- ============================ English ============================ -->
 <div class="i18n is-active" data-lang="en" lang="en">
 
-<h1>LocalGemma &mdash; Help &amp; Support</h1>
+<h1>Pocket LLMG &mdash; Help &amp; Support</h1>
 
-<p>LocalGemma is a fully on-device AI chat app for iPhone. The language model runs on your own hardware: no account, no sign-in, no cloud service, and nothing about your conversations leaves your device. This page explains how to use the app, what its limits are, and how to fix common problems.</p>
+<p>Pocket LLMG is a fully on-device AI chat app for iPhone. The language model runs on your own hardware: no account, no sign-in, no cloud service, and nothing about your conversations leaves your device. This page explains how to use the app, what its limits are, and how to fix common problems.</p>
 
 <table class="meta">
-  <tr><th>Version documented</th><td>1.1.6 (build 1)</td></tr>
-  <tr><th>Last updated</th><td>October 17, 2026</td></tr>
+  <tr><th>Version documented</th><td>1.1.9 (build 1)</td></tr>
+  <tr><th>Last updated</th><td>October 26, 2026</td></tr>
   <tr><th>Platform</th><td>iPhone, iOS 26.0 or later</td></tr>
   <tr><th>Model</th><td>Gemma 4 E2B Instruct (text-only, 4-bit) &mdash; about 2.5&nbsp;GiB, downloaded once</td></tr>
   <tr><th>Internet needed</th><td>Only for the first model download. Fully offline afterwards.</td></tr>
@@ -99,7 +99,7 @@
 
 <h3>Model menu (bottom of the screen)</h3>
 <ul>
-  <li><strong>Model name</strong> &mdash; shows the currently installed model. Version 1.1.6 ships with a single model, so there is nothing to switch between.</li>
+  <li><strong>Model name</strong> &mdash; shows the currently installed model. Version 1.1.9 ships with a single model, so there is nothing to switch between.</li>
   <li><strong>Delete &lt;model&gt;</strong> &mdash; deletes the downloaded model files and that model&rsquo;s saved chat history, freeing about 2.5&nbsp;GiB. You will be asked to re-download the next time you want to chat.</li>
   <li><strong>HF Source</strong> &mdash; chooses where model files are downloaded from: <code>hf-mirror.com</code> (default) or <code>huggingface.co</code>. If a download is slow or fails, try the other source.</li>
 </ul>
@@ -107,7 +107,7 @@
 <h3>&ldquo;&hellip;&rdquo; menu (top-right)</h3>
 <ul>
   <li><strong>Export&hellip;</strong> &mdash; saves the current conversation as a Markdown (<code>.md</code>) file; on iPhone you choose the destination in the Files app.</li>
-  <li><strong>Storage</strong> &mdash; shows how much space the app and its model use, and lets you reclaim space left behind by failed or interrupted downloads; it also holds <em>Clear Chat</em>, which erases the current conversation and its saved history. The model in use is never removed.</li>
+  <li><strong>Storage</strong> &mdash; shows how much space the app and its model use, and lets you reclaim space left behind by failed or interrupted downloads; it also holds <em>Clear Chat</em> (the same action as the trash button at the top right), which erases the current conversation and its saved history. The model in use is never removed.</li>
   <li><strong>About</strong> &mdash; version information and a link to the <a href="index.html">Privacy Policy</a>.</li>
   <li><strong>Tools calling</strong> &mdash; off by default; see below.</li>
   <li><strong>Thinking</strong> &mdash; off by default; see below.</li>
@@ -134,7 +134,7 @@
 
 <h2 id="memory-en">How the conversation and its limits work</h2>
 
-<p>LocalGemma runs a small 4-bit model that must fit in your iPhone&rsquo;s memory, so it deliberately keeps very little context. Understanding this explains most surprising behaviour:</p>
+<p>Pocket LLMG runs a small 4-bit model that must fit in your iPhone&rsquo;s memory, so it deliberately keeps very little context. Understanding this explains most surprising behaviour:</p>
 
 <ul>
   <li><strong>Only the last two messages are sent to the model each turn</strong> (your most recent message and the assistant&rsquo;s most recent reply), together with a fixed system instruction. Earlier messages remain visible on screen and are included in the exported file, but the model does <em>not</em> see them. In practice the model &ldquo;forgets&rdquo; older parts of a long conversation.</li>
@@ -177,7 +177,7 @@
   </tr>
   <tr>
     <td>You want to start over completely</td>
-    <td>Use <em>Clear Chat</em> (Storage screen) to wipe the conversation. To remove everything &mdash; model, history, preferences and the local diagnostics log &mdash; delete the app from the Home Screen.</td>
+    <td>Use <em>Clear Chat</em> (the trash button at the top right) to wipe the conversation. To remove everything &mdash; model, history, preferences and the local diagnostics log &mdash; delete the app from the Home Screen.</td>
   </tr>
 </table>
 
@@ -190,7 +190,7 @@
 <p>No. The model runs on your iPhone. There is no account, no analytics, no advertising, no crash reporting and no tracking. The only network requests the app ever makes are the model download and the small metadata request that tells it the download size. See the <a href="index.html">Privacy Policy</a> for the exact details.</p>
 
 <h3>Are there subscriptions, in-app purchases or premium features?</h3>
-<p>No. LocalGemma is free: there are no in-app purchases, no subscriptions and no other charges, and every feature is available at no cost (as of October 4, 2026). If paid features are ever introduced, the pricing details will be updated on this page and in the <a href="index.html">Privacy Policy</a> first.</p>
+<p>No. Pocket LLMG is free: there are no in-app purchases, no subscriptions and no other charges, and every feature is available at no cost (as of October 4, 2026). If paid features are ever introduced, the pricing details will be updated on this page and in the <a href="index.html">Privacy Policy</a> first.</p>
 
 <h3>Which AI model does it use?</h3>
 <p>Gemma 4 E2B Instruct, a text-only 4-bit build published on Hugging Face as <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. It is distributed under Google&rsquo;s <strong>Gemma Terms of Use</strong>, so Google&rsquo;s terms and its Prohibited Use Policy apply to your use of the model&rsquo;s outputs, in addition to these support notes. This app is not affiliated with or endorsed by Google. Only one model ships with the app, and the app has no interface for adding your own.</p>
@@ -199,10 +199,10 @@
 <p>No. The bundled model is text-only, so the app does not offer image input.</p>
 
 <h3>Where is my data stored, and how do I delete it?</h3>
-<p>Everything is inside the app&rsquo;s private storage on your iPhone: the model in <code>Documents/.localllmclient/</code>, your chat history in <code>Application Support/LLMclient/History/</code>, one preference in system settings storage, and a small local memory diagnostics log in <code>Documents/diagnostics.log</code>. Use <em>Clear Chat</em> (Storage screen) for the conversation, <em>Delete &lt;model&gt;</em> for the model files, or delete the app to remove all of it. Nothing is stored on any server.</p>
+<p>Everything is inside the app&rsquo;s private storage on your iPhone: the model in <code>Documents/.localllmclient/</code>, your chat history in <code>Application Support/LLMclient/History/</code>, one preference in system settings storage, and a small local memory diagnostics log in <code>Documents/diagnostics.log</code>. Use <em>Clear Chat</em> (the trash button at the top right) for the conversation, <em>Delete &lt;model&gt;</em> for the model files, or delete the app to remove all of it. Nothing is stored on any server.</p>
 
-<h3>Why is the app &ldquo;LocalGemma&rdquo; but the bundle identifier says &ldquo;LLMclient&rdquo;?</h3>
-<p>The app has had more than one name over its life; since version 1.1.6 it is called LocalGemma. Its technical bundle identifier was deliberately left unchanged so that existing installations keep their downloaded model, history and preferences.</p>
+<h3>Why is the app &ldquo;Pocket LLMG&rdquo; but the bundle identifier says &ldquo;LLMclient&rdquo;?</h3>
+<p>The app has had more than one name over its life; since version 1.1.9 it is called Pocket LLMG (before that, LocalGemma). Its technical bundle identifier was deliberately left unchanged so that existing installations keep their downloaded model, history and preferences.</p>
 
 <h3>Is the weather tool giving me real weather?</h3>
 <p>No. It is a demonstration tool that returns fixed sample data so you can see tool calling at work. It never contacts a weather service.</p>
@@ -231,13 +231,13 @@
 
 <ul>
   <li>your iPhone model and iOS version;</li>
-  <li>the app version, shown in <em>&hellip;</em> &rarr; <em>About</em> (the supported version is 1.1.6, build 1);</li>
+  <li>the app version, shown in <em>&hellip;</em> &rarr; <em>About</em> (the supported version is 1.1.9, build 1);</li>
   <li>what you asked the model to do, and whether <em>Tools calling</em> or <em>Thinking</em> was enabled;</li>
   <li>the steps that reproduce the problem, and any message you saw on screen.</li>
 </ul>
 
 <footer>
-  <p>LocalGemma 1.1.6 (build 1) &middot; Help &amp; Support &middot; Last updated October 17, 2026<br>
+  <p>Pocket LLMG 1.1.9 (build 1) &middot; Help &amp; Support &middot; Last updated October 26, 2026<br>
   See also: <a href="index.html">Privacy Policy</a></p>
 </footer>
 
@@ -246,13 +246,13 @@
 <!-- ============================ 日本語 ============================ -->
 <div class="i18n" data-lang="ja" lang="ja">
 
-<h1>LocalGemma &mdash; ヘルプとサポート</h1>
+<h1>Pocket LLMG &mdash; ヘルプとサポート</h1>
 
-<p>LocalGemma は、完全に端末上で動作する iPhone 向けの AI チャットアプリです。言語モデルはお使いのハードウェア上で動作し、アカウントもログインもクラウドサービスもなく、会話の内容が端末の外に出ることはありません。このページでは、アプリの使い方、制限事項、よくある問題の対処方法を説明します。</p>
+<p>Pocket LLMG は、完全に端末上で動作する iPhone 向けの AI チャットアプリです。言語モデルはお使いのハードウェア上で動作し、アカウントもログインもクラウドサービスもなく、会話の内容が端末の外に出ることはありません。このページでは、アプリの使い方、制限事項、よくある問題の対処方法を説明します。</p>
 
 <table class="meta">
-  <tr><th>対象バージョン</th><td>1.1.6（build 1）</td></tr>
-  <tr><th>最終更新</th><td>2026年10月17日</td></tr>
+  <tr><th>対象バージョン</th><td>1.1.9（build 1）</td></tr>
+  <tr><th>最終更新</th><td>2026年10月26日</td></tr>
   <tr><th>プラットフォーム</th><td>iPhone、iOS 26.0 以降</td></tr>
   <tr><th>モデル</th><td>Gemma 4 E2B Instruct（テキスト専用、4bit）&mdash; 約 2.5&nbsp;GiB、ダウンロードは 1 回のみ</td></tr>
   <tr><th>インターネット接続</th><td>初回のモデルダウンロード時のみ必要です。以後は完全にオフラインで動作します。</td></tr>
@@ -285,7 +285,7 @@
 
 <h3>モデルメニュー（画面下部）</h3>
 <ul>
-  <li><strong>モデル名</strong> &mdash; 現在インストールされているモデルを表示します。バージョン 1.1.6 にはモデルが 1 つだけ同梱されているため、切り替える対象はありません。</li>
+  <li><strong>モデル名</strong> &mdash; 現在インストールされているモデルを表示します。バージョン 1.1.9 にはモデルが 1 つだけ同梱されているため、切り替える対象はありません。</li>
   <li><strong>Delete &lt;モデル&gt;</strong> &mdash; ダウンロード済みのモデルファイルとそのモデルの会話履歴を削除し、約 2.5&nbsp;GiB を解放します。次にチャットする際は再度ダウンロードが必要です。</li>
   <li><strong>HF Source</strong> &mdash; モデルファイルのダウンロード元を選びます：<code>hf-mirror.com</code>（既定）または <code>huggingface.co</code>。ダウンロードが遅い、または失敗する場合は、もう一方の提供元をお試しください。</li>
 </ul>
@@ -293,7 +293,7 @@
 <h3>「&hellip;」メニュー（右上）</h3>
 <ul>
   <li><strong>Export&hellip;</strong> &mdash; 現在の会話を Markdown（<code>.md</code>）ファイルとして保存します。iPhone では「ファイル」アプリで保存先を選べます。</li>
-  <li><strong>Storage</strong> &mdash; アプリとモデルが使用している容量を表示し、ダウンロードの失敗や中断で残ったデータを削除できます。現在の会話と保存済みの履歴を消去する <em>Clear Chat</em> もここにあります。使用中のモデルは削除されません。</li>
+  <li><strong>Storage</strong> &mdash; アプリとモデルが使用している容量を表示し、ダウンロードの失敗や中断で残ったデータを削除できます。現在の会話と保存済みの履歴を消去する <em>Clear Chat</em>（画面右上のゴミ箱ボタンと同じ動作）もここにあります。使用中のモデルは削除されません。</li>
   <li><strong>About</strong> &mdash; バージョン情報と<a href="index.html">プライバシーポリシー</a>へのリンク。</li>
   <li><strong>Tools calling</strong> &mdash; 既定ではオフです。以下をご覧ください。</li>
   <li><strong>Thinking</strong> &mdash; 既定ではオフです。以下をご覧ください。</li>
@@ -320,7 +320,7 @@
 
 <h2 id="memory-ja">会話とその制限の仕組み</h2>
 
-<p>LocalGemma は iPhone のメモリに収める必要がある小さな 4bit モデルを実行するため、意図的にごくわずかな文脈しか保持しません。これを理解すると、意外に思える挙動のほとんどが説明できます。</p>
+<p>Pocket LLMG は iPhone のメモリに収める必要がある小さな 4bit モデルを実行するため、意図的にごくわずかな文脈しか保持しません。これを理解すると、意外に思える挙動のほとんどが説明できます。</p>
 
 <ul>
   <li><strong>各ターンでモデルに渡されるのは直近 2 件のメッセージだけです</strong>（あなたの最新のメッセージと、アシスタントの最新の返答）に、固定のシステム指示を加えたものです。それ以前のメッセージは画面には表示され、エクスポートしたファイルにも含まれますが、モデルは<em>それらを見ていません</em>。実際には、長い会話の古い部分をモデルは「忘れて」いきます。</li>
@@ -363,7 +363,7 @@
   </tr>
   <tr>
     <td>完全に最初からやり直したい</td>
-    <td>会話を消すには <em>Clear Chat</em>（Storage 画面）を使います。モデル、履歴、設定、ローカルの診断ログまですべて削除するには、ホーム画面からアプリを削除してください。</td>
+    <td>会話を消すには <em>Clear Chat</em>（画面右上のゴミ箱ボタン）を使います。モデル、履歴、設定、ローカルの診断ログまですべて削除するには、ホーム画面からアプリを削除してください。</td>
   </tr>
 </table>
 
@@ -376,7 +376,7 @@
 <p>いいえ。モデルはお使いの iPhone 上で動作します。アカウント、解析、広告、クラッシュレポート、トラッキングはありません。アプリが行うネットワーク通信は、モデルのダウンロードと、ダウンロードサイズを取得する小さなメタデータ要求だけです。詳しくは<a href="index.html">プライバシーポリシー</a>をご覧ください。</p>
 
 <h3>サブスクリプション、アプリ内課金、有料機能はありますか？</h3>
-<p>いいえ。LocalGemma は無料です。アプリ内課金もサブスクリプションもその他の費用もなく、すべての機能を無償で利用できます（2026年10月4日から）。将来、有料機能を導入する場合は、まずこのページと<a href="index.html">プライバシーポリシー</a>で内容を更新します。</p>
+<p>いいえ。Pocket LLMG は無料です。アプリ内課金もサブスクリプションもその他の費用もなく、すべての機能を無償で利用できます（2026年10月4日から）。将来、有料機能を導入する場合は、まずこのページと<a href="index.html">プライバシーポリシー</a>で内容を更新します。</p>
 
 <h3>どの AI モデルを使っていますか？</h3>
 <p>Gemma 4 E2B Instruct です。Hugging Face で <code>over-show/gemma-4-e2b-it-text-only-4bit</code> として公開されているテキスト専用の 4bit 版です。Google の <strong>Gemma 利用規約</strong>に基づいて配布されているため、モデルの出力を利用する際には、このサポートページに加えて同規約と禁止使用ポリシーが適用されます。本アプリは Google と提携しておらず、承認も受けていません。同梱されるモデルは 1 つだけで、独自のモデルを追加するインターフェースはありません。</p>
@@ -385,10 +385,10 @@
 <p>いいえ。同梱のモデルはテキスト専用のため、画像入力には対応していません。</p>
 
 <h3>データはどこに保存され、どうやって削除しますか？</h3>
-<p>すべて iPhone 上の本アプリ専用領域にあります。モデルは <code>Documents/.localllmclient/</code>、チャット履歴は <code>Application Support/LLMclient/History/</code>、設定はシステムの設定ストレージに 1 件、そして小さなローカルのメモリ診断ログが <code>Documents/diagnostics.log</code> に保存されます。会話は <em>Clear Chat</em>（Storage 画面）、モデルファイルは <em>Delete &lt;モデル&gt;</em>、すべてを削除するにはアプリの削除を使ってください。サーバーには何も保存されていません。</p>
+<p>すべて iPhone 上の本アプリ専用領域にあります。モデルは <code>Documents/.localllmclient/</code>、チャット履歴は <code>Application Support/LLMclient/History/</code>、設定はシステムの設定ストレージに 1 件、そして小さなローカルのメモリ診断ログが <code>Documents/diagnostics.log</code> に保存されます。会話は <em>Clear Chat</em>（画面右上のゴミ箱ボタン）、モデルファイルは <em>Delete &lt;モデル&gt;</em>、すべてを削除するにはアプリの削除を使ってください。サーバーには何も保存されていません。</p>
 
-<h3>アプリ名は「LocalGemma」なのに、バンドル ID が「LLMclient」なのはなぜですか？</h3>
-<p>このアプリはこれまでに何度か名前を変更しており、バージョン 1.1.6 以降は LocalGemma という名前です。技術的なバンドル ID は、既存のインストール環境でダウンロード済みのモデル、履歴、設定をそのまま引き継げるよう、意図的に変更していません。</p>
+<h3>アプリ名は「Pocket LLMG」なのに、バンドル ID が「LLMclient」なのはなぜですか？</h3>
+<p>このアプリはこれまでに何度か名前を変更しており、バージョン 1.1.9 以降は Pocket LLMG という名前です（それ以前は LocalGemma）。技術的なバンドル ID は、既存のインストール環境でダウンロード済みのモデル、履歴、設定をそのまま引き継げるよう、意図的に変更していません。</p>
 
 <h3>天気ツールは実際の天気を返しますか？</h3>
 <p>いいえ。ツール呼び出しの動作を確認できるよう、固定のサンプルデータを返すデモ用ツールです。気象サービスには一切接続しません。</p>
@@ -417,13 +417,13 @@
 
 <ul>
   <li>お使いの iPhone の機種と iOS のバージョン</li>
-  <li>アプリのバージョン（<em>&hellip;</em> &rarr; <em>About</em> に表示。対応バージョンは 1.1.6、build 1 です）</li>
+  <li>アプリのバージョン（<em>&hellip;</em> &rarr; <em>About</em> に表示。対応バージョンは 1.1.9、build 1 です）</li>
   <li>モデルに依頼した内容、および <em>Tools calling</em> や <em>Thinking</em> が有効だったかどうか</li>
   <li>問題を再現する手順と、画面に表示されたメッセージ</li>
 </ul>
 
 <footer>
-  <p>LocalGemma 1.1.6（build 1）&middot; ヘルプとサポート &middot; 最終更新 2026年10月17日<br>
+  <p>Pocket LLMG 1.1.9（build 1）&middot; ヘルプとサポート &middot; 最終更新 2026年10月26日<br>
   関連：<a href="index.html">プライバシーポリシー</a></p>
 </footer>
 
@@ -432,13 +432,13 @@
 <!-- ============================ Deutsch ============================ -->
 <div class="i18n" data-lang="de" lang="de">
 
-<h1>LocalGemma &mdash; Hilfe &amp; Support</h1>
+<h1>Pocket LLMG &mdash; Hilfe &amp; Support</h1>
 
-<p>LocalGemma ist eine vollständig auf dem Gerät arbeitende KI-Chat-App für das iPhone. Das Sprachmodell läuft auf Ihrer eigenen Hardware: kein Konto, keine Anmeldung, kein Cloud-Dienst, und nichts von Ihren Gesprächen verlässt Ihr Gerät. Diese Seite erklärt, wie Sie die App bedienen, welche Grenzen sie hat und wie Sie häufige Probleme beheben.</p>
+<p>Pocket LLMG ist eine vollständig auf dem Gerät arbeitende KI-Chat-App für das iPhone. Das Sprachmodell läuft auf Ihrer eigenen Hardware: kein Konto, keine Anmeldung, kein Cloud-Dienst, und nichts von Ihren Gesprächen verlässt Ihr Gerät. Diese Seite erklärt, wie Sie die App bedienen, welche Grenzen sie hat und wie Sie häufige Probleme beheben.</p>
 
 <table class="meta">
-  <tr><th>Dokumentierte Version</th><td>1.1.6 (Build 1)</td></tr>
-  <tr><th>Zuletzt aktualisiert</th><td>17. Oktober 2026</td></tr>
+  <tr><th>Dokumentierte Version</th><td>1.1.9 (Build 1)</td></tr>
+  <tr><th>Zuletzt aktualisiert</th><td>26. Oktober 2026</td></tr>
   <tr><th>Plattform</th><td>iPhone, iOS 26.0 oder neuer</td></tr>
   <tr><th>Modell</th><td>Gemma 4 E2B Instruct (nur Text, 4 Bit) &mdash; etwa 2,5&nbsp;GiB, einmaliger Download</td></tr>
   <tr><th>Internet erforderlich</th><td>Nur für den ersten Modell-Download. Danach vollständig offline.</td></tr>
@@ -471,7 +471,7 @@
 
 <h3>Modellmenü (unten am Bildschirm)</h3>
 <ul>
-  <li><strong>Modellname</strong> &mdash; zeigt das aktuell installierte Modell. Version 1.1.6 enthält nur ein einziges Modell, es gibt also nichts umzuschalten.</li>
+  <li><strong>Modellname</strong> &mdash; zeigt das aktuell installierte Modell. Version 1.1.9 enthält nur ein einziges Modell, es gibt also nichts umzuschalten.</li>
   <li><strong>Delete &lt;Modell&gt;</strong> &mdash; löscht die heruntergeladenen Modelldateien und den gespeicherten Chatverlauf dieses Modells und gibt etwa 2,5&nbsp;GiB frei. Beim nächsten Chat wird ein erneuter Download verlangt.</li>
   <li><strong>HF Source</strong> &mdash; wählt, woher die Modelldateien geladen werden: <code>hf-mirror.com</code> (Standard) oder <code>huggingface.co</code>. Wenn ein Download langsam ist oder fehlschlägt, versuchen Sie die andere Quelle.</li>
 </ul>
@@ -479,7 +479,7 @@
 <h3>Menü &bdquo;&hellip;&ldquo; (oben rechts)</h3>
 <ul>
   <li><strong>Export&hellip;</strong> &mdash; speichert das aktuelle Gespräch als Markdown-Datei (<code>.md</code>); auf dem iPhone wählen Sie das Ziel in der Dateien-App.</li>
-  <li><strong>Storage</strong> &mdash; zeigt, wie viel Platz App und Modell belegen, und erlaubt das Freigeben von Daten, die durch fehlgeschlagene oder abgebrochene Downloads übrig geblieben sind; hier liegt auch <em>Clear Chat</em>, das das aktuelle Gespräch und dessen gespeicherten Verlauf löscht. Das verwendete Modell wird nie entfernt.</li>
+  <li><strong>Storage</strong> &mdash; zeigt, wie viel Platz App und Modell belegen, und erlaubt das Freigeben von Daten, die durch fehlgeschlagene oder abgebrochene Downloads übrig geblieben sind; hier liegt auch <em>Clear Chat</em> (dieselbe Aktion wie die Papierkorb-Schaltfläche oben rechts), das das aktuelle Gespräch und dessen gespeicherten Verlauf löscht. Das verwendete Modell wird nie entfernt.</li>
   <li><strong>About</strong> &mdash; Versionsinformationen und ein Link zur <a href="index.html">Datenschutzerklärung</a>.</li>
   <li><strong>Tools calling</strong> &mdash; standardmäßig aus; siehe unten.</li>
   <li><strong>Thinking</strong> &mdash; standardmäßig aus; siehe unten.</li>
@@ -506,7 +506,7 @@
 
 <h2 id="memory-de">Wie das Gespräch und seine Grenzen funktionieren</h2>
 
-<p>LocalGemma führt ein kleines 4-Bit-Modell aus, das in den Speicher Ihres iPhones passen muss, und hält daher bewusst sehr wenig Kontext vor. Wer das versteht, kann die meisten überraschenden Verhaltensweisen erklären:</p>
+<p>Pocket LLMG führt ein kleines 4-Bit-Modell aus, das in den Speicher Ihres iPhones passen muss, und hält daher bewusst sehr wenig Kontext vor. Wer das versteht, kann die meisten überraschenden Verhaltensweisen erklären:</p>
 
 <ul>
   <li><strong>Pro Runde werden nur die letzten zwei Nachrichten an das Modell gesendet</strong> (Ihre neueste Nachricht und die neueste Antwort des Assistenten) zusammen mit einer festen Systemanweisung. Frühere Nachrichten bleiben auf dem Bildschirm sichtbar und sind in der exportierten Datei enthalten, aber das Modell <em>sieht sie nicht</em>. In der Praxis &bdquo;vergisst&ldquo; das Modell ältere Teile eines langen Gesprächs.</li>
@@ -549,7 +549,7 @@
   </tr>
   <tr>
     <td>Sie möchten komplett neu beginnen</td>
-    <td>Mit <em>Clear Chat</em> (Storage-Bildschirm) löschen Sie das Gespräch. Um alles zu entfernen &mdash; Modell, Verlauf, Einstellungen und das lokale Diagnoseprotokoll &mdash; löschen Sie die App vom Home-Bildschirm.</td>
+    <td>Mit <em>Clear Chat</em> (Papierkorb-Schaltfläche oben rechts) löschen Sie das Gespräch. Um alles zu entfernen &mdash; Modell, Verlauf, Einstellungen und das lokale Diagnoseprotokoll &mdash; löschen Sie die App vom Home-Bildschirm.</td>
   </tr>
 </table>
 
@@ -562,7 +562,7 @@
 <p>Nein. Das Modell läuft auf Ihrem iPhone. Es gibt kein Konto, keine Analyse, keine Werbung, keine Absturzberichte und kein Tracking. Die einzigen Netzwerkanfragen der App sind der Modell-Download und die kleine Metadatenanfrage, die die Downloadgröße ermittelt. Die genauen Details finden Sie in der <a href="index.html">Datenschutzerklärung</a>.</p>
 
 <h3>Gibt es Abonnements, In-App-Käufe oder Premium-Funktionen?</h3>
-<p>Nein. LocalGemma ist kostenlos: Es gibt keine In-App-Käufe, keine Abonnements und keine sonstigen Kosten, und alle Funktionen sind kostenlos nutzbar (gültig ab dem 4. Oktober 2026). Sollten jemals kostenpflichtige Funktionen eingeführt werden, werden die Preisangaben zuerst auf dieser Seite und in der <a href="index.html">Datenschutzerklärung</a> aktualisiert.</p>
+<p>Nein. Pocket LLMG ist kostenlos: Es gibt keine In-App-Käufe, keine Abonnements und keine sonstigen Kosten, und alle Funktionen sind kostenlos nutzbar (gültig ab dem 4. Oktober 2026). Sollten jemals kostenpflichtige Funktionen eingeführt werden, werden die Preisangaben zuerst auf dieser Seite und in der <a href="index.html">Datenschutzerklärung</a> aktualisiert.</p>
 
 <h3>Welches KI-Modell wird verwendet?</h3>
 <p>Gemma 4 E2B Instruct, ein reiner 4-Bit-Textaufbau, veröffentlicht auf Hugging Face als <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Es wird unter Googles <strong>Gemma-Nutzungsbedingungen</strong> verbreitet; daher gelten Googles Bedingungen und seine Richtlinie zur verbotenen Nutzung zusätzlich zu diesen Support-Hinweisen für Ihre Verwendung der Modellausgaben. Diese App ist mit Google weder verbunden noch von Google unterstützt. Es ist nur ein Modell enthalten, und die App bietet keine Schnittstelle zum Hinzufügen eigener Modelle.</p>
@@ -571,10 +571,10 @@
 <p>Nein. Das mitgelieferte Modell ist reiner Text, daher bietet die App keine Bildeingabe an.</p>
 
 <h3>Wo werden meine Daten gespeichert, und wie lösche ich sie?</h3>
-<p>Alles liegt im privaten Speicher der App auf Ihrem iPhone: das Modell in <code>Documents/.localllmclient/</code>, Ihr Chatverlauf in <code>Application Support/LLMclient/History/</code>, eine Einstellung im Systemspeicher und ein kleines lokales Speicherdiagnoseprotokoll in <code>Documents/diagnostics.log</code>. Nutzen Sie <em>Clear Chat</em> (Storage-Bildschirm) für das Gespräch, <em>Delete &lt;Modell&gt;</em> für die Modelldateien, oder löschen Sie die App, um alles zu entfernen. Auf keinem Server wird etwas gespeichert.</p>
+<p>Alles liegt im privaten Speicher der App auf Ihrem iPhone: das Modell in <code>Documents/.localllmclient/</code>, Ihr Chatverlauf in <code>Application Support/LLMclient/History/</code>, eine Einstellung im Systemspeicher und ein kleines lokales Speicherdiagnoseprotokoll in <code>Documents/diagnostics.log</code>. Nutzen Sie <em>Clear Chat</em> (Papierkorb-Schaltfläche oben rechts) für das Gespräch, <em>Delete &lt;Modell&gt;</em> für die Modelldateien, oder löschen Sie die App, um alles zu entfernen. Auf keinem Server wird etwas gespeichert.</p>
 
-<h3>Warum heißt die App &bdquo;LocalGemma&ldquo;, der Bundle-Identifier aber &bdquo;LLMclient&ldquo;?</h3>
-<p>Die App hat im Laufe der Zeit mehr als einen Namen getragen; seit Version 1.1.6 heißt sie LocalGemma. Ihr technischer Bundle-Identifier wurde bewusst unverändert gelassen, damit bestehende Installationen ihr heruntergeladenes Modell, ihren Verlauf und ihre Einstellungen behalten.</p>
+<h3>Warum heißt die App &bdquo;Pocket LLMG&ldquo;, der Bundle-Identifier aber &bdquo;LLMclient&ldquo;?</h3>
+<p>Die App hat im Laufe der Zeit mehr als einen Namen getragen; seit Version 1.1.9 heißt sie Pocket LLMG (davor LocalGemma). Ihr technischer Bundle-Identifier wurde bewusst unverändert gelassen, damit bestehende Installationen ihr heruntergeladenes Modell, ihren Verlauf und ihre Einstellungen behalten.</p>
 
 <h3>Liefert das Wetter-Werkzeug echtes Wetter?</h3>
 <p>Nein. Es ist ein Demonstrationswerkzeug, das feste Beispieldaten zurückgibt, damit Sie den Werkzeugaufruf in Aktion sehen. Es kontaktiert nie einen Wetterdienst.</p>
@@ -603,13 +603,13 @@
 
 <ul>
   <li>Ihr iPhone-Modell und die iOS-Version;</li>
-  <li>die App-Version, zu sehen unter <em>&hellip;</em> &rarr; <em>About</em> (die unterstützte Version ist 1.1.6, Build 1);</li>
+  <li>die App-Version, zu sehen unter <em>&hellip;</em> &rarr; <em>About</em> (die unterstützte Version ist 1.1.9, Build 1);</li>
   <li>was Sie vom Modell verlangt haben und ob <em>Tools calling</em> oder <em>Thinking</em> aktiv war;</li>
   <li>die Schritte, mit denen sich das Problem reproduzieren lässt, und jede Meldung, die Sie auf dem Bildschirm gesehen haben.</li>
 </ul>
 
 <footer>
-  <p>LocalGemma 1.1.6 (Build 1) &middot; Hilfe &amp; Support &middot; Zuletzt aktualisiert am 17. Oktober 2026<br>
+  <p>Pocket LLMG 1.1.9 (Build 1) &middot; Hilfe &amp; Support &middot; Zuletzt aktualisiert am 26. Oktober 2026<br>
   Siehe auch: <a href="index.html">Datenschutzerklärung</a></p>
 </footer>
 
@@ -618,13 +618,13 @@
 <!-- ============================ Français ============================ -->
 <div class="i18n" data-lang="fr" lang="fr">
 
-<h1>LocalGemma &mdash; Aide et assistance</h1>
+<h1>Pocket LLMG &mdash; Aide et assistance</h1>
 
-<p>LocalGemma est une application de conversation par IA entièrement embarquée pour iPhone. Le modèle de langage s&rsquo;exécute sur votre propre matériel&nbsp;: aucun compte, aucune connexion, aucun service cloud, et rien de vos conversations ne quitte votre appareil. Cette page explique comment utiliser l&rsquo;application, quelles sont ses limites et comment résoudre les problèmes courants.</p>
+<p>Pocket LLMG est une application de conversation par IA entièrement embarquée pour iPhone. Le modèle de langage s&rsquo;exécute sur votre propre matériel&nbsp;: aucun compte, aucune connexion, aucun service cloud, et rien de vos conversations ne quitte votre appareil. Cette page explique comment utiliser l&rsquo;application, quelles sont ses limites et comment résoudre les problèmes courants.</p>
 
 <table class="meta">
-  <tr><th>Version documentée</th><td>1.1.6 (build 1)</td></tr>
-  <tr><th>Dernière mise à jour</th><td>17 octobre 2026</td></tr>
+  <tr><th>Version documentée</th><td>1.1.9 (build 1)</td></tr>
+  <tr><th>Dernière mise à jour</th><td>26 octobre 2026</td></tr>
   <tr><th>Plateforme</th><td>iPhone, iOS 26.0 ou version ultérieure</td></tr>
   <tr><th>Modèle</th><td>Gemma 4 E2B Instruct (texte uniquement, 4 bits) &mdash; environ 2,5&nbsp;GiB, téléchargé une seule fois</td></tr>
   <tr><th>Internet nécessaire</th><td>Uniquement pour le premier téléchargement du modèle. Entièrement hors ligne ensuite.</td></tr>
@@ -657,7 +657,7 @@
 
 <h3>Menu du modèle (en bas de l&rsquo;écran)</h3>
 <ul>
-  <li><strong>Nom du modèle</strong> &mdash; affiche le modèle actuellement installé. La version 1.1.6 ne contient qu&rsquo;un seul modèle&nbsp;: il n&rsquo;y a donc rien à changer.</li>
+  <li><strong>Nom du modèle</strong> &mdash; affiche le modèle actuellement installé. La version 1.1.9 ne contient qu&rsquo;un seul modèle&nbsp;: il n&rsquo;y a donc rien à changer.</li>
   <li><strong>Delete &lt;modèle&gt;</strong> &mdash; supprime les fichiers du modèle téléchargé et l&rsquo;historique de conversation enregistré de ce modèle, libérant environ 2,5&nbsp;GiB. Un nouveau téléchargement vous sera demandé lors de votre prochaine conversation.</li>
   <li><strong>HF Source</strong> &mdash; choisit la source des fichiers du modèle&nbsp;: <code>hf-mirror.com</code> (par défaut) ou <code>huggingface.co</code>. Si un téléchargement est lent ou échoue, essayez l&rsquo;autre source.</li>
 </ul>
@@ -665,7 +665,7 @@
 <h3>Menu &laquo;&nbsp;&hellip;&nbsp;&raquo; (en haut à droite)</h3>
 <ul>
   <li><strong>Export&hellip;</strong> &mdash; enregistre la conversation en cours dans un fichier Markdown (<code>.md</code>)&nbsp;; sur iPhone, vous choisissez la destination dans l&rsquo;app Fichiers.</li>
-  <li><strong>Storage</strong> &mdash; indique l&rsquo;espace occupé par l&rsquo;app et son modèle et permet de récupérer l&rsquo;espace laissé par des téléchargements échoués ou interrompus&nbsp;; il contient aussi <em>Clear Chat</em>, qui efface la conversation en cours et son historique enregistré. Le modèle utilisé n&rsquo;est jamais supprimé.</li>
+  <li><strong>Storage</strong> &mdash; indique l&rsquo;espace occupé par l&rsquo;app et son modèle et permet de récupérer l&rsquo;espace laissé par des téléchargements échoués ou interrompus&nbsp;; il contient aussi <em>Clear Chat</em> (la même action que le bouton corbeille en haut à droite), qui efface la conversation en cours et son historique enregistré. Le modèle utilisé n&rsquo;est jamais supprimé.</li>
   <li><strong>About</strong> &mdash; informations de version et lien vers la <a href="index.html">Politique de confidentialité</a>.</li>
   <li><strong>Tools calling</strong> &mdash; désactivé par défaut&nbsp;; voir ci-dessous.</li>
   <li><strong>Thinking</strong> &mdash; désactivé par défaut&nbsp;; voir ci-dessous.</li>
@@ -692,7 +692,7 @@
 
 <h2 id="memory-fr">Fonctionnement de la conversation et de ses limites</h2>
 
-<p>LocalGemma exécute un petit modèle 4 bits qui doit tenir dans la mémoire de votre iPhone&nbsp;; il ne conserve donc volontairement que très peu de contexte. Le comprendre explique la plupart des comportements surprenants&nbsp;:</p>
+<p>Pocket LLMG exécute un petit modèle 4 bits qui doit tenir dans la mémoire de votre iPhone&nbsp;; il ne conserve donc volontairement que très peu de contexte. Le comprendre explique la plupart des comportements surprenants&nbsp;:</p>
 
 <ul>
   <li><strong>Seuls les deux derniers messages sont envoyés au modèle à chaque tour</strong> (votre message le plus récent et la dernière réponse de l&rsquo;assistant), accompagnés d&rsquo;une instruction système fixe. Les messages antérieurs restent visibles à l&rsquo;écran et figurent dans le fichier exporté, mais le modèle <em>ne les voit pas</em>. En pratique, le modèle &laquo;&nbsp;oublie&nbsp;&raquo; les parties anciennes d&rsquo;une longue conversation.</li>
@@ -735,7 +735,7 @@
   </tr>
   <tr>
     <td>Vous voulez repartir de zéro</td>
-    <td>Utilisez <em>Clear Chat</em> (écran Storage) pour effacer la conversation. Pour tout supprimer &mdash; modèle, historique, préférences et journal de diagnostic local &mdash; supprimez l&rsquo;application depuis l&rsquo;écran d&rsquo;accueil.</td>
+    <td>Utilisez <em>Clear Chat</em> (le bouton corbeille en haut à droite) pour effacer la conversation. Pour tout supprimer &mdash; modèle, historique, préférences et journal de diagnostic local &mdash; supprimez l&rsquo;application depuis l&rsquo;écran d&rsquo;accueil.</td>
   </tr>
 </table>
 
@@ -748,7 +748,7 @@
 <p>Non. Le modèle s&rsquo;exécute sur votre iPhone. Il n&rsquo;y a ni compte, ni analyse, ni publicité, ni rapport de plantage, ni suivi. Les seules requêtes réseau de l&rsquo;application sont le téléchargement du modèle et la petite requête de métadonnées qui en donne la taille. Voir la <a href="index.html">Politique de confidentialité</a> pour les détails exacts.</p>
 
 <h3>Y a-t-il des abonnements, des achats intégrés ou des fonctions premium&nbsp;?</h3>
-<p>Non. LocalGemma est gratuit&nbsp;: il n&rsquo;y a ni achats intégrés, ni abonnements, ni aucun autre frais, et toutes les fonctions sont accessibles gratuitement (à compter du 4 octobre 2026). Si des fonctions payantes devaient être introduites un jour, les informations tarifaires seront mises à jour d&rsquo;abord sur cette page et dans la <a href="index.html">Politique de confidentialité</a>.</p>
+<p>Non. Pocket LLMG est gratuit&nbsp;: il n&rsquo;y a ni achats intégrés, ni abonnements, ni aucun autre frais, et toutes les fonctions sont accessibles gratuitement (à compter du 4 octobre 2026). Si des fonctions payantes devaient être introduites un jour, les informations tarifaires seront mises à jour d&rsquo;abord sur cette page et dans la <a href="index.html">Politique de confidentialité</a>.</p>
 
 <h3>Quel modèle d&rsquo;IA est utilisé&nbsp;?</h3>
 <p>Gemma 4 E2B Instruct, une version texte uniquement en 4 bits publiée sur Hugging Face sous <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Il est distribué sous les <strong>Conditions d&rsquo;utilisation de Gemma</strong> de Google&nbsp;: ces conditions et la politique d&rsquo;utilisation interdite de Google s&rsquo;appliquent donc à votre usage des sorties du modèle, en plus de ces notes d&rsquo;assistance. Cette application n&rsquo;est ni affiliée à Google ni approuvée par Google. Un seul modèle est fourni, et l&rsquo;application n&rsquo;offre aucune interface pour en ajouter.</p>
@@ -757,10 +757,10 @@
 <p>Non. Le modèle fourni est uniquement textuel&nbsp;: l&rsquo;application ne propose donc pas d&rsquo;entrée d&rsquo;images.</p>
 
 <h3>Où sont stockées mes données et comment les supprimer&nbsp;?</h3>
-<p>Tout se trouve dans l&rsquo;espace de stockage privé de l&rsquo;application sur votre iPhone&nbsp;: le modèle dans <code>Documents/.localllmclient/</code>, votre historique de conversation dans <code>Application Support/LLMclient/History/</code>, une préférence dans le stockage système et un petit journal local de diagnostic mémoire dans <code>Documents/diagnostics.log</code>. Utilisez <em>Clear Chat</em> (écran Storage) pour la conversation, <em>Delete &lt;modèle&gt;</em> pour les fichiers du modèle, ou supprimez l&rsquo;application pour tout effacer. Rien n&rsquo;est stocké sur un serveur.</p>
+<p>Tout se trouve dans l&rsquo;espace de stockage privé de l&rsquo;application sur votre iPhone&nbsp;: le modèle dans <code>Documents/.localllmclient/</code>, votre historique de conversation dans <code>Application Support/LLMclient/History/</code>, une préférence dans le stockage système et un petit journal local de diagnostic mémoire dans <code>Documents/diagnostics.log</code>. Utilisez <em>Clear Chat</em> (le bouton corbeille en haut à droite) pour la conversation, <em>Delete &lt;modèle&gt;</em> pour les fichiers du modèle, ou supprimez l&rsquo;application pour tout effacer. Rien n&rsquo;est stocké sur un serveur.</p>
 
-<h3>Pourquoi l&rsquo;application s&rsquo;appelle-t-elle &laquo;&nbsp;LocalGemma&nbsp;&raquo; alors que l&rsquo;identifiant de bundle indique &laquo;&nbsp;LLMclient&nbsp;&raquo;&nbsp;?</h3>
-<p>Au fil du temps, l&rsquo;application a porté plusieurs noms&nbsp;; depuis la version 1.1.6, elle s&rsquo;appelle LocalGemma. Son identifiant de bundle technique a été délibérément laissé inchangé afin que les installations existantes conservent leur modèle téléchargé, leur historique et leurs préférences.</p>
+<h3>Pourquoi l&rsquo;application s&rsquo;appelle-t-elle &laquo;&nbsp;Pocket LLMG&nbsp;&raquo; alors que l&rsquo;identifiant de bundle indique &laquo;&nbsp;LLMclient&nbsp;&raquo;&nbsp;?</h3>
+<p>Au fil du temps, l&rsquo;application a porté plusieurs noms&nbsp;; depuis la version 1.1.9, elle s&rsquo;appelle Pocket LLMG (auparavant LocalGemma). Son identifiant de bundle technique a été délibérément laissé inchangé afin que les installations existantes conservent leur modèle téléchargé, leur historique et leurs préférences.</p>
 
 <h3>L&rsquo;outil météo donne-t-il la météo réelle&nbsp;?</h3>
 <p>Non. C&rsquo;est un outil de démonstration qui renvoie des données d&rsquo;exemple fixes pour vous montrer l&rsquo;appel d&rsquo;outils en action. Il ne contacte jamais de service météo.</p>
@@ -789,13 +789,13 @@
 
 <ul>
   <li>le modèle de votre iPhone et la version d&rsquo;iOS&nbsp;;</li>
-  <li>la version de l&rsquo;application, visible dans <em>&hellip;</em> &rarr; <em>About</em> (la version prise en charge est la 1.1.6, build 1)&nbsp;;</li>
+  <li>la version de l&rsquo;application, visible dans <em>&hellip;</em> &rarr; <em>About</em> (la version prise en charge est la 1.1.9, build 1)&nbsp;;</li>
   <li>ce que vous avez demandé au modèle, et si <em>Tools calling</em> ou <em>Thinking</em> était activé&nbsp;;</li>
   <li>les étapes qui reproduisent le problème, ainsi que tout message affiché à l&rsquo;écran.</li>
 </ul>
 
 <footer>
-  <p>LocalGemma 1.1.6 (build 1) &middot; Aide et assistance &middot; Dernière mise à jour le 17 octobre 2026<br>
+  <p>Pocket LLMG 1.1.9 (build 1) &middot; Aide et assistance &middot; Dernière mise à jour le 26 octobre 2026<br>
   Voir aussi&nbsp;: <a href="index.html">Politique de confidentialité</a></p>
 </footer>
 
@@ -804,13 +804,13 @@
 <!-- ============================ Español ============================ -->
 <div class="i18n" data-lang="es" lang="es">
 
-<h1>LocalGemma &mdash; Ayuda y soporte</h1>
+<h1>Pocket LLMG &mdash; Ayuda y soporte</h1>
 
-<p>LocalGemma es una aplicación de chat con IA totalmente local para iPhone. El modelo de lenguaje se ejecuta en su propio hardware: sin cuenta, sin inicio de sesión, sin servicio en la nube, y nada de sus conversaciones sale de su dispositivo. Esta página explica cómo usar la aplicación, cuáles son sus límites y cómo resolver los problemas habituales.</p>
+<p>Pocket LLMG es una aplicación de chat con IA totalmente local para iPhone. El modelo de lenguaje se ejecuta en su propio hardware: sin cuenta, sin inicio de sesión, sin servicio en la nube, y nada de sus conversaciones sale de su dispositivo. Esta página explica cómo usar la aplicación, cuáles son sus límites y cómo resolver los problemas habituales.</p>
 
 <table class="meta">
-  <tr><th>Versión documentada</th><td>1.1.6 (compilación 1)</td></tr>
-  <tr><th>Última actualización</th><td>17 de octubre de 2026</td></tr>
+  <tr><th>Versión documentada</th><td>1.1.9 (compilación 1)</td></tr>
+  <tr><th>Última actualización</th><td>26 de octubre de 2026</td></tr>
   <tr><th>Plataforma</th><td>iPhone, iOS 26.0 o posterior</td></tr>
   <tr><th>Modelo</th><td>Gemma 4 E2B Instruct (solo texto, 4 bits) &mdash; unos 2,5&nbsp;GiB, se descarga una sola vez</td></tr>
   <tr><th>Internet necesario</th><td>Solo para la primera descarga del modelo. Totalmente sin conexión después.</td></tr>
@@ -843,7 +843,7 @@
 
 <h3>Menú del modelo (parte inferior de la pantalla)</h3>
 <ul>
-  <li><strong>Nombre del modelo</strong> &mdash; muestra el modelo instalado actualmente. La versión 1.1.6 incluye un único modelo, así que no hay nada entre lo que cambiar.</li>
+  <li><strong>Nombre del modelo</strong> &mdash; muestra el modelo instalado actualmente. La versión 1.1.9 incluye un único modelo, así que no hay nada entre lo que cambiar.</li>
   <li><strong>Delete &lt;modelo&gt;</strong> &mdash; elimina los archivos del modelo descargado y el historial de conversación guardado de ese modelo, liberando unos 2,5&nbsp;GiB. Se le pedirá que lo descargue de nuevo la próxima vez que quiera conversar.</li>
   <li><strong>HF Source</strong> &mdash; elige de dónde se descargan los archivos del modelo: <code>hf-mirror.com</code> (predeterminado) o <code>huggingface.co</code>. Si una descarga va lenta o falla, pruebe la otra fuente.</li>
 </ul>
@@ -851,7 +851,7 @@
 <h3>Menú &laquo;&hellip;&raquo; (arriba a la derecha)</h3>
 <ul>
   <li><strong>Export&hellip;</strong> &mdash; guarda la conversación actual como archivo Markdown (<code>.md</code>); en el iPhone elige el destino en la app Archivos.</li>
-  <li><strong>Storage</strong> &mdash; muestra el espacio que ocupan la app y su modelo, y permite recuperar el espacio que dejan las descargas fallidas o interrumpidas; también incluye <em>Clear Chat</em>, que borra la conversación actual y su historial guardado. El modelo en uso nunca se elimina.</li>
+  <li><strong>Storage</strong> &mdash; muestra el espacio que ocupan la app y su modelo, y permite recuperar el espacio que dejan las descargas fallidas o interrumpidas; también incluye <em>Clear Chat</em> (la misma acción que el botón de papelera arriba a la derecha), que borra la conversación actual y su historial guardado. El modelo en uso nunca se elimina.</li>
   <li><strong>About</strong> &mdash; información de versión y un enlace a la <a href="index.html">Política de privacidad</a>.</li>
   <li><strong>Tools calling</strong> &mdash; desactivado de forma predeterminada; véase más abajo.</li>
   <li><strong>Thinking</strong> &mdash; desactivado de forma predeterminada; véase más abajo.</li>
@@ -878,7 +878,7 @@
 
 <h2 id="memory-es">Cómo funcionan la conversación y sus límites</h2>
 
-<p>LocalGemma ejecuta un pequeño modelo de 4 bits que debe caber en la memoria de su iPhone, por lo que conserva deliberadamente muy poco contexto. Entender esto explica la mayoría de los comportamientos sorprendentes:</p>
+<p>Pocket LLMG ejecuta un pequeño modelo de 4 bits que debe caber en la memoria de su iPhone, por lo que conserva deliberadamente muy poco contexto. Entender esto explica la mayoría de los comportamientos sorprendentes:</p>
 
 <ul>
   <li><strong>En cada turno solo se envían al modelo los dos últimos mensajes</strong> (su mensaje más reciente y la última respuesta del asistente), junto con una instrucción de sistema fija. Los mensajes anteriores siguen visibles en pantalla y se incluyen en el archivo exportado, pero el modelo <em>no</em> los ve. En la práctica, el modelo &laquo;olvida&raquo; las partes antiguas de una conversación larga.</li>
@@ -921,7 +921,7 @@
   </tr>
   <tr>
     <td>Quiere empezar de cero por completo</td>
-    <td>Usa <em>Clear Chat</em> (pantalla Storage) para borrar la conversación. Para eliminar todo &mdash; modelo, historial, preferencias y el registro de diagnóstico local &mdash; elimine la aplicación desde la pantalla de inicio.</td>
+    <td>Usa <em>Clear Chat</em> (el botón de papelera arriba a la derecha) para borrar la conversación. Para eliminar todo &mdash; modelo, historial, preferencias y el registro de diagnóstico local &mdash; elimine la aplicación desde la pantalla de inicio.</td>
   </tr>
 </table>
 
@@ -934,7 +934,7 @@
 <p>No. El modelo se ejecuta en su iPhone. No hay cuenta, ni analítica, ni publicidad, ni informes de fallos, ni seguimiento. Las únicas solicitudes de red que hace la aplicación son la descarga del modelo y la pequeña solicitud de metadatos que indica el tamaño de la descarga. Consulte la <a href="index.html">Política de privacidad</a> para conocer los detalles exactos.</p>
 
 <h3>¿Hay suscripciones, compras integradas o funciones premium?</h3>
-<p>No. LocalGemma es gratis: no hay compras integradas, ni suscripciones, ni ningún otro cargo, y todas las funciones están disponibles sin coste (a partir del 4 de octubre de 2026). Si en el futuro se introducen funciones de pago, los detalles de precio se actualizarán primero en esta página y en la <a href="index.html">Política de privacidad</a>.</p>
+<p>No. Pocket LLMG es gratis: no hay compras integradas, ni suscripciones, ni ningún otro cargo, y todas las funciones están disponibles sin coste (a partir del 4 de octubre de 2026). Si en el futuro se introducen funciones de pago, los detalles de precio se actualizarán primero en esta página y en la <a href="index.html">Política de privacidad</a>.</p>
 
 <h3>¿Qué modelo de IA utiliza?</h3>
 <p>Gemma 4 E2B Instruct, una versión solo de texto en 4 bits publicada en Hugging Face como <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Se distribuye bajo las <strong>Condiciones de uso de Gemma</strong> de Google, por lo que dichas condiciones y su Política de usos prohibidos se aplican a su uso de las salidas del modelo, además de estas notas de soporte. Esta aplicación no está afiliada a Google ni cuenta con su respaldo. Solo se incluye un modelo y la aplicación no ofrece ninguna interfaz para añadir el suyo.</p>
@@ -943,10 +943,10 @@
 <p>No. El modelo incluido es solo de texto, así que la aplicación no ofrece entrada de imágenes.</p>
 
 <h3>¿Dónde se guardan mis datos y cómo los elimino?</h3>
-<p>Todo está en el almacenamiento privado de la aplicación en su iPhone: el modelo en <code>Documents/.localllmclient/</code>, su historial de conversaciones en <code>Application Support/LLMclient/History/</code>, una preferencia en el almacenamiento del sistema y un pequeño registro local de diagnóstico de memoria en <code>Documents/diagnostics.log</code>. Usa <em>Clear Chat</em> (pantalla Storage) para la conversación, <em>Delete &lt;modelo&gt;</em> para los archivos del modelo, o elimine la aplicación para quitarlo todo. No se guarda nada en ningún servidor.</p>
+<p>Todo está en el almacenamiento privado de la aplicación en su iPhone: el modelo en <code>Documents/.localllmclient/</code>, su historial de conversaciones en <code>Application Support/LLMclient/History/</code>, una preferencia en el almacenamiento del sistema y un pequeño registro local de diagnóstico de memoria en <code>Documents/diagnostics.log</code>. Usa <em>Clear Chat</em> (el botón de papelera arriba a la derecha) para la conversación, <em>Delete &lt;modelo&gt;</em> para los archivos del modelo, o elimine la aplicación para quitarlo todo. No se guarda nada en ningún servidor.</p>
 
-<h3>¿Por qué la aplicación se llama &laquo;LocalGemma&raquo; pero el identificador de paquete dice &laquo;LLMclient&raquo;?</h3>
-<p>La aplicación ha tenido más de un nombre con el tiempo; desde la versión 1.1.6 se llama LocalGemma. Su identificador de paquete técnico se dejó deliberadamente sin cambios para que las instalaciones existentes conserven el modelo descargado, el historial y las preferencias.</p>
+<h3>¿Por qué la aplicación se llama &laquo;Pocket LLMG&raquo; pero el identificador de paquete dice &laquo;LLMclient&raquo;?</h3>
+<p>La aplicación ha tenido más de un nombre con el tiempo; desde la versión 1.1.9 se llama Pocket LLMG (antes, LocalGemma). Su identificador de paquete técnico se dejó deliberadamente sin cambios para que las instalaciones existentes conserven el modelo descargado, el historial y las preferencias.</p>
 
 <h3>¿La herramienta del tiempo me da el tiempo real?</h3>
 <p>No. Es una herramienta de demostración que devuelve datos de ejemplo fijos para que vea la llamada a herramientas en funcionamiento. Nunca contacta con un servicio meteorológico.</p>
@@ -975,13 +975,13 @@
 
 <ul>
   <li>el modelo de su iPhone y la versión de iOS;</li>
-  <li>la versión de la aplicación, que aparece en <em>&hellip;</em> &rarr; <em>About</em> (la versión admitida es la 1.1.6, compilación 1);</li>
+  <li>la versión de la aplicación, que aparece en <em>&hellip;</em> &rarr; <em>About</em> (la versión admitida es la 1.1.9, compilación 1);</li>
   <li>qué le pidió al modelo y si <em>Tools calling</em> o <em>Thinking</em> estaba activado;</li>
   <li>los pasos que reproducen el problema y cualquier mensaje que viera en pantalla.</li>
 </ul>
 
 <footer>
-  <p>LocalGemma 1.1.6 (compilación 1) &middot; Ayuda y soporte &middot; Última actualización: 17 de octubre de 2026<br>
+  <p>Pocket LLMG 1.1.9 (compilación 1) &middot; Ayuda y soporte &middot; Última actualización: 26 de octubre de 2026<br>
   Véase también: <a href="index.html">Política de privacidad</a></p>
 </footer>
 
@@ -990,13 +990,13 @@
 <!-- ============================ Italiano ============================ -->
 <div class="i18n" data-lang="it" lang="it">
 
-<h1>LocalGemma &mdash; Assistenza e supporto</h1>
+<h1>Pocket LLMG &mdash; Assistenza e supporto</h1>
 
-<p>LocalGemma è un&rsquo;app di chat con IA che funziona interamente sul dispositivo, per iPhone. Il modello linguistico viene eseguito sul tuo hardware: nessun account, nessun accesso, nessun servizio cloud e nulla delle tue conversazioni lascia il dispositivo. Questa pagina spiega come usare l&rsquo;app, quali sono i suoi limiti e come risolvere i problemi più comuni.</p>
+<p>Pocket LLMG è un&rsquo;app di chat con IA che funziona interamente sul dispositivo, per iPhone. Il modello linguistico viene eseguito sul tuo hardware: nessun account, nessun accesso, nessun servizio cloud e nulla delle tue conversazioni lascia il dispositivo. Questa pagina spiega come usare l&rsquo;app, quali sono i suoi limiti e come risolvere i problemi più comuni.</p>
 
 <table class="meta">
-  <tr><th>Versione documentata</th><td>1.1.6 (build 1)</td></tr>
-  <tr><th>Ultimo aggiornamento</th><td>17 ottobre 2026</td></tr>
+  <tr><th>Versione documentata</th><td>1.1.9 (build 1)</td></tr>
+  <tr><th>Ultimo aggiornamento</th><td>26 ottobre 2026</td></tr>
   <tr><th>Piattaforma</th><td>iPhone, iOS 26.0 o successivo</td></tr>
   <tr><th>Modello</th><td>Gemma 4 E2B Instruct (solo testo, 4 bit) &mdash; circa 2,5&nbsp;GiB, scaricato una sola volta</td></tr>
   <tr><th>Internet necessario</th><td>Solo per il primo download del modello. Poi completamente offline.</td></tr>
@@ -1029,7 +1029,7 @@
 
 <h3>Menu del modello (in basso sullo schermo)</h3>
 <ul>
-  <li><strong>Nome del modello</strong> &mdash; mostra il modello attualmente installato. La versione 1.1.6 include un solo modello, quindi non c&rsquo;è nulla tra cui scegliere.</li>
+  <li><strong>Nome del modello</strong> &mdash; mostra il modello attualmente installato. La versione 1.1.9 include un solo modello, quindi non c&rsquo;è nulla tra cui scegliere.</li>
   <li><strong>Delete &lt;modello&gt;</strong> &mdash; elimina i file del modello scaricato e la cronologia chat salvata di quel modello, liberando circa 2,5&nbsp;GiB. Al prossimo utilizzo ti verrà chiesto di scaricarlo di nuovo.</li>
   <li><strong>HF Source</strong> &mdash; sceglie da dove scaricare i file del modello: <code>hf-mirror.com</code> (predefinito) o <code>huggingface.co</code>. Se un download è lento o non riesce, prova l&rsquo;altra fonte.</li>
 </ul>
@@ -1037,7 +1037,7 @@
 <h3>Menu &laquo;&hellip;&raquo; (in alto a destra)</h3>
 <ul>
   <li><strong>Export&hellip;</strong> &mdash; salva la conversazione corrente come file Markdown (<code>.md</code>); su iPhone scegli la destinazione nell&rsquo;app File.</li>
-  <li><strong>Storage</strong> &mdash; mostra quanto spazio occupano l&rsquo;app e il suo modello e permette di recuperare lo spazio lasciato da download non riusciti o interrotti; include anche <em>Clear Chat</em>, che cancella la conversazione corrente e la cronologia salvata. Il modello in uso non viene mai rimosso.</li>
+  <li><strong>Storage</strong> &mdash; mostra quanto spazio occupano l&rsquo;app e il suo modello e permette di recuperare lo spazio lasciato da download non riusciti o interrotti; include anche <em>Clear Chat</em> (la stessa azione del pulsante cestino in alto a destra), che cancella la conversazione corrente e la cronologia salvata. Il modello in uso non viene mai rimosso.</li>
   <li><strong>About</strong> &mdash; informazioni sulla versione e un link all&rsquo;<a href="index.html">Informativa sulla privacy</a>.</li>
   <li><strong>Tools calling</strong> &mdash; disattivato per impostazione predefinita; vedi sotto.</li>
   <li><strong>Thinking</strong> &mdash; disattivato per impostazione predefinita; vedi sotto.</li>
@@ -1064,7 +1064,7 @@
 
 <h2 id="memory-it">Come funzionano la conversazione e i suoi limiti</h2>
 
-<p>LocalGemma esegue un piccolo modello a 4 bit che deve stare nella memoria del tuo iPhone, quindi mantiene deliberatamente pochissimo contesto. Capire questo spiega la maggior parte dei comportamenti inattesi:</p>
+<p>Pocket LLMG esegue un piccolo modello a 4 bit che deve stare nella memoria del tuo iPhone, quindi mantiene deliberatamente pochissimo contesto. Capire questo spiega la maggior parte dei comportamenti inattesi:</p>
 
 <ul>
   <li><strong>A ogni turno vengono inviati al modello solo gli ultimi due messaggi</strong> (il tuo messaggio più recente e l&rsquo;ultima risposta dell&rsquo;assistente), insieme a un&rsquo;istruzione di sistema fissa. I messaggi precedenti restano visibili sullo schermo e sono inclusi nel file esportato, ma il modello <em>non</em> li vede. In pratica il modello &laquo;dimentica&raquo; le parti più vecchie di una conversazione lunga.</li>
@@ -1107,7 +1107,7 @@
   </tr>
   <tr>
     <td>Vuoi ricominciare completamente da zero</td>
-    <td>Usa <em>Clear Chat</em> (schermata Storage) per azzerare la conversazione. Per rimuovere tutto &mdash; modello, cronologia, preferenze e il registro di diagnostica locale &mdash; elimina l&rsquo;app dalla schermata Home.</td>
+    <td>Usa <em>Clear Chat</em> (il pulsante cestino in alto a destra) per azzerare la conversazione. Per rimuovere tutto &mdash; modello, cronologia, preferenze e il registro di diagnostica locale &mdash; elimina l&rsquo;app dalla schermata Home.</td>
   </tr>
 </table>
 
@@ -1120,7 +1120,7 @@
 <p>No. Il modello viene eseguito sul tuo iPhone. Non ci sono account, analisi, pubblicità, segnalazione di crash né tracciamento. Le uniche richieste di rete che l&rsquo;app effettua sono il download del modello e la piccola richiesta di metadati che ne indica la dimensione. Consulta l&rsquo;<a href="index.html">Informativa sulla privacy</a> per i dettagli esatti.</p>
 
 <h3>Ci sono abbonamenti, acquisti in-app o funzioni premium?</h3>
-<p>No. LocalGemma è gratuito: non ci sono acquisti in-app, abbonamenti né altri costi, e tutte le funzioni sono disponibili gratuitamente (a partire dal 4 ottobre 2026). Se in futuro verranno introdotte funzioni a pagamento, i dettagli sui prezzi saranno aggiornati prima su questa pagina e nell&rsquo;<a href="index.html">Informativa sulla privacy</a>.</p>
+<p>No. Pocket LLMG è gratuito: non ci sono acquisti in-app, abbonamenti né altri costi, e tutte le funzioni sono disponibili gratuitamente (a partire dal 4 ottobre 2026). Se in futuro verranno introdotte funzioni a pagamento, i dettagli sui prezzi saranno aggiornati prima su questa pagina e nell&rsquo;<a href="index.html">Informativa sulla privacy</a>.</p>
 
 <h3>Quale modello di IA utilizza?</h3>
 <p>Gemma 4 E2B Instruct, una build solo testo a 4 bit pubblicata su Hugging Face come <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. È distribuito secondo i <strong>Termini di utilizzo di Gemma</strong> di Google, quindi quei termini e la relativa Politica sui divieti d&rsquo;uso si applicano al tuo utilizzo degli output del modello, oltre a queste note di supporto. Questa app non è affiliata a Google né approvata da Google. È incluso un solo modello e l&rsquo;app non offre alcuna interfaccia per aggiungerne altri.</p>
@@ -1129,10 +1129,10 @@
 <p>No. Il modello incluso è solo testo, quindi l&rsquo;app non offre input per le immagini.</p>
 
 <h3>Dove sono conservati i miei dati e come li elimino?</h3>
-<p>Tutto si trova nello spazio di archiviazione privato dell&rsquo;app sul tuo iPhone: il modello in <code>Documents/.localllmclient/</code>, la cronologia delle chat in <code>Application Support/LLMclient/History/</code>, una preferenza nella memoria di sistema e un piccolo registro locale di diagnostica della memoria in <code>Documents/diagnostics.log</code>. Usa <em>Clear Chat</em> (schermata Storage) per la conversazione, <em>Delete &lt;modello&gt;</em> per i file del modello, oppure elimina l&rsquo;app per rimuovere tutto. Nulla viene conservato su alcun server.</p>
+<p>Tutto si trova nello spazio di archiviazione privato dell&rsquo;app sul tuo iPhone: il modello in <code>Documents/.localllmclient/</code>, la cronologia delle chat in <code>Application Support/LLMclient/History/</code>, una preferenza nella memoria di sistema e un piccolo registro locale di diagnostica della memoria in <code>Documents/diagnostics.log</code>. Usa <em>Clear Chat</em> (il pulsante cestino in alto a destra) per la conversazione, <em>Delete &lt;modello&gt;</em> per i file del modello, oppure elimina l&rsquo;app per rimuovere tutto. Nulla viene conservato su alcun server.</p>
 
-<h3>Perché l&rsquo;app si chiama &laquo;LocalGemma&raquo; ma l&rsquo;identificatore del bundle dice &laquo;LLMclient&raquo;?</h3>
-<p>Nel tempo l&rsquo;app ha avuto più di un nome; dalla versione 1.1.6 si chiama LocalGemma. Il suo identificatore di bundle tecnico è stato lasciato intenzionalmente invariato, così le installazioni esistenti mantengono il modello scaricato, la cronologia e le preferenze.</p>
+<h3>Perché l&rsquo;app si chiama &laquo;Pocket LLMG&raquo; ma l&rsquo;identificatore del bundle dice &laquo;LLMclient&raquo;?</h3>
+<p>Nel tempo l&rsquo;app ha avuto più di un nome; dalla versione 1.1.9 si chiama Pocket LLMG (in precedenza LocalGemma). Il suo identificatore di bundle tecnico è stato lasciato intenzionalmente invariato, così le installazioni esistenti mantengono il modello scaricato, la cronologia e le preferenze.</p>
 
 <h3>Lo strumento meteo fornisce il meteo reale?</h3>
 <p>No. È uno strumento dimostrativo che restituisce dati di esempio fissi, così puoi vedere la chiamata agli strumenti in azione. Non contatta mai alcun servizio meteo.</p>
@@ -1161,13 +1161,13 @@
 
 <ul>
   <li>il modello del tuo iPhone e la versione di iOS;</li>
-  <li>la versione dell&rsquo;app, visibile in <em>&hellip;</em> &rarr; <em>About</em> (la versione supportata è la 1.1.6, build 1);</li>
+  <li>la versione dell&rsquo;app, visibile in <em>&hellip;</em> &rarr; <em>About</em> (la versione supportata è la 1.1.9, build 1);</li>
   <li>cosa hai chiesto al modello e se <em>Tools calling</em> o <em>Thinking</em> era attivo;</li>
   <li>i passaggi che riproducono il problema e qualsiasi messaggio visto sullo schermo.</li>
 </ul>
 
 <footer>
-  <p>LocalGemma 1.1.6 (build 1) &middot; Assistenza e supporto &middot; Ultimo aggiornamento 17 ottobre 2026<br>
+  <p>Pocket LLMG 1.1.9 (build 1) &middot; Assistenza e supporto &middot; Ultimo aggiornamento 26 ottobre 2026<br>
   Vedi anche: <a href="index.html">Informativa sulla privacy</a></p>
 </footer>
 
@@ -1178,12 +1178,12 @@
     var LANGUAGES = ["en", "ja", "de", "fr", "es", "it"];
     var STORAGE_KEY = "localllmclient.lang";
     var TITLES = {
-      en: "Help & Support - LocalGemma",
-      ja: "ヘルプとサポート - LocalGemma",
-      de: "Hilfe & Support - LocalGemma",
-      fr: "Aide et assistance - LocalGemma",
-      es: "Ayuda y soporte - LocalGemma",
-      it: "Assistenza e supporto - LocalGemma"
+      en: "Help & Support - Pocket LLMG",
+      ja: "ヘルプとサポート - Pocket LLMG",
+      de: "Hilfe & Support - Pocket LLMG",
+      fr: "Aide et assistance - Pocket LLMG",
+      es: "Ayuda y soporte - Pocket LLMG",
+      it: "Assistenza e supporto - Pocket LLMG"
     };
     var LABELS = {
       en: "Language",
