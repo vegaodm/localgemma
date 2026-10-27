@@ -66,7 +66,7 @@
 
 <table class="meta">
   <tr><th>Version documented</th><td>1.1.9 (build 1)</td></tr>
-  <tr><th>Last updated</th><td>October 26, 2026</td></tr>
+  <tr><th>Last updated</th><td>October 27, 2026</td></tr>
   <tr><th>Platform</th><td>iPhone, iOS 26.0 or later</td></tr>
   <tr><th>Model</th><td>Gemma 4 E2B Instruct (text-only, 4-bit) &mdash; about 2.5&nbsp;GiB, downloaded once</td></tr>
   <tr><th>Internet needed</th><td>Only for the first model download. Fully offline afterwards.</td></tr>
@@ -99,7 +99,7 @@
 
 <h3>Model menu (bottom of the screen)</h3>
 <ul>
-  <li><strong>Model name</strong> &mdash; shows the currently installed model. Version 1.1.9 ships with a single model, so there is nothing to switch between.</li>
+  <li><strong>Model name</strong> &mdash; shows the currently installed model. Version 1.1.9 supports a single model, so there is nothing to switch between.</li>
   <li><strong>Delete &lt;model&gt;</strong> &mdash; deletes the downloaded model files and that model&rsquo;s saved chat history, freeing about 2.5&nbsp;GiB. You will be asked to re-download the next time you want to chat.</li>
   <li><strong>HF Source</strong> &mdash; chooses where model files are downloaded from: <code>hf-mirror.com</code> (default) or <code>huggingface.co</code>. If a download is slow or fails, try the other source.</li>
 </ul>
@@ -193,10 +193,11 @@
 <p>No. Pocket LLMG is free: there are no in-app purchases, no subscriptions and no other charges, and every feature is available at no cost (as of October 4, 2026). If paid features are ever introduced, the pricing details will be updated on this page and in the <a href="index.html">Privacy Policy</a> first.</p>
 
 <h3>Which AI model does it use?</h3>
-<p>Gemma 4 E2B Instruct, a text-only 4-bit build published on Hugging Face as <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. It is distributed under Google&rsquo;s <strong>Gemma Terms of Use</strong>, so Google&rsquo;s terms and its Prohibited Use Policy apply to your use of the model&rsquo;s outputs, in addition to these support notes. This app is not affiliated with or endorsed by Google. Only one model ships with the app, and the app has no interface for adding your own.</p>
+<p>Gemma 4 E2B Instruct, a text-only 4-bit build published on Hugging Face as <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. It is downloaded on first use and distributed under Google&rsquo;s <strong><a href="https://ai.google.dev/gemma/terms">Gemma Terms of Use</a></strong>, so those terms and the <a href="https://ai.google.dev/gemma/prohibited_use_policy">Gemma Prohibited Use Policy</a> apply to your use of the model and its outputs, in addition to these support notes. These weights are a modified build (text-only, 4-bit quantized). You must not use the model for any purpose prohibited by that policy or in violation of applicable laws and regulations. This app is not affiliated with or endorsed by Google. Only one model is available, and the app has no interface for adding your own.</p>
+<p><strong>Notice:</strong> Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms.</p>
 
 <h3>Can I send images?</h3>
-<p>No. The bundled model is text-only, so the app does not offer image input.</p>
+<p>No. The model is text-only, so the app does not offer image input.</p>
 
 <h3>Where is my data stored, and how do I delete it?</h3>
 <p>Everything is inside the app&rsquo;s private storage on your iPhone: the model in <code>Documents/.localllmclient/</code>, your chat history in <code>Application Support/LLMclient/History/</code>, one preference in system settings storage, and a small local memory diagnostics log in <code>Documents/diagnostics.log</code>. Use <em>Clear Chat</em> (the trash button at the top right) for the conversation, <em>Delete &lt;model&gt;</em> for the model files, or delete the app to remove all of it. Nothing is stored on any server.</p>
@@ -222,7 +223,7 @@
   <li>Launch is much faster: the app no longer re-reads and re-verifies the 2.5&nbsp;GiB of model weights on every start, and no longer shows a &ldquo;Switching model&rdquo; step.</li>
   <li>Fixed a bug where clearing the chat could leave the app unable to reply until it was restarted.</li>
   <li>Fixed the app icon so it passes App Store validation.</li>
-  <li>The model menu was reduced to the single bundled model.</li>
+  <li>The model menu was reduced to a single model.</li>
 </ul>
 
 <h2 id="report-en">Reporting a problem</h2>
@@ -237,7 +238,7 @@
 </ul>
 
 <footer>
-  <p>Pocket LLMG 1.1.9 (build 1) &middot; Help &amp; Support &middot; Last updated October 26, 2026<br>
+  <p>Pocket LLMG 1.1.9 (build 1) &middot; Help &amp; Support &middot; Last updated October 27, 2026<br>
   See also: <a href="index.html">Privacy Policy</a></p>
 </footer>
 
@@ -252,7 +253,7 @@
 
 <table class="meta">
   <tr><th>対象バージョン</th><td>1.1.9（build 1）</td></tr>
-  <tr><th>最終更新</th><td>2026年10月26日</td></tr>
+  <tr><th>最終更新</th><td>2026年10月27日</td></tr>
   <tr><th>プラットフォーム</th><td>iPhone、iOS 26.0 以降</td></tr>
   <tr><th>モデル</th><td>Gemma 4 E2B Instruct（テキスト専用、4bit）&mdash; 約 2.5&nbsp;GiB、ダウンロードは 1 回のみ</td></tr>
   <tr><th>インターネット接続</th><td>初回のモデルダウンロード時のみ必要です。以後は完全にオフラインで動作します。</td></tr>
@@ -285,7 +286,7 @@
 
 <h3>モデルメニュー（画面下部）</h3>
 <ul>
-  <li><strong>モデル名</strong> &mdash; 現在インストールされているモデルを表示します。バージョン 1.1.9 にはモデルが 1 つだけ同梱されているため、切り替える対象はありません。</li>
+  <li><strong>モデル名</strong> &mdash; 現在インストールされているモデルを表示します。バージョン 1.1.9 で利用できるモデルは 1 つだけのため、切り替える対象はありません。</li>
   <li><strong>Delete &lt;モデル&gt;</strong> &mdash; ダウンロード済みのモデルファイルとそのモデルの会話履歴を削除し、約 2.5&nbsp;GiB を解放します。次にチャットする際は再度ダウンロードが必要です。</li>
   <li><strong>HF Source</strong> &mdash; モデルファイルのダウンロード元を選びます：<code>hf-mirror.com</code>（既定）または <code>huggingface.co</code>。ダウンロードが遅い、または失敗する場合は、もう一方の提供元をお試しください。</li>
 </ul>
@@ -379,10 +380,11 @@
 <p>いいえ。Pocket LLMG は無料です。アプリ内課金もサブスクリプションもその他の費用もなく、すべての機能を無償で利用できます（2026年10月4日から）。将来、有料機能を導入する場合は、まずこのページと<a href="index.html">プライバシーポリシー</a>で内容を更新します。</p>
 
 <h3>どの AI モデルを使っていますか？</h3>
-<p>Gemma 4 E2B Instruct です。Hugging Face で <code>over-show/gemma-4-e2b-it-text-only-4bit</code> として公開されているテキスト専用の 4bit 版です。Google の <strong>Gemma 利用規約</strong>に基づいて配布されているため、モデルの出力を利用する際には、このサポートページに加えて同規約と禁止使用ポリシーが適用されます。本アプリは Google と提携しておらず、承認も受けていません。同梱されるモデルは 1 つだけで、独自のモデルを追加するインターフェースはありません。</p>
+<p>Gemma 4 E2B Instruct です。Hugging Face で <code>over-show/gemma-4-e2b-it-text-only-4bit</code> として公開されているテキスト専用の 4bit 版で、初回利用時にダウンロードされ、Google の <strong><a href="https://ai.google.dev/gemma/terms">Gemma 利用規約</a></strong>に基づいて配布されています。そのため、モデルおよびその出力の利用には、このサポートページに加えて同規約と <a href="https://ai.google.dev/gemma/prohibited_use_policy">Gemma 禁止使用ポリシー</a>が適用されます。この重みは改変版（テキスト専用・4bit 量子化）です。同ポリシーで禁止される用途や法令違反となる用途に使用してはなりません。本アプリは Google と提携しておらず、承認も受けていません。利用できるモデルは 1 つだけで、独自のモデルを追加するインターフェースはありません。</p>
+<p><strong>通知:</strong> Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms.</p>
 
 <h3>画像を送信できますか？</h3>
-<p>いいえ。同梱のモデルはテキスト専用のため、画像入力には対応していません。</p>
+<p>いいえ。モデルはテキスト専用のため、画像入力には対応していません。</p>
 
 <h3>データはどこに保存され、どうやって削除しますか？</h3>
 <p>すべて iPhone 上の本アプリ専用領域にあります。モデルは <code>Documents/.localllmclient/</code>、チャット履歴は <code>Application Support/LLMclient/History/</code>、設定はシステムの設定ストレージに 1 件、そして小さなローカルのメモリ診断ログが <code>Documents/diagnostics.log</code> に保存されます。会話は <em>Clear Chat</em>（画面右上のゴミ箱ボタン）、モデルファイルは <em>Delete &lt;モデル&gt;</em>、すべてを削除するにはアプリの削除を使ってください。サーバーには何も保存されていません。</p>
@@ -408,7 +410,7 @@
   <li>起動が大幅に高速化しました。毎回の起動時に 2.5&nbsp;GiB のモデル重みを読み直して検証することがなくなり、「Switching model」の手順も表示されなくなりました。</li>
   <li>チャットを消去すると再起動するまで返答できなくなることがある不具合を修正しました。</li>
   <li>App Store の審査を通過するようアプリアイコンを修正しました。</li>
-  <li>モデルメニューを同梱の 1 モデルだけに整理しました。</li>
+  <li>モデルメニューを 1 モデルだけに整理しました。</li>
 </ul>
 
 <h2 id="report-ja">問題の報告</h2>
@@ -423,7 +425,7 @@
 </ul>
 
 <footer>
-  <p>Pocket LLMG 1.1.9（build 1）&middot; ヘルプとサポート &middot; 最終更新 2026年10月26日<br>
+  <p>Pocket LLMG 1.1.9（build 1）&middot; ヘルプとサポート &middot; 最終更新 2026年10月27日<br>
   関連：<a href="index.html">プライバシーポリシー</a></p>
 </footer>
 
@@ -438,7 +440,7 @@
 
 <table class="meta">
   <tr><th>Dokumentierte Version</th><td>1.1.9 (Build 1)</td></tr>
-  <tr><th>Zuletzt aktualisiert</th><td>26. Oktober 2026</td></tr>
+  <tr><th>Zuletzt aktualisiert</th><td>27. Oktober 2026</td></tr>
   <tr><th>Plattform</th><td>iPhone, iOS 26.0 oder neuer</td></tr>
   <tr><th>Modell</th><td>Gemma 4 E2B Instruct (nur Text, 4 Bit) &mdash; etwa 2,5&nbsp;GiB, einmaliger Download</td></tr>
   <tr><th>Internet erforderlich</th><td>Nur für den ersten Modell-Download. Danach vollständig offline.</td></tr>
@@ -471,7 +473,7 @@
 
 <h3>Modellmenü (unten am Bildschirm)</h3>
 <ul>
-  <li><strong>Modellname</strong> &mdash; zeigt das aktuell installierte Modell. Version 1.1.9 enthält nur ein einziges Modell, es gibt also nichts umzuschalten.</li>
+  <li><strong>Modellname</strong> &mdash; zeigt das aktuell installierte Modell. In Version 1.1.9 ist nur ein einziges Modell verfügbar, es gibt also nichts umzuschalten.</li>
   <li><strong>Delete &lt;Modell&gt;</strong> &mdash; löscht die heruntergeladenen Modelldateien und den gespeicherten Chatverlauf dieses Modells und gibt etwa 2,5&nbsp;GiB frei. Beim nächsten Chat wird ein erneuter Download verlangt.</li>
   <li><strong>HF Source</strong> &mdash; wählt, woher die Modelldateien geladen werden: <code>hf-mirror.com</code> (Standard) oder <code>huggingface.co</code>. Wenn ein Download langsam ist oder fehlschlägt, versuchen Sie die andere Quelle.</li>
 </ul>
@@ -565,10 +567,11 @@
 <p>Nein. Pocket LLMG ist kostenlos: Es gibt keine In-App-Käufe, keine Abonnements und keine sonstigen Kosten, und alle Funktionen sind kostenlos nutzbar (gültig ab dem 4. Oktober 2026). Sollten jemals kostenpflichtige Funktionen eingeführt werden, werden die Preisangaben zuerst auf dieser Seite und in der <a href="index.html">Datenschutzerklärung</a> aktualisiert.</p>
 
 <h3>Welches KI-Modell wird verwendet?</h3>
-<p>Gemma 4 E2B Instruct, ein reiner 4-Bit-Textaufbau, veröffentlicht auf Hugging Face als <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Es wird unter Googles <strong>Gemma-Nutzungsbedingungen</strong> verbreitet; daher gelten Googles Bedingungen und seine Richtlinie zur verbotenen Nutzung zusätzlich zu diesen Support-Hinweisen für Ihre Verwendung der Modellausgaben. Diese App ist mit Google weder verbunden noch von Google unterstützt. Es ist nur ein Modell enthalten, und die App bietet keine Schnittstelle zum Hinzufügen eigener Modelle.</p>
+<p>Gemma 4 E2B Instruct, ein reiner 4-Bit-Textaufbau, veröffentlicht auf Hugging Face als <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Er wird bei der ersten Verwendung heruntergeladen und unter Googles <strong><a href="https://ai.google.dev/gemma/terms">Gemma-Nutzungsbedingungen</a></strong> verbreitet; daher gelten diese Bedingungen und die <a href="https://ai.google.dev/gemma/prohibited_use_policy">Richtlinie zur verbotenen Nutzung von Gemma</a> zusätzlich zu diesen Support-Hinweisen für Ihre Verwendung des Modells und seiner Ausgaben. Diese Gewichte sind ein modifizierter Build (nur Text, 4-Bit-quantisiert). Sie dürfen das Modell nicht für Zwecke verwenden, die durch diese Richtlinie verboten sind oder gegen geltendes Recht verstoßen. Diese App ist mit Google weder verbunden noch von Google unterstützt. Es ist nur ein Modell verfügbar, und die App bietet keine Schnittstelle zum Hinzufügen eigener Modelle.</p>
+<p><strong>Hinweis:</strong> Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms.</p>
 
 <h3>Kann ich Bilder senden?</h3>
-<p>Nein. Das mitgelieferte Modell ist reiner Text, daher bietet die App keine Bildeingabe an.</p>
+<p>Nein. Das Modell ist reiner Text, daher bietet die App keine Bildeingabe an.</p>
 
 <h3>Wo werden meine Daten gespeichert, und wie lösche ich sie?</h3>
 <p>Alles liegt im privaten Speicher der App auf Ihrem iPhone: das Modell in <code>Documents/.localllmclient/</code>, Ihr Chatverlauf in <code>Application Support/LLMclient/History/</code>, eine Einstellung im Systemspeicher und ein kleines lokales Speicherdiagnoseprotokoll in <code>Documents/diagnostics.log</code>. Nutzen Sie <em>Clear Chat</em> (Papierkorb-Schaltfläche oben rechts) für das Gespräch, <em>Delete &lt;Modell&gt;</em> für die Modelldateien, oder löschen Sie die App, um alles zu entfernen. Auf keinem Server wird etwas gespeichert.</p>
@@ -594,7 +597,7 @@
   <li>Der Start ist viel schneller: Die App liest und prüft die 2,5&nbsp;GiB Modellgewichte nicht mehr bei jedem Start und zeigt keinen Schritt &bdquo;Switching model&ldquo; mehr an.</li>
   <li>Ein Fehler wurde behoben, durch den die App nach dem Löschen des Chats bis zum Neustart nicht mehr antworten konnte.</li>
   <li>Das App-Symbol wurde korrigiert, damit es die App-Store-Prüfung besteht.</li>
-  <li>Das Modellmenü wurde auf das einzige mitgelieferte Modell reduziert.</li>
+  <li>Das Modellmenü wurde auf ein einziges Modell reduziert.</li>
 </ul>
 
 <h2 id="report-de">Ein Problem melden</h2>
@@ -609,7 +612,7 @@
 </ul>
 
 <footer>
-  <p>Pocket LLMG 1.1.9 (Build 1) &middot; Hilfe &amp; Support &middot; Zuletzt aktualisiert am 26. Oktober 2026<br>
+  <p>Pocket LLMG 1.1.9 (Build 1) &middot; Hilfe &amp; Support &middot; Zuletzt aktualisiert am 27. Oktober 2026<br>
   Siehe auch: <a href="index.html">Datenschutzerklärung</a></p>
 </footer>
 
@@ -624,7 +627,7 @@
 
 <table class="meta">
   <tr><th>Version documentée</th><td>1.1.9 (build 1)</td></tr>
-  <tr><th>Dernière mise à jour</th><td>26 octobre 2026</td></tr>
+  <tr><th>Dernière mise à jour</th><td>27 octobre 2026</td></tr>
   <tr><th>Plateforme</th><td>iPhone, iOS 26.0 ou version ultérieure</td></tr>
   <tr><th>Modèle</th><td>Gemma 4 E2B Instruct (texte uniquement, 4 bits) &mdash; environ 2,5&nbsp;GiB, téléchargé une seule fois</td></tr>
   <tr><th>Internet nécessaire</th><td>Uniquement pour le premier téléchargement du modèle. Entièrement hors ligne ensuite.</td></tr>
@@ -657,7 +660,7 @@
 
 <h3>Menu du modèle (en bas de l&rsquo;écran)</h3>
 <ul>
-  <li><strong>Nom du modèle</strong> &mdash; affiche le modèle actuellement installé. La version 1.1.9 ne contient qu&rsquo;un seul modèle&nbsp;: il n&rsquo;y a donc rien à changer.</li>
+  <li><strong>Nom du modèle</strong> &mdash; affiche le modèle actuellement installé. La version 1.1.9 ne propose qu&rsquo;un seul modèle&nbsp;: il n&rsquo;y a donc rien à changer.</li>
   <li><strong>Delete &lt;modèle&gt;</strong> &mdash; supprime les fichiers du modèle téléchargé et l&rsquo;historique de conversation enregistré de ce modèle, libérant environ 2,5&nbsp;GiB. Un nouveau téléchargement vous sera demandé lors de votre prochaine conversation.</li>
   <li><strong>HF Source</strong> &mdash; choisit la source des fichiers du modèle&nbsp;: <code>hf-mirror.com</code> (par défaut) ou <code>huggingface.co</code>. Si un téléchargement est lent ou échoue, essayez l&rsquo;autre source.</li>
 </ul>
@@ -751,10 +754,11 @@
 <p>Non. Pocket LLMG est gratuit&nbsp;: il n&rsquo;y a ni achats intégrés, ni abonnements, ni aucun autre frais, et toutes les fonctions sont accessibles gratuitement (à compter du 4 octobre 2026). Si des fonctions payantes devaient être introduites un jour, les informations tarifaires seront mises à jour d&rsquo;abord sur cette page et dans la <a href="index.html">Politique de confidentialité</a>.</p>
 
 <h3>Quel modèle d&rsquo;IA est utilisé&nbsp;?</h3>
-<p>Gemma 4 E2B Instruct, une version texte uniquement en 4 bits publiée sur Hugging Face sous <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Il est distribué sous les <strong>Conditions d&rsquo;utilisation de Gemma</strong> de Google&nbsp;: ces conditions et la politique d&rsquo;utilisation interdite de Google s&rsquo;appliquent donc à votre usage des sorties du modèle, en plus de ces notes d&rsquo;assistance. Cette application n&rsquo;est ni affiliée à Google ni approuvée par Google. Un seul modèle est fourni, et l&rsquo;application n&rsquo;offre aucune interface pour en ajouter.</p>
+<p>Gemma 4 E2B Instruct, une version texte uniquement en 4 bits publiée sur Hugging Face sous <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Elle est téléchargée à la première utilisation et distribuée sous les <strong><a href="https://ai.google.dev/gemma/terms">Conditions d&rsquo;utilisation de Gemma</a></strong> de Google&nbsp;: ces conditions et la <a href="https://ai.google.dev/gemma/prohibited_use_policy">politique d&rsquo;utilisation interdite de Gemma</a> s&rsquo;appliquent donc à votre usage du modèle et de ses sorties, en plus de ces notes d&rsquo;assistance. Ces poids sont une version modifiée (texte uniquement, quantifiée en 4 bits). Vous ne devez pas utiliser le modèle à des fins interdites par cette politique ou en violation des lois et règlements applicables. Cette application n&rsquo;est ni affiliée à Google ni approuvée par Google. Un seul modèle est disponible, et l&rsquo;application n&rsquo;offre aucune interface pour en ajouter.</p>
+<p><strong>Avis&nbsp;:</strong> Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms.</p>
 
 <h3>Puis-je envoyer des images&nbsp;?</h3>
-<p>Non. Le modèle fourni est uniquement textuel&nbsp;: l&rsquo;application ne propose donc pas d&rsquo;entrée d&rsquo;images.</p>
+<p>Non. Le modèle est uniquement textuel&nbsp;: l&rsquo;application ne propose donc pas d&rsquo;entrée d&rsquo;images.</p>
 
 <h3>Où sont stockées mes données et comment les supprimer&nbsp;?</h3>
 <p>Tout se trouve dans l&rsquo;espace de stockage privé de l&rsquo;application sur votre iPhone&nbsp;: le modèle dans <code>Documents/.localllmclient/</code>, votre historique de conversation dans <code>Application Support/LLMclient/History/</code>, une préférence dans le stockage système et un petit journal local de diagnostic mémoire dans <code>Documents/diagnostics.log</code>. Utilisez <em>Clear Chat</em> (le bouton corbeille en haut à droite) pour la conversation, <em>Delete &lt;modèle&gt;</em> pour les fichiers du modèle, ou supprimez l&rsquo;application pour tout effacer. Rien n&rsquo;est stocké sur un serveur.</p>
@@ -780,7 +784,7 @@
   <li>Lancement beaucoup plus rapide&nbsp;: l&rsquo;application ne relit et ne revérifie plus les 2,5&nbsp;GiB de poids à chaque démarrage, et n&rsquo;affiche plus d&rsquo;étape &laquo;&nbsp;Switching model&nbsp;&raquo;.</li>
   <li>Correction d&rsquo;un bug où l&rsquo;effacement de la conversation pouvait empêcher l&rsquo;application de répondre jusqu&rsquo;au redémarrage.</li>
   <li>Correction de l&rsquo;icône de l&rsquo;application pour qu&rsquo;elle passe la validation de l&rsquo;App Store.</li>
-  <li>Le menu du modèle a été réduit au seul modèle fourni.</li>
+  <li>Le menu du modèle a été réduit à un seul modèle.</li>
 </ul>
 
 <h2 id="report-fr">Signaler un problème</h2>
@@ -795,7 +799,7 @@
 </ul>
 
 <footer>
-  <p>Pocket LLMG 1.1.9 (build 1) &middot; Aide et assistance &middot; Dernière mise à jour le 26 octobre 2026<br>
+  <p>Pocket LLMG 1.1.9 (build 1) &middot; Aide et assistance &middot; Dernière mise à jour le 27 octobre 2026<br>
   Voir aussi&nbsp;: <a href="index.html">Politique de confidentialité</a></p>
 </footer>
 
@@ -810,7 +814,7 @@
 
 <table class="meta">
   <tr><th>Versión documentada</th><td>1.1.9 (compilación 1)</td></tr>
-  <tr><th>Última actualización</th><td>26 de octubre de 2026</td></tr>
+  <tr><th>Última actualización</th><td>27 de octubre de 2026</td></tr>
   <tr><th>Plataforma</th><td>iPhone, iOS 26.0 o posterior</td></tr>
   <tr><th>Modelo</th><td>Gemma 4 E2B Instruct (solo texto, 4 bits) &mdash; unos 2,5&nbsp;GiB, se descarga una sola vez</td></tr>
   <tr><th>Internet necesario</th><td>Solo para la primera descarga del modelo. Totalmente sin conexión después.</td></tr>
@@ -843,7 +847,7 @@
 
 <h3>Menú del modelo (parte inferior de la pantalla)</h3>
 <ul>
-  <li><strong>Nombre del modelo</strong> &mdash; muestra el modelo instalado actualmente. La versión 1.1.9 incluye un único modelo, así que no hay nada entre lo que cambiar.</li>
+  <li><strong>Nombre del modelo</strong> &mdash; muestra el modelo instalado actualmente. La versión 1.1.9 solo ofrece un único modelo, así que no hay nada entre lo que cambiar.</li>
   <li><strong>Delete &lt;modelo&gt;</strong> &mdash; elimina los archivos del modelo descargado y el historial de conversación guardado de ese modelo, liberando unos 2,5&nbsp;GiB. Se le pedirá que lo descargue de nuevo la próxima vez que quiera conversar.</li>
   <li><strong>HF Source</strong> &mdash; elige de dónde se descargan los archivos del modelo: <code>hf-mirror.com</code> (predeterminado) o <code>huggingface.co</code>. Si una descarga va lenta o falla, pruebe la otra fuente.</li>
 </ul>
@@ -937,10 +941,11 @@
 <p>No. Pocket LLMG es gratis: no hay compras integradas, ni suscripciones, ni ningún otro cargo, y todas las funciones están disponibles sin coste (a partir del 4 de octubre de 2026). Si en el futuro se introducen funciones de pago, los detalles de precio se actualizarán primero en esta página y en la <a href="index.html">Política de privacidad</a>.</p>
 
 <h3>¿Qué modelo de IA utiliza?</h3>
-<p>Gemma 4 E2B Instruct, una versión solo de texto en 4 bits publicada en Hugging Face como <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Se distribuye bajo las <strong>Condiciones de uso de Gemma</strong> de Google, por lo que dichas condiciones y su Política de usos prohibidos se aplican a su uso de las salidas del modelo, además de estas notas de soporte. Esta aplicación no está afiliada a Google ni cuenta con su respaldo. Solo se incluye un modelo y la aplicación no ofrece ninguna interfaz para añadir el suyo.</p>
+<p>Gemma 4 E2B Instruct, una versión solo de texto en 4 bits publicada en Hugging Face como <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Se descarga en el primer uso y se distribuye bajo las <strong><a href="https://ai.google.dev/gemma/terms">Condiciones de uso de Gemma</a></strong> de Google, por lo que dichas condiciones y la <a href="https://ai.google.dev/gemma/prohibited_use_policy">Política de usos prohibidos de Gemma</a> se aplican a su uso del modelo y de sus salidas, además de estas notas de soporte. Estos pesos son una versión modificada (solo texto, cuantizada a 4 bits). No debe utilizar el modelo para fines prohibidos por dicha política ni en violación de las leyes y regulaciones aplicables. Esta aplicación no está afiliada a Google ni cuenta con su respaldo. Solo hay un modelo disponible y la aplicación no ofrece ninguna interfaz para añadir el suyo.</p>
+<p><strong>Aviso:</strong> Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms.</p>
 
 <h3>¿Puedo enviar imágenes?</h3>
-<p>No. El modelo incluido es solo de texto, así que la aplicación no ofrece entrada de imágenes.</p>
+<p>No. El modelo es solo de texto, así que la aplicación no ofrece entrada de imágenes.</p>
 
 <h3>¿Dónde se guardan mis datos y cómo los elimino?</h3>
 <p>Todo está en el almacenamiento privado de la aplicación en su iPhone: el modelo en <code>Documents/.localllmclient/</code>, su historial de conversaciones en <code>Application Support/LLMclient/History/</code>, una preferencia en el almacenamiento del sistema y un pequeño registro local de diagnóstico de memoria en <code>Documents/diagnostics.log</code>. Usa <em>Clear Chat</em> (el botón de papelera arriba a la derecha) para la conversación, <em>Delete &lt;modelo&gt;</em> para los archivos del modelo, o elimine la aplicación para quitarlo todo. No se guarda nada en ningún servidor.</p>
@@ -966,7 +971,7 @@
   <li>El inicio es mucho más rápido: la aplicación ya no relee ni reverifica los 2,5&nbsp;GiB de pesos en cada arranque, y ya no muestra un paso &laquo;Switching model&raquo;.</li>
   <li>Se corrigió un error por el que borrar la conversación podía dejar la aplicación sin poder responder hasta reiniciarla.</li>
   <li>Se corrigió el icono de la aplicación para que supere la validación del App Store.</li>
-  <li>El menú del modelo se redujo al único modelo incluido.</li>
+  <li>El menú del modelo se redujo a un único modelo.</li>
 </ul>
 
 <h2 id="report-es">Informar de un problema</h2>
@@ -981,7 +986,7 @@
 </ul>
 
 <footer>
-  <p>Pocket LLMG 1.1.9 (compilación 1) &middot; Ayuda y soporte &middot; Última actualización: 26 de octubre de 2026<br>
+  <p>Pocket LLMG 1.1.9 (compilación 1) &middot; Ayuda y soporte &middot; Última actualización: 27 de octubre de 2026<br>
   Véase también: <a href="index.html">Política de privacidad</a></p>
 </footer>
 
@@ -996,7 +1001,7 @@
 
 <table class="meta">
   <tr><th>Versione documentata</th><td>1.1.9 (build 1)</td></tr>
-  <tr><th>Ultimo aggiornamento</th><td>26 ottobre 2026</td></tr>
+  <tr><th>Ultimo aggiornamento</th><td>27 ottobre 2026</td></tr>
   <tr><th>Piattaforma</th><td>iPhone, iOS 26.0 o successivo</td></tr>
   <tr><th>Modello</th><td>Gemma 4 E2B Instruct (solo testo, 4 bit) &mdash; circa 2,5&nbsp;GiB, scaricato una sola volta</td></tr>
   <tr><th>Internet necessario</th><td>Solo per il primo download del modello. Poi completamente offline.</td></tr>
@@ -1029,7 +1034,7 @@
 
 <h3>Menu del modello (in basso sullo schermo)</h3>
 <ul>
-  <li><strong>Nome del modello</strong> &mdash; mostra il modello attualmente installato. La versione 1.1.9 include un solo modello, quindi non c&rsquo;è nulla tra cui scegliere.</li>
+  <li><strong>Nome del modello</strong> &mdash; mostra il modello attualmente installato. La versione 1.1.9 supporta un solo modello, quindi non c&rsquo;è nulla tra cui scegliere.</li>
   <li><strong>Delete &lt;modello&gt;</strong> &mdash; elimina i file del modello scaricato e la cronologia chat salvata di quel modello, liberando circa 2,5&nbsp;GiB. Al prossimo utilizzo ti verrà chiesto di scaricarlo di nuovo.</li>
   <li><strong>HF Source</strong> &mdash; sceglie da dove scaricare i file del modello: <code>hf-mirror.com</code> (predefinito) o <code>huggingface.co</code>. Se un download è lento o non riesce, prova l&rsquo;altra fonte.</li>
 </ul>
@@ -1123,10 +1128,11 @@
 <p>No. Pocket LLMG è gratuito: non ci sono acquisti in-app, abbonamenti né altri costi, e tutte le funzioni sono disponibili gratuitamente (a partire dal 4 ottobre 2026). Se in futuro verranno introdotte funzioni a pagamento, i dettagli sui prezzi saranno aggiornati prima su questa pagina e nell&rsquo;<a href="index.html">Informativa sulla privacy</a>.</p>
 
 <h3>Quale modello di IA utilizza?</h3>
-<p>Gemma 4 E2B Instruct, una build solo testo a 4 bit pubblicata su Hugging Face come <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. È distribuito secondo i <strong>Termini di utilizzo di Gemma</strong> di Google, quindi quei termini e la relativa Politica sui divieti d&rsquo;uso si applicano al tuo utilizzo degli output del modello, oltre a queste note di supporto. Questa app non è affiliata a Google né approvata da Google. È incluso un solo modello e l&rsquo;app non offre alcuna interfaccia per aggiungerne altri.</p>
+<p>Gemma 4 E2B Instruct, una build solo testo a 4 bit pubblicata su Hugging Face come <code>over-show/gemma-4-e2b-it-text-only-4bit</code>. Viene scaricata al primo utilizzo ed è distribuita secondo i <strong><a href="https://ai.google.dev/gemma/terms">Termini di utilizzo di Gemma</a></strong> di Google, quindi tali termini e la <a href="https://ai.google.dev/gemma/prohibited_use_policy">Politica sui divieti d&rsquo;uso di Gemma</a> si applicano al tuo utilizzo del modello e dei suoi output, oltre a queste note di supporto. Questi pesi sono una versione modificata (solo testo, quantizzata a 4 bit). Non devi usare il modello per scopi vietati da tale politica o in violazione delle leggi e dei regolamenti applicabili. Questa app non è affiliata a Google né approvata da Google. È disponibile un solo modello e l&rsquo;app non offre alcuna interfaccia per aggiungerne altri.</p>
+<p><strong>Avviso:</strong> Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms.</p>
 
 <h3>Posso inviare immagini?</h3>
-<p>No. Il modello incluso è solo testo, quindi l&rsquo;app non offre input per le immagini.</p>
+<p>No. Il modello è solo testo, quindi l&rsquo;app non offre input per le immagini.</p>
 
 <h3>Dove sono conservati i miei dati e come li elimino?</h3>
 <p>Tutto si trova nello spazio di archiviazione privato dell&rsquo;app sul tuo iPhone: il modello in <code>Documents/.localllmclient/</code>, la cronologia delle chat in <code>Application Support/LLMclient/History/</code>, una preferenza nella memoria di sistema e un piccolo registro locale di diagnostica della memoria in <code>Documents/diagnostics.log</code>. Usa <em>Clear Chat</em> (il pulsante cestino in alto a destra) per la conversazione, <em>Delete &lt;modello&gt;</em> per i file del modello, oppure elimina l&rsquo;app per rimuovere tutto. Nulla viene conservato su alcun server.</p>
@@ -1152,7 +1158,7 @@
   <li>Avvio molto più rapido: l&rsquo;app non rilegge e non riverifica più i 2,5&nbsp;GiB di pesi a ogni avvio e non mostra più il passaggio &laquo;Switching model&raquo;.</li>
   <li>Corretto un bug per cui cancellare la chat poteva lasciare l&rsquo;app incapace di rispondere fino al riavvio.</li>
   <li>Corretta l&rsquo;icona dell&rsquo;app perché superi la convalida dell&rsquo;App Store.</li>
-  <li>Il menu del modello è stato ridotto all&rsquo;unico modello incluso.</li>
+  <li>Il menu del modello è stato ridotto a un unico modello.</li>
 </ul>
 
 <h2 id="report-it">Segnalare un problema</h2>
@@ -1167,7 +1173,7 @@
 </ul>
 
 <footer>
-  <p>Pocket LLMG 1.1.9 (build 1) &middot; Assistenza e supporto &middot; Ultimo aggiornamento 26 ottobre 2026<br>
+  <p>Pocket LLMG 1.1.9 (build 1) &middot; Assistenza e supporto &middot; Ultimo aggiornamento 27 ottobre 2026<br>
   Vedi anche: <a href="index.html">Informativa sulla privacy</a></p>
 </footer>
 
